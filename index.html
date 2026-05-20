@@ -1,35 +1,35 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTFâ€”8">
-<meta name="viewport" content="width=deviceâ€”width, initialâ€”scale=1.0">
-<title>Valourâ€”Digital Marketing Agency</title>
-<link rel="icon" type="image/png" href="Valourâ€”icon.png">
-<link rel="appleâ€”touchâ€”icon" href="Valourâ€”icon.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Valour-Digital Marketing Agency</title>
+<link rel="icon" type="image/png" href="Valour-icon.png">
+<link rel="apple-touch-icon" href="Valour-icon.png">
 <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fontâ€”awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <style>
   :root {
-    â€”â€”lime: #AAFF00;
-    â€”â€”limeâ€”dim: #7ACC00;
-    â€”â€”limeâ€”glow: rgba(170,255,0,0.25);
-    â€”â€”black: #000000;
-    â€”â€”dark: #060606;
-    â€”â€”dark2: #0d0d0d;
-    â€”â€”dark3: #111111;
-    â€”â€”glass: rgba(170,255,0,0.06);
-    â€”â€”silver: #C0C0C0;
+    --lime: #AAFF00;
+    --lime-dim: #7ACC00;
+    --lime-glow: rgba(170,255,0,0.25);
+    --black: #000000;
+    --dark: #060606;
+    --dark2: #0d0d0d;
+    --dark3: #111111;
+    --glass: rgba(170,255,0,0.06);
+    --silver: #C0C0C0;
   }
 
-  *, *::before, *::after { boxâ€”sizing: borderâ€”box; margin: 0; padding: 0; }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-  html { scrollâ€”behavior: smooth; }
+  html { scroll-behavior: smooth; }
 
   body {
-    background: var(â€”â€”black);
+    background: var(--black);
     color: #fff;
-    fontâ€”family: 'Inter', sansâ€”serif;
-    overflowâ€”x: hidden;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
     cursor: none;
   }
 
@@ -37,242 +37,242 @@
   #cursor {
     position: fixed;
     width: 28px; height: 28px;
-    background: var(â€”â€”lime);
-    borderâ€”radius: 50%;
-    pointerâ€”events: none;
-    zâ€”index: 9999;
-    transform: translate(â€”50%,â€”50%);
+    background: var(--lime);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%,-50%);
     transition: width 0.2s, height 0.2s, background 0.2s, opacity 0.2s;
-    mixâ€”blendâ€”mode: screen;
-    boxâ€”shadow: 0 0 30px var(â€”â€”lime), 0 0 80px rgba(170,255,0,0.5);
+    mix-blend-mode: screen;
+    box-shadow: 0 0 30px var(--lime), 0 0 80px rgba(170,255,0,0.5);
   }
-  #cursorâ€”trail {
+  #cursor-trail {
     position: fixed;
     width: 70px; height: 70px;
     border: 1.5px solid rgba(170,255,0,0.5);
-    borderâ€”radius: 50%;
-    pointerâ€”events: none;
-    zâ€”index: 9998;
-    transform: translate(â€”50%,â€”50%);
-    transition: transform 0.12s ease, width 0.3s, height 0.3s, borderâ€”color 0.3s;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9998;
+    transform: translate(-50%,-50%);
+    transition: transform 0.12s ease, width 0.3s, height 0.3s, border-color 0.3s;
   }
   body:hover #cursor { opacity: 1; }
 
   .spark {
     position: fixed;
-    pointerâ€”events: none;
-    zâ€”index: 9997;
-    borderâ€”radius: 50%;
+    pointer-events: none;
+    z-index: 9997;
+    border-radius: 50%;
     animation: sparkle 0.6s forwards;
   }
   @keyframes sparkle {
     0% { opacity:1; transform: scale(1) translate(0,0); }
-    100% { opacity:0; transform: scale(0) translate(var(â€”â€”dx), var(â€”â€”dy)); }
+    100% { opacity:0; transform: scale(0) translate(var(--dx), var(--dy)); }
   }
 
   /* â”€â”€ NAV â”€â”€ */
   nav {
     position: fixed;
     top: 0; left: 0; right: 0;
-    zâ€”index: 1000;
+    z-index: 1000;
     padding: 20px 60px;
     display: flex;
-    alignâ€”items: center;
-    justifyâ€”content: spaceâ€”between;
+    align-items: center;
+    justify-content: space-between;
     background: rgba(0,0,0,0.7);
-    backdropâ€”filter: blur(20px);
-    borderâ€”bottom: 1px solid rgba(170,255,0,0.12);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(170,255,0,0.12);
   }
-  .navâ€”logo {
-    fontâ€”family: 'Orbitron', sansâ€”serif;
-    fontâ€”size: 22px;
-    fontâ€”weight: 900;
-    color: var(â€”â€”lime);
-    letterâ€”spacing: 0.1em;
-    textâ€”decoration: none;
+  .nav-logo {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 22px;
+    font-weight: 900;
+    color: var(--lime);
+    letter-spacing: 0.1em;
+    text-decoration: none;
     display: flex;
-    alignâ€”items: center;
+    align-items: center;
     gap: 10px;
   }
-  .navâ€”logo img { width: 110px; height: 110px; objectâ€”fit: contain; }
-  .navâ€”links { display: flex; gap: 40px; listâ€”style: none; }
-  .navâ€”links a {
+  .nav-logo img { width: 110px; height: 110px; object-fit: contain; }
+  .nav-links { display: flex; gap: 40px; list-style: none; }
+  .nav-links a {
     color: rgba(255,255,255,0.7);
-    textâ€”decoration: none;
-    fontâ€”family: 'Rajdhani', sansâ€”serif;
-    fontâ€”weight: 500;
-    fontâ€”size: 15px;
-    letterâ€”spacing: 0.12em;
-    textâ€”transform: uppercase;
+    text-decoration: none;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
     transition: color 0.3s;
   }
-  .navâ€”links a:hover { color: var(â€”â€”lime); }
-  .navâ€”cta {
-    fontâ€”family: 'Rajdhani', sansâ€”serif;
-    fontâ€”weight: 700;
-    fontâ€”size: 14px;
-    letterâ€”spacing: 0.15em;
-    textâ€”transform: uppercase;
+  .nav-links a:hover { color: var(--lime); }
+  .nav-cta {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
     padding: 12px 28px;
-    border: 1px solid var(â€”â€”lime);
-    color: var(â€”â€”lime);
+    border: 1px solid var(--lime);
+    color: var(--lime);
     background: transparent;
     cursor: none;
-    textâ€”decoration: none;
-    display: inlineâ€”flex;
-    alignâ€”items: center;
-    justifyâ€”content: center;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     transition: all 0.3s;
     position: relative;
     overflow: hidden;
   }
-  .navâ€”cta::before {
+  .nav-cta::before {
     content: '';
     position: absolute;
     inset: 0;
-    background: linearâ€”gradient(135deg, transparent 0%, rgba(192,192,192,0.15) 50%, transparent 100%);
-    transform: translateX(â€”100%);
+    background: linear-gradient(135deg, transparent 0%, rgba(192,192,192,0.15) 50%, transparent 100%);
+    transform: translateX(-100%);
     transition: transform 0.4s;
   }
-  .navâ€”cta:hover::before { transform: translateX(100%); }
-  .navâ€”cta:hover {
-    background: var(â€”â€”lime);
-    color: var(â€”â€”black);
-    boxâ€”shadow: 0 0 30px var(â€”â€”limeâ€”glow), inset 0 0 20px rgba(192,192,192,0.2);
+  .nav-cta:hover::before { transform: translateX(100%); }
+  .nav-cta:hover {
+    background: var(--lime);
+    color: var(--black);
+    box-shadow: 0 0 30px var(--lime-glow), inset 0 0 20px rgba(192,192,192,0.2);
   }
 
   /* â”€â”€ SECTIONS â”€â”€ */
-  section { position: relative; scrollâ€”marginâ€”top: 130px; }
-  section:not(#logoâ€”boxâ€”section) { overflow: hidden; }
+  section { position: relative; scroll-margin-top: 130px; }
+  section:not(#logo-box-section) { overflow: hidden; }
 
   /* â”€â”€ HERO â”€â”€ */
   #hero {
-    minâ€”height: 100vh;
+    min-height: 100vh;
     display: grid;
-    gridâ€”templateâ€”columns: 1fr auto 1fr;
-    gridâ€”templateâ€”rows: 1fr;
-    alignâ€”items: center;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
     padding: 100px 60px 60px;
-    background: var(â€”â€”black);
+    background: var(--black);
     gap: 0;
     position: relative;
   }
-  .heroâ€”grid {
+  .hero-grid {
     position: absolute;
     inset: 0;
-    backgroundâ€”image:
-      linearâ€”gradient(rgba(170,255,0,0.04) 1px, transparent 1px),
-      linearâ€”gradient(90deg, rgba(170,255,0,0.04) 1px, transparent 1px);
-    backgroundâ€”size: 60px 60px;
-    pointerâ€”events: none;
+    background-image:
+      linear-gradient(rgba(170,255,0,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(170,255,0,0.04) 1px, transparent 1px);
+    background-size: 60px 60px;
+    pointer-events: none;
   }
-  .heroâ€”content {
-    gridâ€”column: 1;
-    maxâ€”width: 480px;
-    justifyâ€”self: end;
-    paddingâ€”right: 60px;
+  .hero-content {
+    grid-column: 1;
+    max-width: 480px;
+    justify-self: end;
+    padding-right: 60px;
     position: relative;
-    zâ€”index: 2;
+    z-index: 2;
   }
-  .heroâ€”contentâ€”right {
-    gridâ€”column: 3;
-    maxâ€”width: 320px;
-    justifyâ€”self: start;
-    paddingâ€”left: 60px;
+  .hero-content-right {
+    grid-column: 3;
+    max-width: 320px;
+    justify-self: start;
+    padding-left: 60px;
     position: relative;
-    zâ€”index: 2;
+    z-index: 2;
     display: flex;
-    flexâ€”direction: column;
+    flex-direction: column;
     gap: 24px;
   }
-  .heroâ€”stat {
-    borderâ€”left: 2px solid rgba(170,255,0,0.3);
-    paddingâ€”left: 20px;
+  .hero-stat {
+    border-left: 2px solid rgba(170,255,0,0.3);
+    padding-left: 20px;
   }
-  .heroâ€”statâ€”num {
-    fontâ€”family: 'Orbitron', sansâ€”serif;
-    fontâ€”size: 36px;
-    fontâ€”weight: 900;
-    color: var(â€”â€”lime);
-    lineâ€”height: 1;
+  .hero-stat-num {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 36px;
+    font-weight: 900;
+    color: var(--lime);
+    line-height: 1;
   }
-  .heroâ€”statâ€”label {
-    fontâ€”family: 'Rajdhani', sansâ€”serif;
-    fontâ€”size: 12px;
-    letterâ€”spacing: 0.2em;
+  .hero-stat-label {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.2em;
     color: rgba(255,255,255,0.4);
-    textâ€”transform: uppercase;
-    marginâ€”top: 4px;
+    text-transform: uppercase;
+    margin-top: 4px;
   }
-  .heroâ€”eyebrow {
-    fontâ€”family: 'Rajdhani', sansâ€”serif;
-    fontâ€”size: 13px;
-    letterâ€”spacing: 0.3em;
-    textâ€”transform: uppercase;
-    color: var(â€”â€”lime);
-    marginâ€”bottom: 20px;
+  .hero-eyebrow {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--lime);
+    margin-bottom: 20px;
     display: flex;
-    alignâ€”items: center;
+    align-items: center;
     gap: 12px;
   }
-  .heroâ€”eyebrow::before {
+  .hero-eyebrow::before {
     content: '';
     width: 40px; height: 1px;
-    background: var(â€”â€”lime);
+    background: var(--lime);
   }
   h1 {
-    fontâ€”family: 'Orbitron', sansâ€”serif;
-    fontâ€”size: clamp(42px, 6vw, 80px);
-    fontâ€”weight: 900;
-    lineâ€”height: 1.0;
-    marginâ€”bottom: 24px;
-    letterâ€”spacing: â€”0.02em;
+    font-family: 'Orbitron', sans-serif;
+    font-size: clamp(42px, 6vw, 80px);
+    font-weight: 900;
+    line-height: 1.0;
+    margin-bottom: 24px;
+    letter-spacing: -0.02em;
   }
-  h1 .lineâ€”accent { color: var(â€”â€”lime); display: block; }
-  .heroâ€”sub {
-    fontâ€”size: 17px;
-    lineâ€”height: 1.7;
+  h1 .line-accent { color: var(--lime); display: block; }
+  .hero-sub {
+    font-size: 17px;
+    line-height: 1.7;
     color: rgba(255,255,255,0.6);
-    marginâ€”bottom: 44px;
-    fontâ€”weight: 300;
+    margin-bottom: 44px;
+    font-weight: 300;
   }
-  .heroâ€”btns { display: flex; gap: 16px; flexâ€”wrap: wrap; }
-  .btnâ€”primary {
-    fontâ€”family: 'Rajdhani', sansâ€”serif;
-    fontâ€”weight: 700;
-    fontâ€”size: 14px;
-    letterâ€”spacing: 0.15em;
-    textâ€”transform: uppercase;
+  .hero-btns { display: flex; gap: 16px; flex-wrap: wrap; }
+  .btn-primary {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
     padding: 16px 40px;
-    background: var(â€”â€”lime);
-    color: var(â€”â€”black);
+    background: var(--lime);
+    color: var(--black);
     border: none;
     cursor: none;
     position: relative;
     overflow: hidden;
     transition: all 0.3s;
-    textâ€”decoration: none;
-    display: inlineâ€”block;
+    text-decoration: none;
+    display: inline-block;
   }
-  .btnâ€”primary::before {
+  .btn-primary::before {
     content:'';
     position: absolute;
     inset: 0;
-    background: linearâ€”gradient(90deg, transparent 0%, rgba(255,255,255,0.4) 50%, transparent 100%);
-    transform: translateX(â€”100%) skewX(â€”15deg);
+    background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.4) 50%, transparent 100%);
+    transform: translateX(-100%) skewX(-15deg);
     transition: transform 0.5s;
   }
-  .btnâ€”primary:hover::before { transform: translateX(150%) skewX(â€”15deg); }
-  .btnâ€”primary:hover {
-    boxâ€”shadow: 0 0 40px var(â€”â€”lime), 0 0 80px rgba(170,255,0,0.3), inset 0 0 20px rgba(192,192,192,0.15);
-    transform: translateY(â€”2px);
+  .btn-primary:hover::before { transform: translateX(150%) skewX(-15deg); }
+  .btn-primary:hover {
+    box-shadow: 0 0 40px var(--lime), 0 0 80px rgba(170,255,0,0.3), inset 0 0 20px rgba(192,192,192,0.15);
+    transform: translateY(-2px);
   }
-  .btnâ€”secondary {
-    fontâ€”family: 'Rajdhani', sansâ€”serif;
-    fontâ€”weight: 600;
-    fontâ€”size: 14px;
-    letterâ€”spacing: 0.15em;
-    textâ€”transform: uppercase;
+  .btn-secondary {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
     padding: 16px 40px;
     background: transparent;
     color: rgba(255,255,255,0.8);
@@ -281,385 +281,385 @@
     position: relative;
     overflow: hidden;
     transition: all 0.3s;
-    textâ€”decoration: none;
-    display: inlineâ€”block;
+    text-decoration: none;
+    display: inline-block;
   }
-  .btnâ€”secondary::before {
+  .btn-secondary::before {
     content:'';
     position: absolute;
     inset: 0;
-    background: linearâ€”gradient(90deg, transparent, rgba(192,192,192,0.12), transparent);
-    transform: translateX(â€”100%);
+    background: linear-gradient(90deg, transparent, rgba(192,192,192,0.12), transparent);
+    transform: translateX(-100%);
     transition: transform 0.4s;
   }
-  .btnâ€”secondary:hover::before { transform: translateX(100%); }
-  .btnâ€”secondary:hover { borderâ€”color: rgba(255,255,255,0.5); color: #fff; }
+  .btn-secondary:hover::before { transform: translateX(100%); }
+  .btn-secondary:hover { border-color: rgba(255,255,255,0.5); color: #fff; }
 
   /* â”€â”€ MASCOT â”€â”€ */
-  .mascotâ€”wrap {
+  .mascot-wrap {
     position: relative;
     width: 560px;
     height: 680px;
-    flexâ€”shrink: 0;
-    zâ€”index: 2;
+    flex-shrink: 0;
+    z-index: 2;
     margin: 0 auto;
   }
-  /* Base whiteâ€”hoodie image â€” always visible */
-  .mascotâ€”img {
+  /* Base white-hoodie image - always visible */
+  .mascot-img {
     position: absolute;
     inset: 0;
     width: 100%;
     height: 100%;
-    objectâ€”fit: contain;
+    object-fit: contain;
     display: block;
   }
-  .mascotâ€”img.white {
-    zâ€”index: 1;
+  .mascot-img.white {
+    z-index: 1;
   }
-  /* Green jacket â€” sits on top, clipped to a circle that follows the cursor */
-  .mascotâ€”img.green {
-    zâ€”index: 2;
-    â€”â€”spotlightâ€”x: 50%;
-    â€”â€”spotlightâ€”y: 50%;
-    â€”â€”spotlightâ€”r: 0px;
-    â€”â€”spotlightâ€”inner: 0px;
-    /* clipâ€”path circle starts at 0 radius (invisible) â€” JS will update this */
-    clipâ€”path: circle(0px at 50% 50%);
-    â€”webkitâ€”maskâ€”image: radialâ€”gradient(
-      circle at var(â€”â€”spotlightâ€”x) var(â€”â€”spotlightâ€”y),
+  /* Green jacket - sits on top, clipped to a circle that follows the cursor */
+  .mascot-img.green {
+    z-index: 2;
+    --spotlight-x: 50%;
+    --spotlight-y: 50%;
+    --spotlight-r: 0px;
+    --spotlight-inner: 0px;
+    /* clip-path circle starts at 0 radius (invisible) - JS will update this */
+    clip-path: circle(0px at 50% 50%);
+    -webkit-mask-image: radial-gradient(
+      circle at var(--spotlight-x) var(--spotlight-y),
       #000 0,
-      #000 var(â€”â€”spotlightâ€”inner),
-      transparent var(â€”â€”spotlightâ€”r)
+      #000 var(--spotlight-inner),
+      transparent var(--spotlight-r)
     );
-    maskâ€”image: radialâ€”gradient(
-      circle at var(â€”â€”spotlightâ€”x) var(â€”â€”spotlightâ€”y),
+    mask-image: radial-gradient(
+      circle at var(--spotlight-x) var(--spotlight-y),
       #000 0,
-      #000 var(â€”â€”spotlightâ€”inner),
-      transparent var(â€”â€”spotlightâ€”r)
+      #000 var(--spotlight-inner),
+      transparent var(--spotlight-r)
     );
-    â€”webkitâ€”maskâ€”repeat: noâ€”repeat;
-    maskâ€”repeat: noâ€”repeat;
-    transition: clipâ€”path 0.08s ease;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    transition: clip-path 0.08s ease;
   }
-  /* Bottom fade blend â€” sits above both images, fades cat into the bg */
-  .mascotâ€”fade {
+  /* Bottom fade blend - sits above both images, fades cat into the bg */
+  .mascot-fade {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     height: 42%;
-    background: linearâ€”gradient(to bottom, transparent 0%, var(â€”â€”black) 100%);
-    zâ€”index: 3;
-    pointerâ€”events: none;
+    background: linear-gradient(to bottom, transparent 0%, var(--black) 100%);
+    z-index: 3;
+    pointer-events: none;
   }
-  .mascotâ€”ring {
+  .mascot-ring {
     position: absolute;
-    borderâ€”radius: 50%;
+    border-radius: 50%;
     border: 1px solid rgba(170,255,0,0.15);
-    animation: pulseâ€”ring 3s infinite;
-    pointerâ€”events: none;
-    zâ€”index: 0;
+    animation: pulse-ring 3s infinite;
+    pointer-events: none;
+    z-index: 0;
   }
-  .mascotâ€”ring:nthâ€”child(1) { inset: â€”20px; animationâ€”delay: 0s; }
-  .mascotâ€”ring:nthâ€”child(2) { inset: â€”50px; animationâ€”delay: 1s; }
-  .mascotâ€”ring:nthâ€”child(3) { inset: â€”80px; animationâ€”delay: 2s; }
-  @keyframes pulseâ€”ring {
+  .mascot-ring:nth-child(1) { inset: -20px; animation-delay: 0s; }
+  .mascot-ring:nth-child(2) { inset: -50px; animation-delay: 1s; }
+  .mascot-ring:nth-child(3) { inset: -80px; animation-delay: 2s; }
+  @keyframes pulse-ring {
     0%, 100% { opacity: 0.3; transform: scale(1); }
     50% { opacity: 0.7; transform: scale(1.02); }
   }
-  .mascotâ€”label {
+  .mascot-label {
     position: absolute;
-    bottom: â€”30px;
+    bottom: -30px;
     left: 50%;
-    transform: translateX(â€”50%);
-    fontâ€”family: 'Rajdhani', sansâ€”serif;
-    fontâ€”size: 11px;
-    letterâ€”spacing: 0.25em;
+    transform: translateX(-50%);
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.25em;
     color: rgba(170,255,0,0.5);
-    textâ€”transform: uppercase;
-    whiteâ€”space: nowrap;
+    text-transform: uppercase;
+    white-space: nowrap;
   }
 
   /* â”€â”€ MARQUEE â”€â”€ */
-  .marqueeâ€”section {
+  .marquee-section {
     padding: 20px 0;
-    background: var(â€”â€”lime);
+    background: var(--lime);
     overflow: hidden;
   }
-  .marqueeâ€”track {
+  .marquee-track {
     display: flex;
     gap: 60px;
     animation: marquee 20s linear infinite;
-    whiteâ€”space: nowrap;
+    white-space: nowrap;
   }
-  .marqueeâ€”item {
-    fontâ€”family: 'Orbitron', sansâ€”serif;
-    fontâ€”size: 13px;
-    fontâ€”weight: 700;
-    color: var(â€”â€”black);
-    letterâ€”spacing: 0.2em;
-    textâ€”transform: uppercase;
+  .marquee-item {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--black);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
     display: flex;
-    alignâ€”items: center;
+    align-items: center;
     gap: 20px;
-    flexâ€”shrink: 0;
+    flex-shrink: 0;
   }
-  .marqueeâ€”dot { width: 6px; height: 6px; background: var(â€”â€”black); borderâ€”radius: 50%; }
+  .marquee-dot { width: 6px; height: 6px; background: var(--black); border-radius: 50%; }
   @keyframes marquee {
     0% { transform: translateX(0); }
-    100% { transform: translateX(â€”50%); }
+    100% { transform: translateX(-50%); }
   }
 
   /* â”€â”€ ABOUT â”€â”€ */
   #about {
     padding: 120px 60px;
-    background: var(â€”â€”dark);
+    background: var(--dark);
   }
-  .sectionâ€”label {
-    fontâ€”family: 'Rajdhani', sansâ€”serif;
-    fontâ€”size: 12px;
-    letterâ€”spacing: 0.35em;
-    textâ€”transform: uppercase;
-    color: var(â€”â€”lime);
-    marginâ€”bottom: 16px;
+  .section-label {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: var(--lime);
+    margin-bottom: 16px;
   }
-  .sectionâ€”title {
-    fontâ€”family: 'Orbitron', sansâ€”serif;
-    fontâ€”size: clamp(30px, 4vw, 52px);
-    fontâ€”weight: 900;
-    marginâ€”bottom: 24px;
-    lineâ€”height: 1.1;
+  .section-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: clamp(30px, 4vw, 52px);
+    font-weight: 900;
+    margin-bottom: 24px;
+    line-height: 1.1;
   }
-  .aboutâ€”grid {
+  .about-grid {
     display: grid;
-    gridâ€”templateâ€”columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 80px;
-    alignâ€”items: center;
-    marginâ€”top: 60px;
+    align-items: center;
+    margin-top: 60px;
   }
-  .aboutâ€”text p {
+  .about-text p {
     color: rgba(255,255,255,0.6);
-    lineâ€”height: 1.8;
-    fontâ€”size: 16px;
-    fontâ€”weight: 300;
-    marginâ€”bottom: 20px;
+    line-height: 1.8;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 20px;
   }
-  .statsâ€”grid {
+  .stats-grid {
     display: grid;
-    gridâ€”templateâ€”columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 2px;
   }
-  .statâ€”num {
-    fontâ€”family: 'Orbitron', sansâ€”serif;
-    fontâ€”size: 48px;
-    fontâ€”weight: 900;
-    color: var(â€”â€”lime);
-    lineâ€”height: 1;
-    marginâ€”bottom: 8px;
+  .stat-num {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+    color: var(--lime);
+    line-height: 1;
+    margin-bottom: 8px;
   }
-  .statâ€”label {
-    fontâ€”family: 'Rajdhani', sansâ€”serif;
-    fontâ€”size: 13px;
-    letterâ€”spacing: 0.15em;
+  .stat-label {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.15em;
     color: rgba(255,255,255,0.5);
-    textâ€”transform: uppercase;
+    text-transform: uppercase;
   }
 
   /* â”€â”€ SERVICES â”€â”€ */
   #services {
     padding: 120px 60px;
-    background: var(â€”â€”black);
+    background: var(--black);
   }
-  .servicesâ€”cardsâ€”section {
+  .services-cards-section {
     padding: 0 60px 120px;
-    background: var(â€”â€”black);
+    background: var(--black);
   }
-  .servicesâ€”intro {
-    textâ€”align: center;
-    maxâ€”width: 600px;
+  .services-intro {
+    text-align: center;
+    max-width: 600px;
     margin: 0 auto 80px;
   }
-  .cardsâ€”grid {
+  .cards-grid {
     display: grid;
-    gridâ€”templateâ€”columns: repeat(autoâ€”fill, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 24px;
   }
-  .flipâ€”card {
+  .flip-card {
     height: 320px;
     perspective: 1000px;
   }
-  .flipâ€”inner {
+  .flip-inner {
     position: relative;
     width: 100%;
     height: 100%;
-    transformâ€”style: preserveâ€”3d;
-    transition: transform 0.7s cubicâ€”bezier(0.4, 0.2, 0.2, 1);
+    transform-style: preserve-3d;
+    transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
   }
-  .flipâ€”card:hover .flipâ€”inner { transform: rotateY(180deg); }
-  .flipâ€”front, .flipâ€”back {
+  .flip-card:hover .flip-inner { transform: rotateY(180deg); }
+  .flip-front, .flip-back {
     position: absolute;
     inset: 0;
-    backfaceâ€”visibility: hidden;
-    â€”webkitâ€”backfaceâ€”visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
     padding: 36px;
     border: 1px solid rgba(170,255,0,0.12);
     display: flex;
-    flexâ€”direction: column;
-    justifyâ€”content: flexâ€”end;
+    flex-direction: column;
+    justify-content: flex-end;
   }
-  .flipâ€”front {
-    background: var(â€”â€”dark2);
-    transition: borderâ€”color 0.3s;
+  .flip-front {
+    background: var(--dark2);
+    transition: border-color 0.3s;
   }
-  .flipâ€”card:hover .flipâ€”front { borderâ€”color: rgba(170,255,0,0.3); }
-  .flipâ€”back {
-    background: var(â€”â€”lime);
+  .flip-card:hover .flip-front { border-color: rgba(170,255,0,0.3); }
+  .flip-back {
+    background: var(--lime);
     transform: rotateY(180deg);
-    justifyâ€”content: center;
-    alignâ€”items: flexâ€”start;
+    justify-content: center;
+    align-items: flex-start;
     gap: 16px;
   }
-  .serviceâ€”icon {
-    fontâ€”size: 40px;
-    marginâ€”bottom: 20px;
+  .service-icon {
+    font-size: 40px;
+    margin-bottom: 20px;
     display: block;
     transition: transform 0.3s;
   }
-  .flipâ€”card:hover .serviceâ€”icon { transform: scale(1.1); }
-  .serviceâ€”name {
-    fontâ€”family: 'Orbitron', sansâ€”serif;
-    fontâ€”size: 18px;
-    fontâ€”weight: 700;
-    marginâ€”bottom: 8px;
+  .flip-card:hover .service-icon { transform: scale(1.1); }
+  .service-name {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 8px;
     color: #fff;
   }
-  .serviceâ€”tag {
-    fontâ€”family: 'Rajdhani', sansâ€”serif;
-    fontâ€”size: 12px;
-    letterâ€”spacing: 0.2em;
+  .service-tag {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.2em;
     color: rgba(170,255,0,0.6);
-    textâ€”transform: uppercase;
+    text-transform: uppercase;
   }
-  .flipâ€”back .serviceâ€”name { color: var(â€”â€”black); fontâ€”size: 20px; }
-  .flipâ€”back p {
+  .flip-back .service-name { color: var(--black); font-size: 20px; }
+  .flip-back p {
     color: rgba(0,0,0,0.75);
-    fontâ€”size: 14px;
-    lineâ€”height: 1.7;
-    fontâ€”weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    font-weight: 400;
   }
-  .flipâ€”back .learnâ€”more {
-    fontâ€”family: 'Rajdhani', sansâ€”serif;
-    fontâ€”weight: 700;
-    fontâ€”size: 13px;
-    letterâ€”spacing: 0.2em;
-    textâ€”transform: uppercase;
-    color: var(â€”â€”black);
-    textâ€”decoration: none;
-    borderâ€”bottom: 2px solid var(â€”â€”black);
-    paddingâ€”bottom: 2px;
-    display: inlineâ€”block;
-    marginâ€”top: 8px;
+  .flip-back .learn-more {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--black);
+    text-decoration: none;
+    border-bottom: 2px solid var(--black);
+    padding-bottom: 2px;
+    display: inline-block;
+    margin-top: 8px;
   }
-  .cardâ€”number {
+  .card-number {
     position: absolute;
     top: 24px; right: 24px;
-    fontâ€”family: 'Orbitron', sansâ€”serif;
-    fontâ€”size: 12px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 12px;
     color: rgba(170,255,0,0.25);
-    fontâ€”weight: 700;
+    font-weight: 700;
   }
-  .limeâ€”bar {
+  .lime-bar {
     position: absolute;
     bottom: 0; left: 0;
     height: 2px;
     width: 0%;
-    background: var(â€”â€”lime);
+    background: var(--lime);
     transition: width 0.4s ease;
   }
-  .flipâ€”card:hover .limeâ€”bar { width: 100%; }
+  .flip-card:hover .lime-bar { width: 100%; }
 
   /* â”€â”€ PROCESS â”€â”€ */
   #process {
     padding: 0 60px 120px;
-    background: var(â€”â€”black);
+    background: var(--black);
   }
-  #processâ€”overview {
+  #process-overview {
     width: 100%;
     padding: 120px 60px;
-    background: var(â€”â€”black);
+    background: var(--black);
     overflow: hidden;
   }
-  .processâ€”timeline {
+  .process-timeline {
     display: flex;
     gap: 0;
-    marginâ€”top: 0;
+    margin-top: 0;
     position: relative;
   }
-  .processâ€”timeline::before {
+  .process-timeline::before {
     content: '';
     position: absolute;
     top: 50px;
     left: 60px;
     right: 60px;
     height: 1px;
-    background: linearâ€”gradient(90deg, transparent, var(â€”â€”lime), transparent);
+    background: linear-gradient(90deg, transparent, var(--lime), transparent);
   }
-  .processâ€”step {
+  .process-step {
     flex: 1;
-    textâ€”align: center;
+    text-align: center;
     padding: 0 20px;
     position: relative;
   }
-  .stepâ€”num {
+  .step-num {
     width: 100px;
     height: 100px;
     border: 1px solid rgba(170,255,0,0.3);
-    borderâ€”radius: 50%;
+    border-radius: 50%;
     display: flex;
-    alignâ€”items: center;
-    justifyâ€”content: center;
+    align-items: center;
+    justify-content: center;
     margin: 0 auto 24px;
-    fontâ€”family: 'Orbitron', sansâ€”serif;
-    fontâ€”size: 22px;
-    fontâ€”weight: 900;
-    color: var(â€”â€”lime);
-    background: var(â€”â€”dark);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 22px;
+    font-weight: 900;
+    color: var(--lime);
+    background: var(--dark);
     position: relative;
-    zâ€”index: 1;
+    z-index: 1;
     transition: all 0.4s;
   }
-  .processâ€”step:hover .stepâ€”num {
-    background: var(â€”â€”lime);
-    color: var(â€”â€”black);
-    boxâ€”shadow: 0 0 40px var(â€”â€”limeâ€”glow);
-    borderâ€”color: var(â€”â€”lime);
+  .process-step:hover .step-num {
+    background: var(--lime);
+    color: var(--black);
+    box-shadow: 0 0 40px var(--lime-glow);
+    border-color: var(--lime);
   }
-  .stepâ€”title {
-    fontâ€”family: 'Rajdhani', sansâ€”serif;
-    fontâ€”size: 16px;
-    fontâ€”weight: 700;
-    letterâ€”spacing: 0.1em;
-    textâ€”transform: uppercase;
-    marginâ€”bottom: 12px;
+  .step-title {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
     color: rgba(255,255,255,0.9);
   }
-  .stepâ€”desc {
-    fontâ€”size: 13px;
+  .step-desc {
+    font-size: 13px;
     color: rgba(255,255,255,0.45);
-    lineâ€”height: 1.7;
+    line-height: 1.7;
   }
 
   /* â”€â”€ LOGO PHYSICS BOX â”€â”€ */
-  #logoâ€”boxâ€”section {
+  #logo-box-section {
     padding: 120px 60px;
-    background: var(â€”â€”black);
+    background: var(--black);
     overflow: hidden;
   }
-  .logoâ€”boxâ€”intro { textâ€”align: center; marginâ€”bottom: 60px; }
-  #logoâ€”canvasâ€”wrap {
+  .logo-box-intro { text-align: center; margin-bottom: 60px; }
+  #logo-canvas-wrap {
     position: relative;
     width: 100%;
-    maxâ€”width: 900px;
+    max-width: 900px;
     margin: 0 auto;
     height: 500px;
     border: 1px solid rgba(170,255,0,0.2);
@@ -667,86 +667,86 @@
     overflow: hidden;
     cursor: none;
   }
-  #logoâ€”canvas { position: absolute; top: 0; left: 0; width: 100%; pointerâ€”events: none; }
-  .canvasâ€”corner {
+  #logo-canvas { position: absolute; top: 0; left: 0; width: 100%; pointer-events: none; }
+  .canvas-corner {
     position: absolute;
     width: 20px; height: 20px;
-    borderâ€”color: var(â€”â€”lime);
-    borderâ€”style: solid;
+    border-color: var(--lime);
+    border-style: solid;
     opacity: 0.6;
   }
-  .canvasâ€”corner.tl { top: 0; left: 0; borderâ€”width: 2px 0 0 2px; }
-  .canvasâ€”corner.tr { top: 0; right: 0; borderâ€”width: 2px 2px 0 0; }
-  .canvasâ€”corner.bl { bottom: 0; left: 0; borderâ€”width: 0 0 2px 2px; }
-  .canvasâ€”corner.br { bottom: 0; right: 0; borderâ€”width: 0 2px 2px 0; }
+  .canvas-corner.tl { top: 0; left: 0; border-width: 2px 0 0 2px; }
+  .canvas-corner.tr { top: 0; right: 0; border-width: 2px 2px 0 0; }
+  .canvas-corner.bl { bottom: 0; left: 0; border-width: 0 0 2px 2px; }
+  .canvas-corner.br { bottom: 0; right: 0; border-width: 0 2px 2px 0; }
 
   /* â”€â”€ CTA â”€â”€ */
-  .btnâ€”dark {
-    fontâ€”family: 'Rajdhani', sansâ€”serif;
-    fontâ€”weight: 700;
-    fontâ€”size: 14px;
-    letterâ€”spacing: 0.15em;
-    textâ€”transform: uppercase;
+  .btn-dark {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
     padding: 18px 48px;
-    background: var(â€”â€”black);
-    color: var(â€”â€”lime);
+    background: var(--black);
+    color: var(--lime);
     border: none;
     cursor: none;
     position: relative;
     overflow: hidden;
     transition: all 0.3s;
-    textâ€”decoration: none;
-    display: inlineâ€”block;
+    text-decoration: none;
+    display: inline-block;
   }
-  .btnâ€”dark::before {
+  .btn-dark::before {
     content: '';
     position: absolute;
     inset: 0;
-    background: linearâ€”gradient(135deg, transparent, rgba(192,192,192,0.15), transparent);
-    transform: translateX(â€”100%);
+    background: linear-gradient(135deg, transparent, rgba(192,192,192,0.15), transparent);
+    transform: translateX(-100%);
     transition: transform 0.5s;
   }
-  .btnâ€”dark:hover::before { transform: translateX(100%); }
-  .btnâ€”dark:hover { boxâ€”shadow: inset 0 0 30px rgba(192,192,192,0.1); transform: translateY(â€”2px); }
+  .btn-dark:hover::before { transform: translateX(100%); }
+  .btn-dark:hover { box-shadow: inset 0 0 30px rgba(192,192,192,0.1); transform: translateY(-2px); }
 
   /* â”€â”€ FOOTER â”€â”€ */
   footer {
     padding: 60px;
-    background: var(â€”â€”dark);
-    borderâ€”top: 1px solid rgba(170,255,0,0.1);
+    background: var(--dark);
+    border-top: 1px solid rgba(170,255,0,0.1);
     display: flex;
-    justifyâ€”content: spaceâ€”between;
-    alignâ€”items: center;
-    flexâ€”wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
     gap: 10px;
   }
-  .footerâ€”logo {
-    fontâ€”family: 'Orbitron', sansâ€”serif;
-    fontâ€”size: 20px;
-    fontâ€”weight: 900;
-    color: var(â€”â€”lime);
+  .footer-logo {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    color: var(--lime);
     display: flex;
-    alignâ€”items: center;
+    align-items: center;
     gap: 10px;
-    textâ€”decoration: none;
+    text-decoration: none;
   }
-  .footerâ€”logo img { width: 110px; height: 110px; objectâ€”fit: contain; }
-  .footerâ€”links { display: flex; gap: 32px; flexâ€”wrap: wrap; }
-  .footerâ€”links a {
-    fontâ€”family: 'Rajdhani', sansâ€”serif;
-    fontâ€”size: 13px;
-    letterâ€”spacing: 0.15em;
-    textâ€”transform: uppercase;
+  .footer-logo img { width: 110px; height: 110px; object-fit: contain; }
+  .footer-links { display: flex; gap: 32px; flex-wrap: wrap; }
+  .footer-links a {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
     color: rgba(255,255,255,0.4);
-    textâ€”decoration: none;
+    text-decoration: none;
     transition: color 0.3s;
   }
-  .footerâ€”links a:hover { color: var(â€”â€”lime); }
+  .footer-links a:hover { color: var(--lime); }
   footer small {
-    fontâ€”size: 12px;
+    font-size: 12px;
     color: rgba(255,255,255,0.25);
-    fontâ€”family: 'Rajdhani', sansâ€”serif;
-    letterâ€”spacing: 0.1em;
+    font-family: 'Rajdhani', sans-serif;
+    letter-spacing: 0.1em;
   }
 
   /* â”€â”€ SCROLL REVEAL â”€â”€ */
@@ -761,171 +761,171 @@
   }
 
   /* â”€â”€ RESPONSIVE â”€â”€ */
-  @media (maxâ€”width: 1100px) {
+  @media (max-width: 1100px) {
     #hero {
-      gridâ€”templateâ€”columns: 1fr;
-      gridâ€”templateâ€”rows: auto auto auto;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto;
       padding: 110px 32px 60px;
-      textâ€”align: center;
+      text-align: center;
       gap: 40px;
     }
-    .heroâ€”content { gridâ€”column: 1; maxâ€”width: 100%; justifyâ€”self: center; paddingâ€”right: 0; }
-    .heroâ€”contentâ€”right { gridâ€”column: 1; maxâ€”width: 100%; justifyâ€”self: center; paddingâ€”left: 0; flexâ€”direction: row; justifyâ€”content: center; flexâ€”wrap: wrap; }
-    .mascotâ€”wrap { gridâ€”column: 1; }
-    .heroâ€”eyebrow { justifyâ€”content: center; }
-    .heroâ€”btns { justifyâ€”content: center; }
-    .heroâ€”stat { borderâ€”left: none; borderâ€”top: 2px solid rgba(170,255,0,0.3); paddingâ€”left: 0; paddingâ€”top: 12px; textâ€”align: center; minâ€”width: 120px; }
+    .hero-content { grid-column: 1; max-width: 100%; justify-self: center; padding-right: 0; }
+    .hero-content-right { grid-column: 1; max-width: 100%; justify-self: center; padding-left: 0; flex-direction: row; justify-content: center; flex-wrap: wrap; }
+    .mascot-wrap { grid-column: 1; }
+    .hero-eyebrow { justify-content: center; }
+    .hero-btns { justify-content: center; }
+    .hero-stat { border-left: none; border-top: 2px solid rgba(170,255,0,0.3); padding-left: 0; padding-top: 12px; text-align: center; min-width: 120px; }
   }
-  @media (maxâ€”width: 900px) {
+  @media (max-width: 900px) {
     nav { padding: 16px 24px; }
-    .navâ€”links { display: none; }
-    .mascotâ€”wrap { width: 340px; height: 440px; }
-    .aboutâ€”grid { gridâ€”templateâ€”columns: 1fr; gap: 40px; }
-    #about, #services, #logoâ€”boxâ€”section, #contact { padding: 80px 24px; }
-    #processâ€”overview { padding: 80px 24px; }
+    .nav-links { display: none; }
+    .mascot-wrap { width: 340px; height: 440px; }
+    .about-grid { grid-template-columns: 1fr; gap: 40px; }
+    #about, #services, #logo-box-section, #contact { padding: 80px 24px; }
+    #process-overview { padding: 80px 24px; }
     #process { padding: 0 24px 80px; }
-    .servicesâ€”cardsâ€”section { padding: 0 24px 80px; }
-    footer { padding: 40px 24px; flexâ€”direction: column; textâ€”align: center; }
-    .processâ€”timeline { flexâ€”direction: column; }
-    .processâ€”timeline::before { display: none; }
+    .services-cards-section { padding: 0 24px 80px; }
+    footer { padding: 40px 24px; flex-direction: column; text-align: center; }
+    .process-timeline { flex-direction: column; }
+    .process-timeline::before { display: none; }
   }
 </style>
 </head>
 <body>
 
-<!â€”â€” Custom Cursor â€”â€”>
+<!-- Custom Cursor -->
 <div id="cursor"></div>
-<div id="cursorâ€”trail"></div>
+<div id="cursor-trail"></div>
 
-<!â€”â€” NAV â€”â€”>
+<!-- NAV -->
 <nav>
-  <a class="navâ€”logo" href="#hero">
-    <img src="Valourâ€”logo.png" alt="Valour Logo">
+  <a class="nav-logo" href="#hero">
+    <img src="Valour-logo.png" alt="Valour Logo">
     Digital Agency
   </a>
-  <ul class="navâ€”links">
+  <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#services">Services</a></li>
-    <li><a href="#processâ€”overview">Process</a></li>
+    <li><a href="#process-overview">Process</a></li>
   </ul>
-  <a href="#contactâ€”options" class="navâ€”cta">Contact Us</a>
+  <a href="#contact-options" class="nav-cta">Contact Us</a>
 </nav>
 
-<!â€”â€” HERO â€”â€”>
+<!-- HERO -->
 <section id="hero">
-  <div class="heroâ€”grid"></div>
+  <div class="hero-grid"></div>
 
-  <!â€”â€” LEFT: headline & CTA â€”â€”>
-  <div class="heroâ€”content reveal">
-    <div class="heroâ€”eyebrow">Digital Marketing Reimagined</div>
+  <!-- LEFT: headline & CTA -->
+  <div class="hero-content reveal">
+    <div class="hero-eyebrow">Digital Marketing Reimagined</div>
     <h1>
       We Build
-      <span class="lineâ€”accent">Bold Brands</span>
+      <span class="line-accent">Bold Brands</span>
       That Win.
     </h1>
-    <p class="heroâ€”sub">We help businesses scale with dataâ€”driven digital marketing strategies that deliver measurable results.</p>
-    <div class="heroâ€”btns">
-      <a href="#services" class="btnâ€”primary">Explore Services</a>
-      <a href="#contactâ€”options" class="btnâ€”secondary">Let's Talk</a>
+    <p class="hero-sub">We help businesses scale with data-driven digital marketing strategies that deliver measurable results.</p>
+    <div class="hero-btns">
+      <a href="#services" class="btn-primary">Explore Services</a>
+      <a href="#contact-options" class="btn-secondary">Let's Talk</a>
     </div>
   </div>
 
-  <!â€”â€” CENTRE: mascot â€”â€”>
-      <div class="mascotâ€”wrap" id="mascot">
-        <div class="mascotâ€”ring"></div>
-        <div class="mascotâ€”ring"></div>
-        <div class="mascotâ€”ring"></div>
-        <img class="mascotâ€”img white" src="valourâ€”mascotâ€”white.png" alt="Valour cat mascot in a white hoodie" />
-        <img class="mascotâ€”img green" id="mascotâ€”green" src="valourâ€”mascotâ€”greenâ€”aligned.png" alt="Valour cat mascot in green style" />
-        <div class="mascotâ€”fade"></div>
-        <p class="mascotâ€”label" id="mascotâ€”label">Move cursor over me</p>
+  <!-- CENTRE: mascot -->
+      <div class="mascot-wrap" id="mascot">
+        <div class="mascot-ring"></div>
+        <div class="mascot-ring"></div>
+        <div class="mascot-ring"></div>
+        <img class="mascot-img white" src="valour-mascot-white.png" alt="Valour cat mascot in a white hoodie" />
+        <img class="mascot-img green" id="mascot-green" src="valour-mascot-green-aligned.png" alt="Valour cat mascot in green style" />
+        <div class="mascot-fade"></div>
+        <p class="mascot-label" id="mascot-label">Move cursor over me</p>
       </div>
 
-  <!â€”â€” RIGHT: quick stats â€”â€”>
-  <div class="heroâ€”contentâ€”right reveal">
-    <div class="heroâ€”stat">
-      <div class="heroâ€”statâ€”num">10+</div>
-      <div class="heroâ€”statâ€”label">Brands Elevated</div>
+  <!-- RIGHT: quick stats -->
+  <div class="hero-content-right reveal">
+    <div class="hero-stat">
+      <div class="hero-stat-num">10+</div>
+      <div class="hero-stat-label">Brands Elevated</div>
     </div>
-    <div class="heroâ€”stat">
-      <div class="heroâ€”statâ€”num">100%</div>
-      <div class="heroâ€”statâ€”label">Client Retention</div>
+    <div class="hero-stat">
+      <div class="hero-stat-num">100%</div>
+      <div class="hero-stat-label">Client Retention</div>
     </div>
-    <div style="marginâ€”top:16px;">
-      <a href="#about" class="btnâ€”secondary" style="fontâ€”size:13px; padding:12px 24px;">Our Story â†’</a>
+    <div style="margin-top:16px;">
+      <a href="#about" class="btn-secondary" style="font-size:13px; padding:12px 24px;">Our Story â†’</a>
     </div>
   </div>
 </section>
 
-<!â€”â€” MARQUEE â€”â€”>
-<div class="marqueeâ€”section">
-  <div class="marqueeâ€”track" id="marquee">
-    <span class="marqueeâ€”item"><span class="marqueeâ€”dot"></span>Brand Strategy</span>
-    <span class="marqueeâ€”item"><span class="marqueeâ€”dot"></span>Digital Marketing</span>
-    <span class="marqueeâ€”item"><span class="marqueeâ€”dot"></span>SEO</span>
-    <span class="marqueeâ€”item"><span class="marqueeâ€”dot"></span>Social Media</span>
-    <span class="marqueeâ€”item"><span class="marqueeâ€”dot"></span>Content Creation</span>
-    <span class="marqueeâ€”item"><span class="marqueeâ€”dot"></span>Graphic Design</span>
-    <span class="marqueeâ€”item"><span class="marqueeâ€”dot"></span>Performance Ads</span>
-    <span class="marqueeâ€”item"><span class="marqueeâ€”dot"></span>Web Design</span>
-    <span class="marqueeâ€”item"><span class="marqueeâ€”dot"></span>Brand Strategy</span>
-    <span class="marqueeâ€”item"><span class="marqueeâ€”dot"></span>Digital Marketing</span>
-    <span class="marqueeâ€”item"><span class="marqueeâ€”dot"></span>SEO </span>
-    <span class="marqueeâ€”item"><span class="marqueeâ€”dot"></span>Social Media</span>
-    <span class="marqueeâ€”item"><span class="marqueeâ€”dot"></span>Content Creation</span>
-    <span class="marqueeâ€”item"><span class="marqueeâ€”dot"></span>Graphic Design</span>
-    <span class="marqueeâ€”item"><span class="marqueeâ€”dot"></span>Performance Ads</span>
-    <span class="marqueeâ€”item"><span class="marqueeâ€”dot"></span>Web Design</span>
+<!-- MARQUEE -->
+<div class="marquee-section">
+  <div class="marquee-track" id="marquee">
+    <span class="marquee-item"><span class="marquee-dot"></span>Brand Strategy</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Digital Marketing</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>SEO</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Social Media</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Content Creation</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Graphic Design</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Performance Ads</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Web Design</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Brand Strategy</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Digital Marketing</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>SEO </span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Social Media</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Content Creation</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Graphic Design</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Performance Ads</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Web Design</span>
   </div>
 </div>
 
-<!â€”â€” ABOUT SECTION â€”â€”>
+<!-- ABOUT SECTION -->
 <section id="about">
-  <div class="aboutâ€”container">
+  <div class="about-container">
 
-    <!â€”â€” LEFT SIDE TEXT â€”â€”>
-    <div class="aboutâ€”text">
-      <div class="sectionâ€”label">Who We Are</div>
+    <!-- LEFT SIDE TEXT -->
+    <div class="about-text">
+      <div class="section-label">Who We Are</div>
 
-      <h1 class="sectionâ€”title">
+      <h1 class="section-title">
         Engineered for <br>
         <span>Impact.</span>
       </h1>
 
       <p>
-        Valour was founded with a clear purpose â€” to help businesses grow in a
-        fastâ€”changing digital world through strategy, creativity, and
-        performanceâ€”driven marketing.
+        Valour was founded with a clear purpose - to help businesses grow in a
+        fast-changing digital world through strategy, creativity, and
+        performance-driven marketing.
       </p>
 
       <p>
         We believe that every business, regardless of size, deserves access to
         smart, effective marketing that delivers real value. At Valour, we
         focus on understanding each client's unique goals and crafting
-        solutions that are tailored, scalable, and resultâ€”oriented.
+        solutions that are tailored, scalable, and result-oriented.
       </p>
 
     </div>
 
-    <!â€”â€” RIGHT SIDE â€”â€”>
-    <div class="aboutâ€”right">
+    <!-- RIGHT SIDE -->
+    <div class="about-right">
 
-      <!â€”â€” CAT IMAGE â€”â€”>
-      <div class="catâ€”image">
-        <img src="valourâ€”catâ€”chair.png" alt="Valour Cat">
+      <!-- CAT IMAGE -->
+      <div class="cat-image">
+        <img src="valour-cat-chair.png" alt="Valour Cat">
       </div>
 
-      <!â€”â€” STATS â€”â€”>
-      <div class="statsâ€”grid">
+      <!-- STATS -->
+      <div class="stats-grid">
 
-        <div class="statâ€”card">
-          <div class="statâ€”num">100%</div>
-          <div class="statâ€”label">Dedicated Team</div>
+        <div class="stat-card">
+          <div class="stat-num">100%</div>
+          <div class="stat-label">Dedicated Team</div>
         </div>
 
-        <div class="statâ€”card">
-          <div class="statâ€”num">7+</div>
-          <div class="statâ€”label">Creative Minds</div>
+        <div class="stat-card">
+          <div class="stat-num">7+</div>
+          <div class="stat-label">Creative Minds</div>
         </div>
 
       </div>
@@ -938,214 +938,214 @@
   *{
     margin:0;
     padding:0;
-    boxâ€”sizing:borderâ€”box;
+    box-sizing:border-box;
   }
 
   body{
     background:#000;
-    fontâ€”family:Arial, sansâ€”serif;
+    font-family:Arial, sans-serif;
     color:white;
   }
 
   #about{
     width:100%;
-    minâ€”height:100vh;
+    min-height:100vh;
     padding:80px 8%;
     background:#000;
     overflow:hidden;
   }
 
-  .aboutâ€”container{
+  .about-container{
     display:flex;
-    justifyâ€”content:spaceâ€”between;
-    alignâ€”items:center;
+    justify-content:space-between;
+    align-items:center;
     gap:60px;
-    flexâ€”wrap:wrap;
+    flex-wrap:wrap;
   }
 
   /* LEFT TEXT */
-  .aboutâ€”text{
+  .about-text{
     flex:1;
-    minâ€”width:320px;
+    min-width:320px;
   }
 
-  .sectionâ€”label{
+  .section-label{
     color:#aaff00;
-    fontâ€”size:14px;
-    letterâ€”spacing:3px;
-    textâ€”transform:uppercase;
-    marginâ€”bottom:20px;
+    font-size:14px;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    margin-bottom:20px;
   }
 
-  .sectionâ€”title{
-    fontâ€”size:80px;
-    lineâ€”height:0.95;
-    fontâ€”weight:900;
-    marginâ€”bottom:35px;
+  .section-title{
+    font-size:80px;
+    line-height:0.95;
+    font-weight:900;
+    margin-bottom:35px;
     color:#fff;
   }
 
-  .sectionâ€”title span{
+  .section-title span{
     color:#b7ff00;
   }
 
-  .aboutâ€”text p{
+  .about-text p{
     color:#bdbdbd;
-    fontâ€”size:20px;
-    lineâ€”height:1.9;
-    marginâ€”bottom:25px;
-    maxâ€”width:700px;
+    font-size:20px;
+    line-height:1.9;
+    margin-bottom:25px;
+    max-width:700px;
   }
 
-  .btnâ€”primary{
-    display:inlineâ€”block;
-    marginâ€”top:15px;
+  .btn-primary{
+    display:inline-block;
+    margin-top:15px;
     padding:18px 40px;
     background:#b7ff00;
     color:#000;
-    textâ€”decoration:none;
-    fontâ€”weight:700;
-    letterâ€”spacing:2px;
-    textâ€”transform:uppercase;
+    text-decoration:none;
+    font-weight:700;
+    letter-spacing:2px;
+    text-transform:uppercase;
     transition:0.3s;
   }
 
-  .btnâ€”primary:hover{
-    transform:translateY(â€”3px);
+  .btn-primary:hover{
+    transform:translateY(-3px);
   }
 
   /* RIGHT SIDE */
-  .aboutâ€”right{
+  .about-right{
     flex:1;
-    minâ€”width:320px;
+    min-width:320px;
     display:flex;
-    flexâ€”direction:column;
-    alignâ€”items:center;
-    justifyâ€”content:center;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
   }
 
   /* CAT */
-.catâ€”image img{
+.cat-image img{
     width:100%;
-    maxâ€”width:420px; /* reduce from 520px */
-    objectâ€”fit:contain;
-    filter:dropâ€”shadow(0 0 25px rgba(183,255,0,0.2));
+    max-width:420px; /* reduce from 520px */
+    object-fit:contain;
+    filter:drop-shadow(0 0 25px rgba(183,255,0,0.2));
 }
- .catâ€”image img{
+ .cat-image img{
     width:80%;
-    maxâ€”width:380px;
-    objectâ€”fit:contain;
+    max-width:380px;
+    object-fit:contain;
 }
 
   /* STATS */
-  .statsâ€”grid{
+  .stats-grid{
     width:100%;
     display:grid;
-    gridâ€”templateâ€”columns:1fr 1fr;
+    grid-template-columns:1fr 1fr;
     gap:0;
   }
 
-  .statâ€”card{
+  .stat-card{
     border:1px solid rgba(183,255,0,0.25);
     padding:45px 35px;
     background:#050505;
     transition:0.3s;
   }
 
-  .statâ€”card:hover{
+  .stat-card:hover{
     background:#0b0b0b;
-    borderâ€”color:#b7ff00;
+    border-color:#b7ff00;
   }
 
-  .statâ€”num{
+  .stat-num{
     color:#b7ff00;
-    fontâ€”size:72px;
-    fontâ€”weight:900;
-    marginâ€”bottom:12px;
+    font-size:72px;
+    font-weight:900;
+    margin-bottom:12px;
   }
 
-  .statâ€”label{
+  .stat-label{
     color:#8e8e8e;
-    textâ€”transform:uppercase;
-    letterâ€”spacing:4px;
-    fontâ€”size:13px;
+    text-transform:uppercase;
+    letter-spacing:4px;
+    font-size:13px;
   }
 
   /* RESPONSIVE */
-  @media(maxâ€”width:1100px){
+  @media(max-width:1100px){
 
-    .aboutâ€”container{
-      flexâ€”direction:column;
+    .about-container{
+      flex-direction:column;
     }
 
-    .sectionâ€”title{
-      fontâ€”size:58px;
+    .section-title{
+      font-size:58px;
     }
 
-    .aboutâ€”text p{
-      fontâ€”size:18px;
+    .about-text p{
+      font-size:18px;
     }
 
-    .catâ€”image img{
-      maxâ€”width:420px;
+    .cat-image img{
+      max-width:420px;
     }
   }
 
-  @media(maxâ€”width:700px){
+  @media(max-width:700px){
 
-    .sectionâ€”title{
-      fontâ€”size:44px;
+    .section-title{
+      font-size:44px;
     }
 
-    .statsâ€”grid{
-      gridâ€”templateâ€”columns:1fr;
+    .stats-grid{
+      grid-template-columns:1fr;
     }
 
-    .statâ€”num{
-      fontâ€”size:56px;
+    .stat-num{
+      font-size:56px;
     }
 
-    .catâ€”image img{
-      maxâ€”width:320px;
+    .cat-image img{
+      max-width:320px;
     }
   }
 </style>
 
-<!â€”â€” Services SECTION â€”â€”>
+<!-- Services SECTION -->
 <section id="services">
-  <div class="aboutâ€”container">
+  <div class="about-container">
 
-    <!â€”â€” LEFT SIDE TEXT â€”â€”>
-    <div class="aboutâ€”text">
-      <div class="sectionâ€”label">What We Do</div>
+    <!-- LEFT SIDE TEXT -->
+    <div class="about-text">
+      <div class="section-label">What We Do</div>
 
-      <h1 class="sectionâ€”title">
+      <h1 class="section-title">
         Services That <br>
         <span>Deliver.</span>
       </h1>
 
-      <p>We deliver creative and growthâ€”focused services designed to elevate your brand â€” from Graphic Design that builds bold visual identities and brand systems, Content Writing that creates SEOâ€”optimized blogs, scripts, and ad copy, and Social Media management that drives engagement through strategy, creatives, and content calendars, to SEO services including keyword research, technical optimization, and search campaigns that boost visibility. We also specialize in Video Editing for reels, brand films, and ad creatives, Performance Ads optimized for conversions and scalable growth, Web Design focused on highâ€”converting and visually stunning websites, and Photography that captures powerful stories, emotions, and moments through creative visuals.</p>
+      <p>We deliver creative and growth-focused services designed to elevate your brand - from Graphic Design that builds bold visual identities and brand systems, Content Writing that creates SEO-optimized blogs, scripts, and ad copy, and Social Media management that drives engagement through strategy, creatives, and content calendars, to SEO services including keyword research, technical optimization, and search campaigns that boost visibility. We also specialize in Video Editing for reels, brand films, and ad creatives, Performance Ads optimized for conversions and scalable growth, Web Design focused on high-converting and visually stunning websites, and Photography that captures powerful stories, emotions, and moments through creative visuals.</p>
     </div>
 
-    <!â€”â€” RIGHT SIDE â€”â€”>
-    <div class="aboutâ€”right">
+    <!-- RIGHT SIDE -->
+    <div class="about-right">
 
-      <!â€”â€” CAT IMAGE â€”â€”>
-      <div class="catâ€”image">
-        <img src="valourâ€”catâ€”skate.png" alt="Valour Cat">
+      <!-- CAT IMAGE -->
+      <div class="cat-image">
+        <img src="valour-cat-skate.png" alt="Valour Cat">
       </div>
 
-      <!â€”â€” STATS â€”â€”>
-      <div class="statsâ€”grid">
+      <!-- STATS -->
+      <div class="stats-grid">
 
-        <div class="statâ€”card">
-          <div class="statâ€”num">200+</div>
-          <div class="statâ€”label">Designs delivered</div>
+        <div class="stat-card">
+          <div class="stat-num">200+</div>
+          <div class="stat-label">Designs delivered</div>
         </div>
 
-        <div class="statâ€”card">
-          <div class="statâ€”num">300+</div>
-          <div class="statâ€”label">leads generated</div>
+        <div class="stat-card">
+          <div class="stat-num">300+</div>
+          <div class="stat-label">leads generated</div>
         </div>
 
       </div>
@@ -1158,316 +1158,316 @@
   *{
     margin:0;
     padding:0;
-    boxâ€”sizing:borderâ€”box;
+    box-sizing:border-box;
   }
 
   body{
     background:#000;
-    fontâ€”family:Arial, sansâ€”serif;
+    font-family:Arial, sans-serif;
     color:white;
   }
 
   #about{
     width:100%;
-    minâ€”height:100vh;
+    min-height:100vh;
     padding:80px 8%;
     background:#000;
     overflow:hidden;
   }
 
-  .aboutâ€”container{
+  .about-container{
     display:flex;
-    justifyâ€”content:spaceâ€”between;
-    alignâ€”items:center;
+    justify-content:space-between;
+    align-items:center;
     gap:60px;
-    flexâ€”wrap:wrap;
+    flex-wrap:wrap;
   }
 
   /* LEFT TEXT */
-  .aboutâ€”text{
+  .about-text{
     flex:1;
-    minâ€”width:320px;
+    min-width:320px;
   }
 
-  .sectionâ€”label{
+  .section-label{
     color:#aaff00;
-    fontâ€”size:14px;
-    letterâ€”spacing:3px;
-    textâ€”transform:uppercase;
-    marginâ€”bottom:20px;
+    font-size:14px;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    margin-bottom:20px;
   }
 
-  .sectionâ€”title{
-    fontâ€”size:80px;
-    lineâ€”height:0.95;
-    fontâ€”weight:900;
-    marginâ€”bottom:35px;
+  .section-title{
+    font-size:80px;
+    line-height:0.95;
+    font-weight:900;
+    margin-bottom:35px;
     color:#fff;
   }
 
-  .sectionâ€”title span{
+  .section-title span{
     color:#b7ff00;
   }
 
-  .aboutâ€”text p{
+  .about-text p{
     color:#bdbdbd;
-    fontâ€”size:20px;
-    lineâ€”height:1.9;
-    marginâ€”bottom:25px;
-    maxâ€”width:700px;
+    font-size:20px;
+    line-height:1.9;
+    margin-bottom:25px;
+    max-width:700px;
   }
 
-  .btnâ€”primary{
-    display:inlineâ€”block;
-    marginâ€”top:15px;
+  .btn-primary{
+    display:inline-block;
+    margin-top:15px;
     padding:18px 40px;
     background:#b7ff00;
     color:#000;
-    textâ€”decoration:none;
-    fontâ€”weight:700;
-    letterâ€”spacing:2px;
-    textâ€”transform:uppercase;
+    text-decoration:none;
+    font-weight:700;
+    letter-spacing:2px;
+    text-transform:uppercase;
     transition:0.3s;
   }
 
-  .btnâ€”primary:hover{
-    transform:translateY(â€”3px);
+  .btn-primary:hover{
+    transform:translateY(-3px);
   }
 
   /* RIGHT SIDE */
-  .aboutâ€”right{
+  .about-right{
     flex:1;
-    minâ€”width:320px;
+    min-width:320px;
     display:flex;
-    flexâ€”direction:column;
-    alignâ€”items:center;
-    justifyâ€”content:center;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
   }
 
   /* CAT */
-.catâ€”image img{
+.cat-image img{
     width:100%;
-    maxâ€”width:420px; /* reduce from 520px */
-    objectâ€”fit:contain;
-    filter:dropâ€”shadow(0 0 25px rgba(183,255,0,0.2));
+    max-width:420px; /* reduce from 520px */
+    object-fit:contain;
+    filter:drop-shadow(0 0 25px rgba(183,255,0,0.2));
 }
- .catâ€”image img{
+ .cat-image img{
     width:80%;
-    maxâ€”width:380px;
-    objectâ€”fit:contain;
+    max-width:380px;
+    object-fit:contain;
 }
 
   /* STATS */
-  .statsâ€”grid{
+  .stats-grid{
     width:100%;
     display:grid;
-    gridâ€”templateâ€”columns:1fr 1fr;
+    grid-template-columns:1fr 1fr;
     gap:0;
   }
 
-  .statâ€”card{
+  .stat-card{
     border:1px solid rgba(183,255,0,0.25);
     padding:45px 35px;
     background:#050505;
     transition:0.3s;
   }
 
-  .statâ€”card:hover{
+  .stat-card:hover{
     background:#0b0b0b;
-    borderâ€”color:#b7ff00;
+    border-color:#b7ff00;
   }
 
-  .statâ€”num{
+  .stat-num{
     color:#b7ff00;
-    fontâ€”size:72px;
-    fontâ€”weight:900;
-    marginâ€”bottom:12px;
+    font-size:72px;
+    font-weight:900;
+    margin-bottom:12px;
   }
 
-  .statâ€”label{
+  .stat-label{
     color:#8e8e8e;
-    textâ€”transform:uppercase;
-    letterâ€”spacing:4px;
-    fontâ€”size:13px;
+    text-transform:uppercase;
+    letter-spacing:4px;
+    font-size:13px;
   }
 
   /* RESPONSIVE */
-  @media(maxâ€”width:1100px){
+  @media(max-width:1100px){
 
-    .aboutâ€”container{
-      flexâ€”direction:column;
+    .about-container{
+      flex-direction:column;
     }
 
-    .sectionâ€”title{
-      fontâ€”size:58px;
+    .section-title{
+      font-size:58px;
     }
 
-    .aboutâ€”text p{
-      fontâ€”size:18px;
+    .about-text p{
+      font-size:18px;
     }
 
-    .catâ€”image img{
-      maxâ€”width:420px;
+    .cat-image img{
+      max-width:420px;
     }
   }
 
-  @media(maxâ€”width:700px){
+  @media(max-width:700px){
 
-    .sectionâ€”title{
-      fontâ€”size:44px;
+    .section-title{
+      font-size:44px;
     }
 
-    .statsâ€”grid{
-      gridâ€”templateâ€”columns:1fr;
+    .stats-grid{
+      grid-template-columns:1fr;
     }
 
-    .statâ€”num{
-      fontâ€”size:56px;
+    .stat-num{
+      font-size:56px;
     }
 
-    .catâ€”image img{
-      maxâ€”width:320px;
+    .cat-image img{
+      max-width:320px;
     }
   }
 </style>
 
 
-<!â€”â€” SERVICES â€”â€”>
-<section class="servicesâ€”cardsâ€”section" ariaâ€”label="Service categories">
-  <div class="cardsâ€”grid reveal">
+<!-- SERVICES -->
+<section class="services-cards-section" aria-label="Service categories">
+  <div class="cards-grid reveal">
 
-    <div class="flipâ€”card">
-      <div class="flipâ€”inner">
-        <div class="flipâ€”front">
-          <div class="limeâ€”bar"></div>
-          <span class="cardâ€”number">01</span>
-          <span class="serviceâ€”icon" ariaâ€”hidden="true"><i class="faâ€”solid faâ€”palette"></i></span>
-          <div class="serviceâ€”name">Graphic Design</div>
-          <div class="serviceâ€”tag">Visual Identity</div>
+    <div class="flip-card">
+      <div class="flip-inner">
+        <div class="flip-front">
+          <div class="lime-bar"></div>
+          <span class="card-number">01</span>
+          <span class="service-icon" aria-hidden="true"><i class="fa-solid fa-palette"></i></span>
+          <div class="service-name">Graphic Design</div>
+          <div class="service-tag">Visual Identity</div>
         </div>
-        <div class="flipâ€”back">
-          <div class="serviceâ€”name">Graphic Design</div>
-          <p>From logos to full brand systems â€” we create visuals that stop thumbs and start conversations. Every pixel placed with purpose.</p>
-          <a href="#contactâ€”options" class="learnâ€”more">Get Started â†’</a>
+        <div class="flip-back">
+          <div class="service-name">Graphic Design</div>
+          <p>From logos to full brand systems - we create visuals that stop thumbs and start conversations. Every pixel placed with purpose.</p>
+          <a href="#contact-options" class="learn-more">Get Started â†’</a>
         </div>
       </div>
     </div>
 
-    <div class="flipâ€”card">
-      <div class="flipâ€”inner">
-        <div class="flipâ€”front">
-          <div class="limeâ€”bar"></div>
-          <span class="cardâ€”number">02</span>
-          <span class="serviceâ€”icon" ariaâ€”hidden="true"><i class="faâ€”solid faâ€”penâ€”nib"></i></span>
-          <div class="serviceâ€”name">Content Writing</div>
-          <div class="serviceâ€”tag">Storytelling</div>
+    <div class="flip-card">
+      <div class="flip-inner">
+        <div class="flip-front">
+          <div class="lime-bar"></div>
+          <span class="card-number">02</span>
+          <span class="service-icon" aria-hidden="true"><i class="fa-solid fa-pen-nib"></i></span>
+          <div class="service-name">Content Writing</div>
+          <div class="service-tag">Storytelling</div>
         </div>
-        <div class="flipâ€”back">
-          <div class="serviceâ€”name">Content Writing</div>
-          <p>SEOâ€”optimized copy, blogs, scripts, and ad copy that resonates deeply with your audience and drives measurable action.</p>
-          <a href="#contactâ€”options" class="learnâ€”more">Get Started â†’</a>
+        <div class="flip-back">
+          <div class="service-name">Content Writing</div>
+          <p>SEO-optimized copy, blogs, scripts, and ad copy that resonates deeply with your audience and drives measurable action.</p>
+          <a href="#contact-options" class="learn-more">Get Started â†’</a>
         </div>
       </div>
     </div>
 
-    <div class="flipâ€”card">
-      <div class="flipâ€”inner">
-        <div class="flipâ€”front">
-          <div class="limeâ€”bar"></div>
-          <span class="cardâ€”number">03</span>
-          <span class="serviceâ€”icon" ariaâ€”hidden="true"><i class="faâ€”solid faâ€”shareâ€”nodes"></i></span>
-          <div class="serviceâ€”name">Social Media</div>
-          <div class="serviceâ€”tag">Community Growth</div>
+    <div class="flip-card">
+      <div class="flip-inner">
+        <div class="flip-front">
+          <div class="lime-bar"></div>
+          <span class="card-number">03</span>
+          <span class="service-icon" aria-hidden="true"><i class="fa-solid fa-share-nodes"></i></span>
+          <div class="service-name">Social Media</div>
+          <div class="service-tag">Community Growth</div>
         </div>
-        <div class="flipâ€”back">
-          <div class="serviceâ€”name">Social Media</div>
+        <div class="flip-back">
+          <div class="service-name">Social Media</div>
           <p>Strategy, content calendars, creative assets, and full account management across Instagram, LinkedIn, X, and more.</p>
-          <a href="#contactâ€”options" class="learnâ€”more">Get Started â†’</a>
+          <a href="#contact-options" class="learn-more">Get Started â†’</a>
         </div>
       </div>
     </div>
 
-    <div class="flipâ€”card">
-      <div class="flipâ€”inner">
-        <div class="flipâ€”front">
-          <div class="limeâ€”bar"></div>
-          <span class="cardâ€”number">04</span>
-          <span class="serviceâ€”icon" ariaâ€”hidden="true"><i class="faâ€”solid faâ€”magnifyingâ€”glass"></i></span>
-          <div class="serviceâ€”name">SEO </div>
-          <div class="serviceâ€”tag">Search Domination</div>
+    <div class="flip-card">
+      <div class="flip-inner">
+        <div class="flip-front">
+          <div class="lime-bar"></div>
+          <span class="card-number">04</span>
+          <span class="service-icon" aria-hidden="true"><i class="fa-solid fa-magnifying-glass"></i></span>
+          <div class="service-name">SEO </div>
+          <div class="service-tag">Search Domination</div>
         </div>
-        <div class="flipâ€”back">
-          <div class="serviceâ€”name">SEO </div>
-          <p>Technical SEO, keyword research, link building, and paid search campaigns that put your brand at the top â€” and keep it there.</p>
-          <a href="#contactâ€”options" class="learnâ€”more">Get Started â†’</a>
+        <div class="flip-back">
+          <div class="service-name">SEO </div>
+          <p>Technical SEO, keyword research, link building, and paid search campaigns that put your brand at the top - and keep it there.</p>
+          <a href="#contact-options" class="learn-more">Get Started â†’</a>
         </div>
       </div>
     </div>
 
-    <div class="flipâ€”card">
-      <div class="flipâ€”inner">
-        <div class="flipâ€”front">
-          <div class="limeâ€”bar"></div>
-          <span class="cardâ€”number">05</span>
-          <span class="serviceâ€”icon" ariaâ€”hidden="true"><i class="faâ€”solid faâ€”clapperboard"></i></span>
-          <div class="serviceâ€”name">Video Editing</div>
-          <div class="serviceâ€”tag">Motion & Film</div>
+    <div class="flip-card">
+      <div class="flip-inner">
+        <div class="flip-front">
+          <div class="lime-bar"></div>
+          <span class="card-number">05</span>
+          <span class="service-icon" aria-hidden="true"><i class="fa-solid fa-clapperboard"></i></span>
+          <div class="service-name">Video Editing</div>
+          <div class="service-tag">Motion & Film</div>
         </div>
-        <div class="flipâ€”back">
-          <div class="serviceâ€”name">Video Editing</div>
+        <div class="flip-back">
+          <div class="service-name">Video Editing</div>
           <p>Brand films, reels, explainer videos, and ad creatives crafted to stop the scroll and tell your story in seconds.</p>
-          <a href="#contactâ€”options" class="learnâ€”more">Get Started â†’</a>
+          <a href="#contact-options" class="learn-more">Get Started â†’</a>
         </div>
       </div>
     </div>
 
-    <div class="flipâ€”card">
-      <div class="flipâ€”inner">
-        <div class="flipâ€”front">
-          <div class="limeâ€”bar"></div>
-          <span class="cardâ€”number">06</span>
-          <span class="serviceâ€”icon" ariaâ€”hidden="true"><i class="faâ€”solid faâ€”chartâ€”line"></i></span>
-          <div class="serviceâ€”name">Performance Ads</div>
-          <div class="serviceâ€”tag">Paid Media</div>
+    <div class="flip-card">
+      <div class="flip-inner">
+        <div class="flip-front">
+          <div class="lime-bar"></div>
+          <span class="card-number">06</span>
+          <span class="service-icon" aria-hidden="true"><i class="fa-solid fa-chart-line"></i></span>
+          <div class="service-name">Performance Ads</div>
+          <div class="service-tag">Paid Media</div>
         </div>
-        <div class="flipâ€”back">
-          <div class="serviceâ€”name">Performance Ads</div>
-          <p>Dataâ€”driven Meta, Google, and programmatic ad campaigns optimized for conversion, ROAS, and scalable growth.</p>
-          <a href="#contactâ€”options" class="learnâ€”more">Get Started â†’</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="flipâ€”card">
-      <div class="flipâ€”inner">
-        <div class="flipâ€”front">
-          <div class="limeâ€”bar"></div>
-          <span class="cardâ€”number">07</span>
-          <span class="serviceâ€”icon" ariaâ€”hidden="true"><i class="faâ€”solid faâ€”globe"></i></span>
-          <div class="serviceâ€”name">Web Design</div>
-          <div class="serviceâ€”tag">Digital Presence</div>
-        </div>
-        <div class="flipâ€”back">
-          <div class="serviceâ€”name">Web Design</div>
-          <p>Highâ€”converting landing pages and full websites built with performance, aesthetics, and user experience at the core.</p>
-          <a href="#contactâ€”options" class="learnâ€”more">Get Started â†’</a>
+        <div class="flip-back">
+          <div class="service-name">Performance Ads</div>
+          <p>Data-driven Meta, Google, and programmatic ad campaigns optimized for conversion, ROAS, and scalable growth.</p>
+          <a href="#contact-options" class="learn-more">Get Started â†’</a>
         </div>
       </div>
     </div>
 
-    <div class="flipâ€”card">
-      <div class="flipâ€”inner">
-        <div class="flipâ€”front">
-          <div class="limeâ€”bar"></div>
-          <span class="cardâ€”number">08</span>
-          <span class="serviceâ€”icon" ariaâ€”hidden="true"><i class="faâ€”solid faâ€”camera"></i></span>
-          <div class="serviceâ€”name">Photography</div>
-          <div class="serviceâ€”tag">Virtual Stories</div>
+    <div class="flip-card">
+      <div class="flip-inner">
+        <div class="flip-front">
+          <div class="lime-bar"></div>
+          <span class="card-number">07</span>
+          <span class="service-icon" aria-hidden="true"><i class="fa-solid fa-globe"></i></span>
+          <div class="service-name">Web Design</div>
+          <div class="service-tag">Digital Presence</div>
         </div>
-        <div class="flipâ€”back">
-          <div class="serviceâ€”name">Photography</div>
+        <div class="flip-back">
+          <div class="service-name">Web Design</div>
+          <p>High-converting landing pages and full websites built with performance, aesthetics, and user experience at the core.</p>
+          <a href="#contact-options" class="learn-more">Get Started â†’</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-inner">
+        <div class="flip-front">
+          <div class="lime-bar"></div>
+          <span class="card-number">08</span>
+          <span class="service-icon" aria-hidden="true"><i class="fa-solid fa-camera"></i></span>
+          <div class="service-name">Photography</div>
+          <div class="service-tag">Virtual Stories</div>
+        </div>
+        <div class="flip-back">
+          <div class="service-name">Photography</div>
           <p>Capturing stories, emotions, and moments through creative visuals crafted with style, clarity, and timeless impact.</p>
-          <a href="#contactâ€”options" class="learnâ€”more">Get Started â†’</a>
+          <a href="#contact-options" class="learn-more">Get Started â†’</a>
         </div>
       </div>
     </div>
@@ -1475,13 +1475,13 @@
   </div>
 </section>
 
-<!â€”â€” LOGO MARQUEE SECTION â€”â€”>
-<div class="logoâ€”marqueeâ€”section" ariaâ€”label="Client logo marquee">
-  <div class="logoâ€”marqueeâ€”track">
-    <div class="logoâ€”marqueeâ€”item">
+<!-- LOGO MARQUEE SECTION -->
+<div class="logo-marquee-section" aria-label="Client logo marquee">
+  <div class="logo-marquee-track">
+    <div class="logo-marquee-item">
       <img src="1.jpeg" alt="Geo India">
     </div>
-    <div class="logoâ€”marqueeâ€”item" ariaâ€”hidden="true">
+    <div class="logo-marquee-item" aria-hidden="true">
       <img src="1.jpeg" alt="">
     </div>
   </div>
@@ -1489,130 +1489,130 @@
 
 <style>
 :root{
-  â€”â€”lime:#c6ff00;
-  â€”â€”black:#000;
+  --lime:#c6ff00;
+  --black:#000;
 }
 
 html,
 body{
   width:100%;
-  maxâ€”width:100%;
-  overflowâ€”x:hidden;
+  max-width:100%;
+  overflow-x:hidden;
 }
 
 /* LOGO MARQUEE SECTION */
-.logoâ€”marqueeâ€”section{
+.logo-marquee-section{
   width:100%;
-  maxâ€”width:100vw;
-  background:var(â€”â€”lime);
+  max-width:100vw;
+  background:var(--lime);
   overflow:hidden;
   padding:14px 0;
-  borderâ€”top:2px solid var(â€”â€”black);
-  borderâ€”bottom:2px solid var(â€”â€”black);
+  border-top:2px solid var(--black);
+  border-bottom:2px solid var(--black);
 }
 
 /* TRACK */
-.logoâ€”marqueeâ€”track{
+.logo-marquee-track{
   display:flex;
-  alignâ€”items:center;
+  align-items:center;
   gap:70px;
-  width:maxâ€”content;
-  animation:logoâ€”marquee 22s linear infinite;
-  willâ€”change:transform;
+  width:max-content;
+  animation:logo-marquee 22s linear infinite;
+  will-change:transform;
 }
 
 /* SAME HEIGHT FOR ALL LOGOS */
-.logoâ€”marqueeâ€”item{
+.logo-marquee-item{
   height:130px;
   width:auto;
   display:flex;
-  alignâ€”items:center;
-  justifyâ€”content:center;
-  flexâ€”shrink:0;
+  align-items:center;
+  justify-content:center;
+  flex-shrink:0;
 }
 
 /* IMAGE FIT */
-.logoâ€”marqueeâ€”item img{
+.logo-marquee-item img{
   height:100%;
   width:auto;
-  maxâ€”width:none;
-  objectâ€”fit:contain;
+  max-width:none;
+  object-fit:contain;
   display:block;
 }
 
 /* ANIMATION */
-@keyframes logoâ€”marquee{
+@keyframes logo-marquee{
   from{
     transform:translateX(0);
   }
   to{
-    transform:translateX(â€”50%);
+    transform:translateX(-50%);
   }
 }
 
 /* HOVER PAUSE */
-.logoâ€”marqueeâ€”section:hover .logoâ€”marqueeâ€”track{
-  animationâ€”playâ€”state:paused;
+.logo-marquee-section:hover .logo-marquee-track{
+  animation-play-state:paused;
 }
 
 /* MOBILE */
-@media(maxâ€”width:768px){
-  .logoâ€”marqueeâ€”section{
+@media(max-width:768px){
+  .logo-marquee-section{
     padding:12px 0;
   }
 
-  .logoâ€”marqueeâ€”track{
+  .logo-marquee-track{
     gap:38px;
-    animationâ€”duration:18s;
+    animation-duration:18s;
   }
 
-  .logoâ€”marqueeâ€”item{
+  .logo-marquee-item{
     height:115px;
   }
 
-  .logoâ€”marqueeâ€”item img{
+  .logo-marquee-item img{
     height:115px;
-    maxâ€”width:none;
+    max-width:none;
   }
 }
 </style>
 
 
-<!â€”â€” Valour SECTION â€”â€”>
-<section id="processâ€”overview">
-  <div class="aboutâ€”container">
+<!-- Valour SECTION -->
+<section id="process-overview">
+  <div class="about-container">
 
-    <!â€”â€” LEFT SIDE TEXT â€”â€”>
-    <div class="aboutâ€”text">
-      <div class="sectionâ€”label">How We Work</div>
+    <!-- LEFT SIDE TEXT -->
+    <div class="about-text">
+      <div class="section-label">How We Work</div>
 
-      <h1 class="sectionâ€”title">
+      <h1 class="section-title">
         The Valour <br>
         <span>Method.</span>
       </h1>
 
-      <p>Our process begins with Discover, where we deepâ€”dive into your brand, audience, and competitive landscape to uncover real opportunities. Next comes Strategize, building a dataâ€”backed roadmap tailored to your goals, timeline, and growth targets. In the Create phase, our team develops bold, onâ€”brand, and conversionâ€”ready assets and campaigns designed to make an impact. We then Launch with precision across every channel, maximizing reach and engagement from day one. Finally, we Scale by continuously analyzing, optimizing, and improving performance â€” turning strong results into longâ€”term, compounding growth.</p>
+      <p>Our process begins with Discover, where we deep-dive into your brand, audience, and competitive landscape to uncover real opportunities. Next comes Strategize, building a data-backed roadmap tailored to your goals, timeline, and growth targets. In the Create phase, our team develops bold, on-brand, and conversion-ready assets and campaigns designed to make an impact. We then Launch with precision across every channel, maximizing reach and engagement from day one. Finally, we Scale by continuously analyzing, optimizing, and improving performance - turning strong results into long-term, compounding growth.</p>
     </div>
 
-    <!â€”â€” RIGHT SIDE â€”â€”>
-    <div class="aboutâ€”right">
+    <!-- RIGHT SIDE -->
+    <div class="about-right">
 
-      <!â€”â€” CAT IMAGE â€”â€”>
-      <div class="catâ€”image">
-        <img src="valourâ€”carkâ€”work.png" alt="Valour Cat">
+      <!-- CAT IMAGE -->
+      <div class="cat-image">
+        <img src="valour-cark-work.png" alt="Valour Cat">
       </div>
 
-      <!â€”â€” STATS â€”â€”>
-      <div class="statsâ€”grid">
+      <!-- STATS -->
+      <div class="stats-grid">
 
-        <div class="statâ€”card">
-          <div class="statâ€”num">24/7</div>
-          <div class="statâ€”label">creative support</div>
+        <div class="stat-card">
+          <div class="stat-num">24/7</div>
+          <div class="stat-label">creative support</div>
         </div>
 
-        <div class="statâ€”card">
-          <div class="statâ€”num">100%</div>
-          <div class="statâ€”label">client focused</div>
+        <div class="stat-card">
+          <div class="stat-num">100%</div>
+          <div class="stat-label">client focused</div>
         </div>
 
       </div>
@@ -1624,209 +1624,209 @@ body{
   *{
     margin:0;
     padding:0;
-    boxâ€”sizing:borderâ€”box;
+    box-sizing:border-box;
   }
 
   body{
     background:#000;
-    fontâ€”family:Arial, sansâ€”serif;
+    font-family:Arial, sans-serif;
     color:white;
   }
 
   #about{
     width:100%;
-    minâ€”height:100vh;
+    min-height:100vh;
     padding:80px 8%;
     background:#000;
     overflow:hidden;
   }
 
-  .aboutâ€”container{
+  .about-container{
     display:flex;
-    justifyâ€”content:spaceâ€”between;
-    alignâ€”items:center;
+    justify-content:space-between;
+    align-items:center;
     gap:60px;
-    flexâ€”wrap:wrap;
+    flex-wrap:wrap;
   }
 
   /* LEFT TEXT */
-  .aboutâ€”text{
+  .about-text{
     flex:1;
-    minâ€”width:320px;
+    min-width:320px;
   }
 
-  .sectionâ€”label{
+  .section-label{
     color:#aaff00;
-    fontâ€”size:14px;
-    letterâ€”spacing:3px;
-    textâ€”transform:uppercase;
-    marginâ€”bottom:20px;
+    font-size:14px;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    margin-bottom:20px;
   }
 
-  .sectionâ€”title{
-    fontâ€”size:80px;
-    lineâ€”height:0.95;
-    fontâ€”weight:900;
-    marginâ€”bottom:35px;
+  .section-title{
+    font-size:80px;
+    line-height:0.95;
+    font-weight:900;
+    margin-bottom:35px;
     color:#fff;
   }
 
-  .sectionâ€”title span{
+  .section-title span{
     color:#b7ff00;
   }
 
-  .aboutâ€”text p{
+  .about-text p{
     color:#bdbdbd;
-    fontâ€”size:20px;
-    lineâ€”height:1.9;
-    marginâ€”bottom:25px;
-    maxâ€”width:700px;
+    font-size:20px;
+    line-height:1.9;
+    margin-bottom:25px;
+    max-width:700px;
   }
 
-  .btnâ€”primary{
-    display:inlineâ€”block;
-    marginâ€”top:15px;
+  .btn-primary{
+    display:inline-block;
+    margin-top:15px;
     padding:18px 40px;
     background:#b7ff00;
     color:#000;
-    textâ€”decoration:none;
-    fontâ€”weight:700;
-    letterâ€”spacing:2px;
-    textâ€”transform:uppercase;
+    text-decoration:none;
+    font-weight:700;
+    letter-spacing:2px;
+    text-transform:uppercase;
     transition:0.3s;
   }
 
-  .btnâ€”primary:hover{
-    transform:translateY(â€”3px);
+  .btn-primary:hover{
+    transform:translateY(-3px);
   }
 
   /* RIGHT SIDE */
-  .aboutâ€”right{
+  .about-right{
     flex:1;
-    minâ€”width:320px;
+    min-width:320px;
     display:flex;
-    flexâ€”direction:column;
-    alignâ€”items:center;
-    justifyâ€”content:center;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
   }
 
   /* CAT */
-.catâ€”image img{
+.cat-image img{
     width:400%;
-    maxâ€”width:520px; /* reduce from 520px */
-    objectâ€”fit:contain;
-    filter:dropâ€”shadow(0 0 25px rgba(183,255,0,0.2));
+    max-width:520px; /* reduce from 520px */
+    object-fit:contain;
+    filter:drop-shadow(0 0 25px rgba(183,255,0,0.2));
 }
- .catâ€”image img{
+ .cat-image img{
     width:300%;
-    maxâ€”width:400px;
-    objectâ€”fit:contain;
+    max-width:400px;
+    object-fit:contain;
 }
 
   /* STATS */
-  .statsâ€”grid{
+  .stats-grid{
     width:100%;
     display:grid;
-    gridâ€”templateâ€”columns:1fr 1fr;
+    grid-template-columns:1fr 1fr;
     gap:0;
   }
 
-  .statâ€”card{
+  .stat-card{
     border:1px solid rgba(183,255,0,0.25);
     padding:45px 35px;
     background:#050505;
     transition:0.3s;
   }
 
-  .statâ€”card:hover{
+  .stat-card:hover{
     background:#0b0b0b;
-    borderâ€”color:#b7ff00;
+    border-color:#b7ff00;
   }
 
-  .statâ€”num{
+  .stat-num{
     color:#b7ff00;
-    fontâ€”family: 'Times New Roman', Times, serif;
-    fontâ€”size:70px;
-    fontâ€”weight:00;
-    marginâ€”bottom:12px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:70px;
+    font-weight:00;
+    margin-bottom:12px;
   }
 
-  .statâ€”label{
+  .stat-label{
     color:#8e8e8e;
-    textâ€”transform:uppercase;
-    letterâ€”spacing:4px;
-    fontâ€”size:13px;
+    text-transform:uppercase;
+    letter-spacing:4px;
+    font-size:13px;
   }
 
   /* RESPONSIVE */
-  @media(maxâ€”width:1100px){
+  @media(max-width:1100px){
 
-    .aboutâ€”container{
-      flexâ€”direction:column;
+    .about-container{
+      flex-direction:column;
     }
 
-    .sectionâ€”title{
-      fontâ€”size:58px;
+    .section-title{
+      font-size:58px;
     }
 
-    .aboutâ€”text p{
-      fontâ€”size:18px;
+    .about-text p{
+      font-size:18px;
     }
 
-    .catâ€”image img{
-      maxâ€”width:420px;
+    .cat-image img{
+      max-width:420px;
     }
   }
 
-  @media(maxâ€”width:700px){
+  @media(max-width:700px){
 
-    .sectionâ€”title{
-      fontâ€”size:44px;
+    .section-title{
+      font-size:44px;
     }
 
-    .statsâ€”grid{
-      gridâ€”templateâ€”columns:1fr;
+    .stats-grid{
+      grid-template-columns:1fr;
     }
 
-    .statâ€”num{
-      fontâ€”size:56px;
+    .stat-num{
+      font-size:56px;
     }
 
-    .catâ€”image img{
-      maxâ€”width:320px;
+    .cat-image img{
+      max-width:320px;
     }
   }
 </style>
 </section>
 
 
-<!â€”â€” PROCESS â€”â€”>
+<!-- PROCESS -->
 <section id="process">
-  <div class="processâ€”timeline reveal">
-    <div class="processâ€”step">
-      <div class="stepâ€”num">01</div>
-      <div class="stepâ€”title">Discover</div>
-      <p class="stepâ€”desc">Deepâ€”dive into your brand, audience, and competitive landscape to uncover real opportunities.</p>
+  <div class="process-timeline reveal">
+    <div class="process-step">
+      <div class="step-num">01</div>
+      <div class="step-title">Discover</div>
+      <p class="step-desc">Deep-dive into your brand, audience, and competitive landscape to uncover real opportunities.</p>
     </div>
-    <div class="processâ€”step">
-      <div class="stepâ€”num">02</div>
-      <div class="stepâ€”title">Strategize</div>
-      <p class="stepâ€”desc">Build a dataâ€”backed roadmap tailored to your goals, timeline, and growth targets.</p>
+    <div class="process-step">
+      <div class="step-num">02</div>
+      <div class="step-title">Strategize</div>
+      <p class="step-desc">Build a data-backed roadmap tailored to your goals, timeline, and growth targets.</p>
     </div>
-    <div class="processâ€”step">
-      <div class="stepâ€”num">03</div>
-      <div class="stepâ€”title">Create</div>
-      <p class="stepâ€”desc">Our creatives craft assets and campaigns that are bold, onâ€”brand, and conversionâ€”ready.</p>
+    <div class="process-step">
+      <div class="step-num">03</div>
+      <div class="step-title">Create</div>
+      <p class="step-desc">Our creatives craft assets and campaigns that are bold, on-brand, and conversion-ready.</p>
     </div>
-    <div class="processâ€”step">
-      <div class="stepâ€”num">04</div>
-      <div class="stepâ€”title">Launch</div>
-      <p class="stepâ€”desc">Execute with precision across every channel, maximizing reach and engagement from day one.</p>
+    <div class="process-step">
+      <div class="step-num">04</div>
+      <div class="step-title">Launch</div>
+      <p class="step-desc">Execute with precision across every channel, maximizing reach and engagement from day one.</p>
     </div>
-    <div class="processâ€”step">
-      <div class="stepâ€”num">05</div>
-      <div class="stepâ€”title">Scale</div>
-      <p class="stepâ€”desc">Continuously analyze, optimize, and scale what works â€” turning results into compounding growth.</p>
+    <div class="process-step">
+      <div class="step-num">05</div>
+      <div class="step-title">Scale</div>
+      <p class="step-desc">Continuously analyze, optimize, and scale what works - turning results into compounding growth.</p>
     </div>
   </div>
 </section>
@@ -1839,113 +1839,113 @@ body{
   position:relative;
   overflow:hidden;
   background:#c6ff00;
-  minâ€”height:100vh;
+  min-height:100vh;
   display:grid;
-  gridâ€”templateâ€”columns:minmax(220px,0.75fr) minmax(0,1.35fr);
-  alignâ€”items:center;
+  grid-template-columns:minmax(220px,0.75fr) minmax(0,1.35fr);
+  align-items:center;
   padding:59px 5%;
   gap:56px;
 }
 
-.bgâ€”word{
+.bg-word{
   position:absolute;
   top:50%;
   left:50%;
-  transform:translate(â€”50%,â€”50%);
-  fontâ€”size:190px;
-  fontâ€”weight:900;
+  transform:translate(-50%,-50%);
+  font-size:190px;
+  font-weight:900;
   color:rgba(0,0,0,0.045);
-  letterâ€”spacing:8px;
-  zâ€”index:1;
-  pointerâ€”events:none;
-  fontâ€”family:'Orbitron', sansâ€”serif;
+  letter-spacing:8px;
+  z-index:1;
+  pointer-events:none;
+  font-family:'Orbitron', sans-serif;
 }
 
-.ctaâ€”image{
+.cta-image{
   position:relative;
-  zâ€”index:2;
+  z-index:2;
   display:flex;
-  justifyâ€”content:flexâ€”start;
-  alignâ€”items:flexâ€”end;
+  justify-content:flex-start;
+  align-items:flex-end;
 }
 
-.ctaâ€”image img{
+.cta-image img{
   width:100%;
-  maxâ€”width:500px;
-  objectâ€”fit:contain;
-  filter:dropâ€”shadow(0 26px 48px rgba(0,0,0,0.22));
+  max-width:500px;
+  object-fit:contain;
+  filter:drop-shadow(0 26px 48px rgba(0,0,0,0.22));
 }
 
-.ctaâ€”content{
+.cta-content{
   position:relative;
-  zâ€”index:2;
-  textâ€”align:left;
+  z-index:2;
+  text-align:left;
 }
 
-.contactâ€”label{
+.contact-label{
   color:#111;
-  marginâ€”bottom:14px;
+  margin-bottom:14px;
 }
 
-.ctaâ€”content h2{
-  maxâ€”width:780px;
-  fontâ€”size:68px;
-  lineâ€”height:1.02;
-  marginâ€”bottom:24px;
+.cta-content h2{
+  max-width:780px;
+  font-size:68px;
+  line-height:1.02;
+  margin-bottom:24px;
   color:#000;
-  fontâ€”family:'Orbitron', sansâ€”serif;
-  fontâ€”weight:900;
-  letterâ€”spacing:0;
+  font-family:'Orbitron', sans-serif;
+  font-weight:900;
+  letter-spacing:0;
 }
 
-.ctaâ€”content p{
-  maxâ€”width:620px;
-  marginâ€”bottom:40px;
-  fontâ€”size:19px;
-  lineâ€”height:1.7;
+.cta-content p{
+  max-width:620px;
+  margin-bottom:40px;
+  font-size:19px;
+  line-height:1.7;
   color:rgba(0,0,0,0.72);
-  fontâ€”family:'Inter', sansâ€”serif;
+  font-family:'Inter', sans-serif;
 }
 
-.contactâ€”grid{
+.contact-grid{
   display:grid;
-  gridâ€”templateâ€”columns:repeat(6,minmax(0,1fr));
+  grid-template-columns:repeat(6,minmax(0,1fr));
   gap:10px;
 }
 
-#contactâ€”options{
-  scrollâ€”marginâ€”top:140px;
+#contact-options{
+  scroll-margin-top:140px;
 }
 
-.contactâ€”box{
-  gridâ€”column:span 2;
-  minâ€”height:80px;
+.contact-box{
+  grid-column:span 2;
+  min-height:80px;
   background:#050505;
   border:1px solid rgba(0,0,0,0.86);
-  borderâ€”radius:8px;
+  border-radius:8px;
   padding:10px;
-  textâ€”decoration:none;
+  text-decoration:none;
   color:#fff;
   display:grid;
-  gridâ€”templateâ€”columns:46px minmax(0,1fr);
-  alignâ€”content:center;
-  columnâ€”gap:18px;
-  rowâ€”gap:8px;
+  grid-template-columns:46px minmax(0,1fr);
+  align-content:center;
+  column-gap:18px;
+  row-gap:8px;
   position:relative;
   overflow:hidden;
-  boxâ€”shadow:0 22px 44px rgba(0,0,0,0.18);
-  transition:transform 0.25s ease, borderâ€”color 0.25s ease, boxâ€”shadow 0.25s ease;
+  box-shadow:0 22px 44px rgba(0,0,0,0.18);
+  transition:transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
 }
 
-.contactâ€”box:nthâ€”child(4){
-  gridâ€”column:1 / span 3;
+.contact-box:nth-child(4){
+  grid-column:1 / span 3;
 }
 
-.contactâ€”box:nthâ€”child(5){
-  gridâ€”column:4 / span 3;
+.contact-box:nth-child(5){
+  grid-column:4 / span 3;
 }
 
-.contactâ€”box::after{
+.contact-box::after{
   content:'';
   position:absolute;
   left:22px;
@@ -1954,145 +1954,145 @@ body{
   height:3px;
   background:#c6ff00;
   transform:scaleX(0);
-  transformâ€”origin:left;
+  transform-origin:left;
   transition:transform 0.25s ease;
 }
 
-.contactâ€”box:hover{
-  transform:translateY(â€”6px);
-  borderâ€”color:#c6ff00;
-  boxâ€”shadow:0 28px 60px rgba(0,0,0,0.28);
+.contact-box:hover{
+  transform:translateY(-6px);
+  border-color:#c6ff00;
+  box-shadow:0 28px 60px rgba(0,0,0,0.28);
 }
 
-.contactâ€”box:hover::after,
-.contactâ€”box:focusâ€”visible::after{
+.contact-box:hover::after,
+.contact-box:focus-visible::after{
   transform:scaleX(1);
 }
 
-.contactâ€”box:focusâ€”visible{
+.contact-box:focus-visible{
   outline:3px solid rgba(0,0,0,0.35);
-  outlineâ€”offset:4px;
+  outline-offset:4px;
 }
 
-.contactâ€”icon{
+.contact-icon{
   width:46px;
   height:46px;
-  borderâ€”radius:50%;
+  border-radius:50%;
   display:flex;
-  alignâ€”items:center;
-  justifyâ€”content:center;
-  fontâ€”size:21px;
-  marginâ€”bottom:0;
+  align-items:center;
+  justify-content:center;
+  font-size:21px;
+  margin-bottom:0;
   border:1px solid rgba(255,255,255,0.12);
   background:rgba(198,255,0,0.12);
   color:#c6ff00;
-  gridâ€”row:1 / span 2;
-  gridâ€”column:1;
+  grid-row:1 / span 2;
+  grid-column:1;
 }
 
-.whatsappâ€”icon{ color:#25d366; background:rgba(37,211,102,0.12); }
-.instagramâ€”icon{ color:#e4405f; background:rgba(228,64,95,0.12); }
-.facebookâ€”icon{ color:#1877f2; background:rgba(24,119,242,0.12); }
-.linkedinâ€”icon{ color:#0a66c2; background:rgba(10,102,194,0.12); }
-.emailâ€”icon{ color:#c6ff00; background:rgba(198,255,0,0.12); }
+.whatsapp-icon{ color:#25d366; background:rgba(37,211,102,0.12); }
+.instagram-icon{ color:#e4405f; background:rgba(228,64,95,0.12); }
+.facebook-icon{ color:#1877f2; background:rgba(24,119,242,0.12); }
+.linkedin-icon{ color:#0a66c2; background:rgba(10,102,194,0.12); }
+.email-icon{ color:#c6ff00; background:rgba(198,255,0,0.12); }
 
-.contactâ€”box h3{
-  fontâ€”size:14px;
-  lineâ€”height:1.15;
-  marginâ€”bottom:0;
+.contact-box h3{
+  font-size:14px;
+  line-height:1.15;
+  margin-bottom:0;
   color:#fff;
-  fontâ€”family:'Rajdhani', sansâ€”serif;
-  fontâ€”weight:700;
-  letterâ€”spacing:0.08em;
-  textâ€”transform:uppercase;
-  gridâ€”column:2;
-  alignâ€”self:end;
+  font-family:'Rajdhani', sans-serif;
+  font-weight:700;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+  grid-column:2;
+  align-self:end;
 }
 
-.contactâ€”box h4{
-  fontâ€”size:12px;
-  lineâ€”height:1.45;
-  marginâ€”bottom:0;
+.contact-box h4{
+  font-size:12px;
+  line-height:1.45;
+  margin-bottom:0;
   color:#c6ff00;
-  fontâ€”family:'Inter', sansâ€”serif;
-  fontâ€”weight:600;
-  wordâ€”break:keepâ€”all;
-  overflowâ€”wrap:normal;
-  whiteâ€”space:nowrap;
-  gridâ€”column:2;
-  alignâ€”self:start;
+  font-family:'Inter', sans-serif;
+  font-weight:600;
+  word-break:keep-all;
+  overflow-wrap:normal;
+  white-space:nowrap;
+  grid-column:2;
+  align-self:start;
 }
 
-@media(maxâ€”width:1200px){
+@media(max-width:1200px){
   #contact{
-    gridâ€”templateâ€”columns:1fr;
-    textâ€”align:center;
+    grid-template-columns:1fr;
+    text-align:center;
   }
 
-  .ctaâ€”content{
-    textâ€”align:center;
+  .cta-content{
+    text-align:center;
   }
 
-  .ctaâ€”content p{
-    marginâ€”left:auto;
-    marginâ€”right:auto;
+  .cta-content p{
+    margin-left:auto;
+    margin-right:auto;
   }
 
-  .ctaâ€”image{
-    justifyâ€”content:center;
+  .cta-image{
+    justify-content:center;
   }
 
-  .ctaâ€”image img{
-    maxâ€”width:360px;
+  .cta-image img{
+    max-width:360px;
   }
 
-  .contactâ€”grid{
-    gridâ€”templateâ€”columns:repeat(2,minmax(0,1fr));
+  .contact-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
   }
 
-  .contactâ€”box,
-  .contactâ€”box:nthâ€”child(4),
-  .contactâ€”box:nthâ€”child(5){
-    gridâ€”column:auto;
+  .contact-box,
+  .contact-box:nth-child(4),
+  .contact-box:nth-child(5){
+    grid-column:auto;
   }
 
-  .bgâ€”word{
-    fontâ€”size:120px;
+  .bg-word{
+    font-size:120px;
   }
 }
 
-@media(maxâ€”width:700px){
+@media(max-width:700px){
   #contact{
     padding:76px 18px;
     gap:34px;
   }
 
-  #contactâ€”options{
-    scrollâ€”marginâ€”top:92px;
+  #contact-options{
+    scroll-margin-top:92px;
   }
 
-  .contactâ€”grid{
-    gridâ€”templateâ€”columns:1fr;
+  .contact-grid{
+    grid-template-columns:1fr;
   }
 
-  .contactâ€”box{
-    minâ€”height:118px;
+  .contact-box{
+    min-height:118px;
   }
 
-  .ctaâ€”content h2{
-    fontâ€”size:38px;
+  .cta-content h2{
+    font-size:38px;
   }
 
-  .ctaâ€”content p{
-    fontâ€”size:16px;
+  .cta-content p{
+    font-size:16px;
   }
 
-  .ctaâ€”image img{
-    maxâ€”width:250px;
+  .cta-image img{
+    max-width:250px;
   }
 
-  .bgâ€”word{
-    fontâ€”size:64px;
+  .bg-word{
+    font-size:64px;
   }
 }
 
@@ -2100,20 +2100,20 @@ body{
 
 <section id="contact">
 
-  <!â€”â€” BACKGROUND WORD â€”â€”>
-  <div class="bgâ€”word">
+  <!-- BACKGROUND WORD -->
+  <div class="bg-word">
     VALOUR
   </div>
 
-  <!â€”â€” LEFT SIDE IMAGE â€”â€”>
-  <div class="ctaâ€”image">
-    <img src="valourâ€”catâ€”hand.png" alt="Valour Cat">
+  <!-- LEFT SIDE IMAGE -->
+  <div class="cta-image">
+    <img src="valour-cat-hand.png" alt="Valour Cat">
   </div>
 
-  <!â€”â€” RIGHT SIDE CONTENT â€”â€”>
-  <div class="ctaâ€”content">
+  <!-- RIGHT SIDE CONTENT -->
+  <div class="cta-content">
 
-    <div class="sectionâ€”label contactâ€”label">Contact Valour</div>
+    <div class="section-label contact-label">Contact Valour</div>
 
     <h2>
       Ready to Build <br>
@@ -2125,18 +2125,18 @@ body{
       Your story starts with a conversation.
     </p>
 
-    <!â€”â€” CONTACT GRID â€”â€”>
-    <div class="contactâ€”grid" id="contactâ€”options">
+    <!-- CONTACT GRID -->
+    <div class="contact-grid" id="contact-options">
 
-      <!â€”â€” WHATSAPP â€”â€”>
+      <!-- WHATSAPP -->
       <a href="https://wa.me/916374267472"
          target="_blank"
          rel="noopener noreferrer"
-         ariaâ€”label="Start a WhatsApp chat with Valour"
-         class="contactâ€”box">
+         aria-label="Start a WhatsApp chat with Valour"
+         class="contact-box">
 
-        <div class="contactâ€”icon whatsappâ€”icon">
-          <i class="faâ€”brands faâ€”whatsapp"></i>
+        <div class="contact-icon whatsapp-icon">
+          <i class="fa-brands fa-whatsapp"></i>
         </div>
 
         <h3>WhatsApp</h3>
@@ -2147,15 +2147,15 @@ body{
 
       </a>
 
-      <!â€”â€” INSTAGRAM â€”â€”>
+      <!-- INSTAGRAM -->
       <a href="https://www.instagram.com/valour_digital_agency?igsh=MXNza2Q4ejg3eThubA=="
          target="_blank"
          rel="noopener noreferrer"
-         ariaâ€”label="Visit Valour on Instagram"
-         class="contactâ€”box">
+         aria-label="Visit Valour on Instagram"
+         class="contact-box">
 
-        <div class="contactâ€”icon instagramâ€”icon">
-          <i class="faâ€”brands faâ€”instagram"></i>
+        <div class="contact-icon instagram-icon">
+          <i class="fa-brands fa-instagram"></i>
         </div>
 
         <h3>Instagram</h3>
@@ -2166,15 +2166,15 @@ body{
 
       </a>
 
-      <!â€”â€” FACEBOOK â€”â€”>
+      <!-- FACEBOOK -->
       <a href="https://www.facebook.com/share/18sBMbDUTp/"
          target="_blank"
          rel="noopener noreferrer"
-         ariaâ€”label="Visit Valour on Facebook"
-         class="contactâ€”box">
+         aria-label="Visit Valour on Facebook"
+         class="contact-box">
 
-        <div class="contactâ€”icon facebookâ€”icon">
-          <i class="faâ€”brands faâ€”facebookâ€”f"></i>
+        <div class="contact-icon facebook-icon">
+          <i class="fa-brands fa-facebook-f"></i>
         </div>
 
         <h3>Facebook</h3>
@@ -2185,15 +2185,15 @@ body{
 
       </a>
 
-      <!â€”â€” LINKEDIN â€”â€”>
-      <a href="https://www.linkedin.com/company/valourâ€”digitalagency/"
+      <!-- LINKEDIN -->
+      <a href="https://www.linkedin.com/company/valour-digitalagency/"
          target="_blank"
          rel="noopener noreferrer"
-         ariaâ€”label="Visit Valour on LinkedIn"
-         class="contactâ€”box">
+         aria-label="Visit Valour on LinkedIn"
+         class="contact-box">
 
-        <div class="contactâ€”icon linkedinâ€”icon">
-          <i class="faâ€”brands faâ€”linkedinâ€”in"></i>
+        <div class="contact-icon linkedin-icon">
+          <i class="fa-brands fa-linkedin-in"></i>
         </div>
 
         <h3>LinkedIn</h3>
@@ -2204,13 +2204,13 @@ body{
 
       </a>
 
-      <!â€”â€” EMAIL â€”â€”>
+      <!-- EMAIL -->
       <a href="valourdigitalagency@gmail.com"
-         ariaâ€”label="Send an email to Valour"
-         class="contactâ€”box">
+         aria-label="Send an email to Valour"
+         class="contact-box">
 
-        <div class="contactâ€”icon emailâ€”icon">
-          <i class="faâ€”solid faâ€”envelope"></i>
+        <div class="contact-icon email-icon">
+          <i class="fa-solid fa-envelope"></i>
         </div>
 
         <h3>Email</h3>
@@ -2227,17 +2227,17 @@ body{
 
 </section>
 
-<!â€”â€” FOOTER â€”â€”>
+<!-- FOOTER -->
 <footer>
-  <a class="footerâ€”logo" href="#hero">
-    <img src="Valourâ€”logo.png" alt="Valour Logo">
+  <a class="footer-logo" href="#hero">
+    <img src="Valour-logo.png" alt="Valour Logo">
     
   </a>
-  <div class="footerâ€”links">
+  <div class="footer-links">
     <a href="#about">About</a>
     <a href="#services">Services</a>
-    <a href="#processâ€”overview">Process</a>
-    <a href="#contactâ€”options">Contact</a>
+    <a href="#process-overview">Process</a>
+    <a href="#contact-options">Contact</a>
   </div>
   <small>Â© 2026 Valour Digital Agency. All rights reserved.</small>
 </footer>
@@ -2245,8 +2245,8 @@ body{
 <script>
 // â”€â”€ CURSOR â”€â”€
 const cursor = document.getElementById('cursor');
-const trail = document.getElementById('cursorâ€”trail');
-let mx = â€”100, my = â€”100, tx = â€”100, ty = â€”100;
+const trail = document.getElementById('cursor-trail');
+let mx = -100, my = -100, tx = -100, ty = -100;
 
 document.addEventListener('mousemove', e => {
   mx = e.clientX; my = e.clientY;
@@ -2256,8 +2256,8 @@ document.addEventListener('mousemove', e => {
 });
 
 function lerpTrail() {
-  tx += (mx â€” tx) * 0.1;
-  ty += (my â€” ty) * 0.1;
+  tx += (mx - tx) * 0.1;
+  ty += (my - ty) * 0.1;
   trail.style.left = tx + 'px';
   trail.style.top = ty + 'px';
   requestAnimationFrame(lerpTrail);
@@ -2270,13 +2270,13 @@ function spawnSpark(x, y) {
   const size = Math.random() * 5 + 2;
   const angle = Math.random() * Math.PI * 2;
   const dist = Math.random() * 30 + 10;
-  s.style.cssText = `left:${x}px;top:${y}px;width:${size}px;height:${size}px;background:${Math.random()<0.5?'#AAFF00':'#fff'};â€”â€”dx:${Math.cos(angle)*dist}px;â€”â€”dy:${Math.sin(angle)*dist}px;opacity:0.8;`;
+  s.style.cssText = `left:${x}px;top:${y}px;width:${size}px;height:${size}px;background:${Math.random()<0.5?'#AAFF00':'#fff'};--dx:${Math.cos(angle)*dist}px;--dy:${Math.sin(angle)*dist}px;opacity:0.8;`;
   document.body.appendChild(s);
   setTimeout(() => s.remove(), 600);
 }
 
 // Button hover cursor scale
-document.querySelectorAll('button, a, .flipâ€”card, .statâ€”card, .processâ€”step').forEach(el => {
+document.querySelectorAll('button, a, .flip-card, .stat-card, .process-step').forEach(el => {
   el.addEventListener('mouseenter', () => {
     cursor.style.width = '44px';
     cursor.style.height = '44px';
@@ -2291,8 +2291,8 @@ document.querySelectorAll('button, a, .flipâ€”card, .statâ€”card, .pro
 
 // â”€â”€ MASCOT SPOTLIGHT EFFECT â”€â”€
 const mascotWrap = document.getElementById('mascot');
-const greenImg   = document.getElementById('mascotâ€”green');
-const mascotLbl  = document.getElementById('mascotâ€”label');
+const greenImg   = document.getElementById('mascot-green');
+const mascotLbl  = document.getElementById('mascot-label');
 
 const SPOTLIGHT_R_TARGET = 180;
 const SPOTLIGHT_FEATHER = 22;
@@ -2305,30 +2305,30 @@ let mascotInside = false;
 let mascotRafId = null;
 
 function lerpMascotLoop() {
-  csx += (msx â€” csx) * LERP_SPEED;
-  csy += (msy â€” csy) * LERP_SPEED;
-  currentR += (targetR â€” currentR) * 0.07;
+  csx += (msx - csx) * LERP_SPEED;
+  csy += (msy - csy) * LERP_SPEED;
+  currentR += (targetR - currentR) * 0.07;
 
   const spotlightX = `${csx.toFixed(2)}px`;
   const spotlightY = `${csy.toFixed(2)}px`;
   const spotlightR = `${currentR.toFixed(2)}px`;
-  const spotlightInner = `${Math.max(0, currentR â€” SPOTLIGHT_FEATHER).toFixed(2)}px`;
+  const spotlightInner = `${Math.max(0, currentR - SPOTLIGHT_FEATHER).toFixed(2)}px`;
 
   greenImg.style.transition = 'none';
-  greenImg.style.setProperty('â€”â€”spotlightâ€”x', spotlightX);
-  greenImg.style.setProperty('â€”â€”spotlightâ€”y', spotlightY);
-  greenImg.style.setProperty('â€”â€”spotlightâ€”r', spotlightR);
-  greenImg.style.setProperty('â€”â€”spotlightâ€”inner', spotlightInner);
+  greenImg.style.setProperty('--spotlight-x', spotlightX);
+  greenImg.style.setProperty('--spotlight-y', spotlightY);
+  greenImg.style.setProperty('--spotlight-r', spotlightR);
+  greenImg.style.setProperty('--spotlight-inner', spotlightInner);
   greenImg.style.clipPath = `circle(${spotlightR} at ${spotlightX} ${spotlightY})`;
 
   if (mascotInside || currentR > 0.5) {
     mascotRafId = requestAnimationFrame(lerpMascotLoop);
   } else {
     currentR = 0;
-    greenImg.style.setProperty('â€”â€”spotlightâ€”x', '50%');
-    greenImg.style.setProperty('â€”â€”spotlightâ€”y', '50%');
-    greenImg.style.setProperty('â€”â€”spotlightâ€”r', '0px');
-    greenImg.style.setProperty('â€”â€”spotlightâ€”inner', '0px');
+    greenImg.style.setProperty('--spotlight-x', '50%');
+    greenImg.style.setProperty('--spotlight-y', '50%');
+    greenImg.style.setProperty('--spotlight-r', '0px');
+    greenImg.style.setProperty('--spotlight-inner', '0px');
     greenImg.style.clipPath = 'circle(0px at 50% 50%)';
     mascotRafId = null;
   }
@@ -2336,8 +2336,8 @@ function lerpMascotLoop() {
 
 mascotWrap.addEventListener('mouseenter', e => {
   const rect = mascotWrap.getBoundingClientRect();
-  csx = msx = e.clientX â€” rect.left;
-  csy = msy = e.clientY â€” rect.top;
+  csx = msx = e.clientX - rect.left;
+  csy = msy = e.clientY - rect.top;
   targetR = SPOTLIGHT_R_TARGET;
   mascotInside = true;
   if (!mascotRafId) mascotRafId = requestAnimationFrame(lerpMascotLoop);
@@ -2345,10 +2345,10 @@ mascotWrap.addEventListener('mouseenter', e => {
 
 mascotWrap.addEventListener('mousemove', e => {
   const rect = mascotWrap.getBoundingClientRect();
-  msx = e.clientX â€” rect.left;
-  msy = e.clientY â€” rect.top;
+  msx = e.clientX - rect.left;
+  msy = e.clientY - rect.top;
   mascotLbl.textContent = 'âœ¦ Transforming';
-  mascotLbl.style.color = 'var(â€”â€”lime)';
+  mascotLbl.style.color = 'var(--lime)';
 });
 
 mascotWrap.addEventListener('mouseleave', () => {
@@ -2368,8 +2368,8 @@ const observer = new IntersectionObserver(entries => {
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
 // â”€â”€ LOGO PHYSICS CANVAS â”€â”€
-const canvas = document.getElementById('logoâ€”canvas');
-const wrap = document.getElementById('logoâ€”canvasâ€”wrap');
+const canvas = document.getElementById('logo-canvas');
+const wrap = document.getElementById('logo-canvas-wrap');
 
 if (canvas && wrap) {
 const ctx = canvas.getContext('2d');
@@ -2409,10 +2409,10 @@ function makeBall(x, y) {
   const radius = 10 + Math.random() * 16;
   const col = BALL_COLORS[Math.floor(Math.random() * BALL_COLORS.length)];
   return {
-    x: x ?? (radius + Math.random() * (W â€” radius * 2)),
-    y: y ?? (H / 2 + Math.random() * (H / 2) â€” radius), // spawn in bottom half
-    vx: (Math.random() â€” 0.5) * 1.5,
-    vy: (Math.random() â€” 0.5) * 1.5,
+    x: x ?? (radius + Math.random() * (W - radius * 2)),
+    y: y ?? (H / 2 + Math.random() * (H / 2) - radius), // spawn in bottom half
+    vx: (Math.random() - 0.5) * 1.5,
+    vy: (Math.random() - 0.5) * 1.5,
     radius,
     color: col,
     alpha: 0.8 + Math.random() * 0.2,
@@ -2435,7 +2435,7 @@ function drawBall(b) {
   ctx.globalAlpha = b.alpha;
 
   // main sphere with specular highlight
-  const grad = ctx.createRadialGradient(b.x â€” r * 0.35, b.y â€” r * 0.35, r * 0.04, b.x, b.y, r);
+  const grad = ctx.createRadialGradient(b.x - r * 0.35, b.y - r * 0.35, r * 0.04, b.x, b.y, r);
   grad.addColorStop(0,    '#ffffff');
   grad.addColorStop(0.25, b.color.fill);
   grad.addColorStop(1,    'rgba(0,0,0,0.45)');
@@ -2447,27 +2447,27 @@ function drawBall(b) {
   ctx.restore();
 }
 
-let mouseCanvasX = â€”9999, mouseCanvasY = â€”9999;
+let mouseCanvasX = -9999, mouseCanvasY = -9999;
 let mouseInCanvas = false;
 
 wrap.addEventListener('mousemove', e => {
   const rect = wrap.getBoundingClientRect();
-  mouseCanvasX = e.clientX â€” rect.left;
-  mouseCanvasY = e.clientY â€” rect.top;
+  mouseCanvasX = e.clientX - rect.left;
+  mouseCanvasY = e.clientY - rect.top;
   mouseInCanvas = true;
 });
 wrap.addEventListener('mouseleave', () => {
   mouseInCanvas = false;
-  mouseCanvasX = â€”9999;
-  mouseCanvasY = â€”9999;
+  mouseCanvasX = -9999;
+  mouseCanvasY = -9999;
 });
 
 // Also track mouse globally to keep repelling when cursor drifts slightly
 document.addEventListener('mousemove', e => {
   const rect = wrap.getBoundingClientRect();
-  const lx = e.clientX â€” rect.left;
-  const ly = e.clientY â€” rect.top;
-  if (lx >= â€”50 && lx <= W + 50 && ly >= â€”50 && ly <= H + 50) {
+  const lx = e.clientX - rect.left;
+  const ly = e.clientY - rect.top;
+  if (lx >= -50 && lx <= W + 50 && ly >= -50 && ly <= H + 50) {
     mouseCanvasX = lx;
     mouseCanvasY = ly;
     mouseInCanvas = true;
@@ -2483,25 +2483,25 @@ function collideBalls() {
     for (let j = i + 1; j < balls.length; j++) {
       const b = balls[j];
       if (b.dead) continue;
-      const dx = b.x â€” a.x;
-      const dy = b.y â€” a.y;
+      const dx = b.x - a.x;
+      const dy = b.y - a.y;
       const dist = Math.sqrt(dx * dx + dy * dy);
       const minD = a.radius + b.radius;
       if (dist < minD && dist > 0.01) {
         // separate
-        const overlap = (minD â€” dist) / 2;
+        const overlap = (minD - dist) / 2;
         const nx = dx / dist;
         const ny = dy / dist;
-        a.x â€”= nx * overlap;
-        a.y â€”= ny * overlap;
+        a.x -= nx * overlap;
+        a.y -= ny * overlap;
         b.x += nx * overlap;
         b.y += ny * overlap;
         // exchange velocity along normal
-        const relV = (a.vx â€” b.vx) * nx + (a.vy â€” b.vy) * ny;
+        const relV = (a.vx - b.vx) * nx + (a.vy - b.vy) * ny;
         if (relV > 0) {
           const impulse = relV * 0.7;
-          a.vx â€”= impulse * nx;
-          a.vy â€”= impulse * ny;
+          a.vx -= impulse * nx;
+          a.vy -= impulse * ny;
           b.vx += impulse * nx;
           b.vy += impulse * ny;
         }
@@ -2521,13 +2521,13 @@ function animateBalls() {
     // Gravity
     b.vy += GRAVITY;
 
-    // Cursor repulsion â€” large radius, strong force
+    // Cursor repulsion - large radius, strong force
     if (mouseInCanvas) {
-      const dx = b.x â€” mouseCanvasX;
-      const dy = b.y â€” mouseCanvasY;
+      const dx = b.x - mouseCanvasX;
+      const dy = b.y - mouseCanvasY;
       const dist = Math.sqrt(dx * dx + dy * dy);
       if (dist < REPEL_RADIUS && dist > 0.5) {
-        const force = ((REPEL_RADIUS â€” dist) / REPEL_RADIUS) * REPEL_FORCE;
+        const force = ((REPEL_RADIUS - dist) / REPEL_RADIUS) * REPEL_FORCE;
         b.vx += (dx / dist) * force;
         b.vy += (dy / dist) * force;
       }
@@ -2549,13 +2549,13 @@ function animateBalls() {
 
     const pad = b.radius;
 
-    // LEFT wall â€” hard bounce
+    // LEFT wall - hard bounce
     if (b.x < pad) { b.x = pad; b.vx = Math.abs(b.vx) * BOUNCE; }
-    // RIGHT wall â€” hard bounce
-    if (b.x > W â€” pad) { b.x = W â€” pad; b.vx = â€”Math.abs(b.vx) * BOUNCE; }
-    // BOTTOM wall â€” hard bounce (floor of box)
-    if (b.y > H â€” pad) { b.y = H â€” pad; b.vy = â€”Math.abs(b.vy) * BOUNCE; b.vx *= 0.88; }
-    // TOP wall â€” hard bounce (ceiling of closed box)
+    // RIGHT wall - hard bounce
+    if (b.x > W - pad) { b.x = W - pad; b.vx = -Math.abs(b.vx) * BOUNCE; }
+    // BOTTOM wall - hard bounce (floor of box)
+    if (b.y > H - pad) { b.y = H - pad; b.vy = -Math.abs(b.vy) * BOUNCE; b.vx *= 0.88; }
+    // TOP wall - hard bounce (ceiling of closed box)
     if (b.y < pad) { b.y = pad; b.vy = Math.abs(b.vy) * BOUNCE; }
 
     drawBall(b);
@@ -2568,7 +2568,7 @@ animateBalls();
 
 // â”€â”€ STAT COUNTER ANIMATION â”€â”€
 function animateCounters() {
-  document.querySelectorAll('.statâ€”num').forEach(el => {
+  document.querySelectorAll('.stat-num').forEach(el => {
     const text = el.textContent;
     const num = parseFloat(text);
     if (isNaN(num)) return;
@@ -2591,7 +2591,7 @@ const statsObs = new IntersectionObserver(entries => {
     }
   });
 }, { threshold: 0.5 });
-const statsEl = document.querySelector('.statsâ€”grid');
+const statsEl = document.querySelector('.stats-grid');
 if (statsEl) statsObs.observe(statsEl);
 </script>
 </body>
