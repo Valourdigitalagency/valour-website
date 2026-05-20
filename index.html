@@ -1,35 +1,35 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Valour-Digital Marketing Agency</title>
-<link rel="icon" type="image/png" href="Valour-icon.png">
-<link rel="apple-touch-icon" href="Valour-icon.png">
+<meta charset="UTFâ€”8">
+<meta name="viewport" content="width=deviceâ€”width, initialâ€”scale=1.0">
+<title>Valourâ€”Digital Marketing Agency</title>
+<link rel="icon" type="image/png" href="Valourâ€”icon.png">
+<link rel="appleâ€”touchâ€”icon" href="Valourâ€”icon.png">
 <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fontâ€”awesome/6.5.1/css/all.min.css">
 <style>
   :root {
-    --lime: #AAFF00;
-    --lime-dim: #7ACC00;
-    --lime-glow: rgba(170,255,0,0.25);
-    --black: #000000;
-    --dark: #060606;
-    --dark2: #0d0d0d;
-    --dark3: #111111;
-    --glass: rgba(170,255,0,0.06);
-    --silver: #C0C0C0;
+    â€”â€”lime: #AAFF00;
+    â€”â€”limeâ€”dim: #7ACC00;
+    â€”â€”limeâ€”glow: rgba(170,255,0,0.25);
+    â€”â€”black: #000000;
+    â€”â€”dark: #060606;
+    â€”â€”dark2: #0d0d0d;
+    â€”â€”dark3: #111111;
+    â€”â€”glass: rgba(170,255,0,0.06);
+    â€”â€”silver: #C0C0C0;
   }
 
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  *, *::before, *::after { boxâ€”sizing: borderâ€”box; margin: 0; padding: 0; }
 
-  html { scroll-behavior: smooth; }
+  html { scrollâ€”behavior: smooth; }
 
   body {
-    background: var(--black);
+    background: var(â€”â€”black);
     color: #fff;
-    font-family: 'Inter', sans-serif;
-    overflow-x: hidden;
+    fontâ€”family: 'Inter', sansâ€”serif;
+    overflowâ€”x: hidden;
     cursor: none;
   }
 
@@ -37,242 +37,242 @@
   #cursor {
     position: fixed;
     width: 28px; height: 28px;
-    background: var(--lime);
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: 9999;
-    transform: translate(-50%,-50%);
+    background: var(â€”â€”lime);
+    borderâ€”radius: 50%;
+    pointerâ€”events: none;
+    zâ€”index: 9999;
+    transform: translate(â€”50%,â€”50%);
     transition: width 0.2s, height 0.2s, background 0.2s, opacity 0.2s;
-    mix-blend-mode: screen;
-    box-shadow: 0 0 30px var(--lime), 0 0 80px rgba(170,255,0,0.5);
+    mixâ€”blendâ€”mode: screen;
+    boxâ€”shadow: 0 0 30px var(â€”â€”lime), 0 0 80px rgba(170,255,0,0.5);
   }
-  #cursor-trail {
+  #cursorâ€”trail {
     position: fixed;
     width: 70px; height: 70px;
     border: 1.5px solid rgba(170,255,0,0.5);
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: 9998;
-    transform: translate(-50%,-50%);
-    transition: transform 0.12s ease, width 0.3s, height 0.3s, border-color 0.3s;
+    borderâ€”radius: 50%;
+    pointerâ€”events: none;
+    zâ€”index: 9998;
+    transform: translate(â€”50%,â€”50%);
+    transition: transform 0.12s ease, width 0.3s, height 0.3s, borderâ€”color 0.3s;
   }
   body:hover #cursor { opacity: 1; }
 
   .spark {
     position: fixed;
-    pointer-events: none;
-    z-index: 9997;
-    border-radius: 50%;
+    pointerâ€”events: none;
+    zâ€”index: 9997;
+    borderâ€”radius: 50%;
     animation: sparkle 0.6s forwards;
   }
   @keyframes sparkle {
     0% { opacity:1; transform: scale(1) translate(0,0); }
-    100% { opacity:0; transform: scale(0) translate(var(--dx), var(--dy)); }
+    100% { opacity:0; transform: scale(0) translate(var(â€”â€”dx), var(â€”â€”dy)); }
   }
 
   /* â”€â”€ NAV â”€â”€ */
   nav {
     position: fixed;
     top: 0; left: 0; right: 0;
-    z-index: 1000;
+    zâ€”index: 1000;
     padding: 20px 60px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    alignâ€”items: center;
+    justifyâ€”content: spaceâ€”between;
     background: rgba(0,0,0,0.7);
-    backdrop-filter: blur(20px);
-    border-bottom: 1px solid rgba(170,255,0,0.12);
+    backdropâ€”filter: blur(20px);
+    borderâ€”bottom: 1px solid rgba(170,255,0,0.12);
   }
-  .nav-logo {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 22px;
-    font-weight: 900;
-    color: var(--lime);
-    letter-spacing: 0.1em;
-    text-decoration: none;
+  .navâ€”logo {
+    fontâ€”family: 'Orbitron', sansâ€”serif;
+    fontâ€”size: 22px;
+    fontâ€”weight: 900;
+    color: var(â€”â€”lime);
+    letterâ€”spacing: 0.1em;
+    textâ€”decoration: none;
     display: flex;
-    align-items: center;
+    alignâ€”items: center;
     gap: 10px;
   }
-  .nav-logo img { width: 110px; height: 110px; object-fit: contain; }
-  .nav-links { display: flex; gap: 40px; list-style: none; }
-  .nav-links a {
+  .navâ€”logo img { width: 110px; height: 110px; objectâ€”fit: contain; }
+  .navâ€”links { display: flex; gap: 40px; listâ€”style: none; }
+  .navâ€”links a {
     color: rgba(255,255,255,0.7);
-    text-decoration: none;
-    font-family: 'Rajdhani', sans-serif;
-    font-weight: 500;
-    font-size: 15px;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
+    textâ€”decoration: none;
+    fontâ€”family: 'Rajdhani', sansâ€”serif;
+    fontâ€”weight: 500;
+    fontâ€”size: 15px;
+    letterâ€”spacing: 0.12em;
+    textâ€”transform: uppercase;
     transition: color 0.3s;
   }
-  .nav-links a:hover { color: var(--lime); }
-  .nav-cta {
-    font-family: 'Rajdhani', sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
+  .navâ€”links a:hover { color: var(â€”â€”lime); }
+  .navâ€”cta {
+    fontâ€”family: 'Rajdhani', sansâ€”serif;
+    fontâ€”weight: 700;
+    fontâ€”size: 14px;
+    letterâ€”spacing: 0.15em;
+    textâ€”transform: uppercase;
     padding: 12px 28px;
-    border: 1px solid var(--lime);
-    color: var(--lime);
+    border: 1px solid var(â€”â€”lime);
+    color: var(â€”â€”lime);
     background: transparent;
     cursor: none;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    textâ€”decoration: none;
+    display: inlineâ€”flex;
+    alignâ€”items: center;
+    justifyâ€”content: center;
     transition: all 0.3s;
     position: relative;
     overflow: hidden;
   }
-  .nav-cta::before {
+  .navâ€”cta::before {
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, transparent 0%, rgba(192,192,192,0.15) 50%, transparent 100%);
-    transform: translateX(-100%);
+    background: linearâ€”gradient(135deg, transparent 0%, rgba(192,192,192,0.15) 50%, transparent 100%);
+    transform: translateX(â€”100%);
     transition: transform 0.4s;
   }
-  .nav-cta:hover::before { transform: translateX(100%); }
-  .nav-cta:hover {
-    background: var(--lime);
-    color: var(--black);
-    box-shadow: 0 0 30px var(--lime-glow), inset 0 0 20px rgba(192,192,192,0.2);
+  .navâ€”cta:hover::before { transform: translateX(100%); }
+  .navâ€”cta:hover {
+    background: var(â€”â€”lime);
+    color: var(â€”â€”black);
+    boxâ€”shadow: 0 0 30px var(â€”â€”limeâ€”glow), inset 0 0 20px rgba(192,192,192,0.2);
   }
 
   /* â”€â”€ SECTIONS â”€â”€ */
-  section { position: relative; scroll-margin-top: 130px; }
-  section:not(#logo-box-section) { overflow: hidden; }
+  section { position: relative; scrollâ€”marginâ€”top: 130px; }
+  section:not(#logoâ€”boxâ€”section) { overflow: hidden; }
 
   /* â”€â”€ HERO â”€â”€ */
   #hero {
-    min-height: 100vh;
+    minâ€”height: 100vh;
     display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    grid-template-rows: 1fr;
-    align-items: center;
+    gridâ€”templateâ€”columns: 1fr auto 1fr;
+    gridâ€”templateâ€”rows: 1fr;
+    alignâ€”items: center;
     padding: 100px 60px 60px;
-    background: var(--black);
+    background: var(â€”â€”black);
     gap: 0;
     position: relative;
   }
-  .hero-grid {
+  .heroâ€”grid {
     position: absolute;
     inset: 0;
-    background-image:
-      linear-gradient(rgba(170,255,0,0.04) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(170,255,0,0.04) 1px, transparent 1px);
-    background-size: 60px 60px;
-    pointer-events: none;
+    backgroundâ€”image:
+      linearâ€”gradient(rgba(170,255,0,0.04) 1px, transparent 1px),
+      linearâ€”gradient(90deg, rgba(170,255,0,0.04) 1px, transparent 1px);
+    backgroundâ€”size: 60px 60px;
+    pointerâ€”events: none;
   }
-  .hero-content {
-    grid-column: 1;
-    max-width: 480px;
-    justify-self: end;
-    padding-right: 60px;
+  .heroâ€”content {
+    gridâ€”column: 1;
+    maxâ€”width: 480px;
+    justifyâ€”self: end;
+    paddingâ€”right: 60px;
     position: relative;
-    z-index: 2;
+    zâ€”index: 2;
   }
-  .hero-content-right {
-    grid-column: 3;
-    max-width: 320px;
-    justify-self: start;
-    padding-left: 60px;
+  .heroâ€”contentâ€”right {
+    gridâ€”column: 3;
+    maxâ€”width: 320px;
+    justifyâ€”self: start;
+    paddingâ€”left: 60px;
     position: relative;
-    z-index: 2;
+    zâ€”index: 2;
     display: flex;
-    flex-direction: column;
+    flexâ€”direction: column;
     gap: 24px;
   }
-  .hero-stat {
-    border-left: 2px solid rgba(170,255,0,0.3);
-    padding-left: 20px;
+  .heroâ€”stat {
+    borderâ€”left: 2px solid rgba(170,255,0,0.3);
+    paddingâ€”left: 20px;
   }
-  .hero-stat-num {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 36px;
-    font-weight: 900;
-    color: var(--lime);
-    line-height: 1;
+  .heroâ€”statâ€”num {
+    fontâ€”family: 'Orbitron', sansâ€”serif;
+    fontâ€”size: 36px;
+    fontâ€”weight: 900;
+    color: var(â€”â€”lime);
+    lineâ€”height: 1;
   }
-  .hero-stat-label {
-    font-family: 'Rajdhani', sans-serif;
-    font-size: 12px;
-    letter-spacing: 0.2em;
+  .heroâ€”statâ€”label {
+    fontâ€”family: 'Rajdhani', sansâ€”serif;
+    fontâ€”size: 12px;
+    letterâ€”spacing: 0.2em;
     color: rgba(255,255,255,0.4);
-    text-transform: uppercase;
-    margin-top: 4px;
+    textâ€”transform: uppercase;
+    marginâ€”top: 4px;
   }
-  .hero-eyebrow {
-    font-family: 'Rajdhani', sans-serif;
-    font-size: 13px;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-    color: var(--lime);
-    margin-bottom: 20px;
+  .heroâ€”eyebrow {
+    fontâ€”family: 'Rajdhani', sansâ€”serif;
+    fontâ€”size: 13px;
+    letterâ€”spacing: 0.3em;
+    textâ€”transform: uppercase;
+    color: var(â€”â€”lime);
+    marginâ€”bottom: 20px;
     display: flex;
-    align-items: center;
+    alignâ€”items: center;
     gap: 12px;
   }
-  .hero-eyebrow::before {
+  .heroâ€”eyebrow::before {
     content: '';
     width: 40px; height: 1px;
-    background: var(--lime);
+    background: var(â€”â€”lime);
   }
   h1 {
-    font-family: 'Orbitron', sans-serif;
-    font-size: clamp(42px, 6vw, 80px);
-    font-weight: 900;
-    line-height: 1.0;
-    margin-bottom: 24px;
-    letter-spacing: -0.02em;
+    fontâ€”family: 'Orbitron', sansâ€”serif;
+    fontâ€”size: clamp(42px, 6vw, 80px);
+    fontâ€”weight: 900;
+    lineâ€”height: 1.0;
+    marginâ€”bottom: 24px;
+    letterâ€”spacing: â€”0.02em;
   }
-  h1 .line-accent { color: var(--lime); display: block; }
-  .hero-sub {
-    font-size: 17px;
-    line-height: 1.7;
+  h1 .lineâ€”accent { color: var(â€”â€”lime); display: block; }
+  .heroâ€”sub {
+    fontâ€”size: 17px;
+    lineâ€”height: 1.7;
     color: rgba(255,255,255,0.6);
-    margin-bottom: 44px;
-    font-weight: 300;
+    marginâ€”bottom: 44px;
+    fontâ€”weight: 300;
   }
-  .hero-btns { display: flex; gap: 16px; flex-wrap: wrap; }
-  .btn-primary {
-    font-family: 'Rajdhani', sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
+  .heroâ€”btns { display: flex; gap: 16px; flexâ€”wrap: wrap; }
+  .btnâ€”primary {
+    fontâ€”family: 'Rajdhani', sansâ€”serif;
+    fontâ€”weight: 700;
+    fontâ€”size: 14px;
+    letterâ€”spacing: 0.15em;
+    textâ€”transform: uppercase;
     padding: 16px 40px;
-    background: var(--lime);
-    color: var(--black);
+    background: var(â€”â€”lime);
+    color: var(â€”â€”black);
     border: none;
     cursor: none;
     position: relative;
     overflow: hidden;
     transition: all 0.3s;
-    text-decoration: none;
-    display: inline-block;
+    textâ€”decoration: none;
+    display: inlineâ€”block;
   }
-  .btn-primary::before {
+  .btnâ€”primary::before {
     content:'';
     position: absolute;
     inset: 0;
-    background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.4) 50%, transparent 100%);
-    transform: translateX(-100%) skewX(-15deg);
+    background: linearâ€”gradient(90deg, transparent 0%, rgba(255,255,255,0.4) 50%, transparent 100%);
+    transform: translateX(â€”100%) skewX(â€”15deg);
     transition: transform 0.5s;
   }
-  .btn-primary:hover::before { transform: translateX(150%) skewX(-15deg); }
-  .btn-primary:hover {
-    box-shadow: 0 0 40px var(--lime), 0 0 80px rgba(170,255,0,0.3), inset 0 0 20px rgba(192,192,192,0.15);
-    transform: translateY(-2px);
+  .btnâ€”primary:hover::before { transform: translateX(150%) skewX(â€”15deg); }
+  .btnâ€”primary:hover {
+    boxâ€”shadow: 0 0 40px var(â€”â€”lime), 0 0 80px rgba(170,255,0,0.3), inset 0 0 20px rgba(192,192,192,0.15);
+    transform: translateY(â€”2px);
   }
-  .btn-secondary {
-    font-family: 'Rajdhani', sans-serif;
-    font-weight: 600;
-    font-size: 14px;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
+  .btnâ€”secondary {
+    fontâ€”family: 'Rajdhani', sansâ€”serif;
+    fontâ€”weight: 600;
+    fontâ€”size: 14px;
+    letterâ€”spacing: 0.15em;
+    textâ€”transform: uppercase;
     padding: 16px 40px;
     background: transparent;
     color: rgba(255,255,255,0.8);
@@ -281,385 +281,385 @@
     position: relative;
     overflow: hidden;
     transition: all 0.3s;
-    text-decoration: none;
-    display: inline-block;
+    textâ€”decoration: none;
+    display: inlineâ€”block;
   }
-  .btn-secondary::before {
+  .btnâ€”secondary::before {
     content:'';
     position: absolute;
     inset: 0;
-    background: linear-gradient(90deg, transparent, rgba(192,192,192,0.12), transparent);
-    transform: translateX(-100%);
+    background: linearâ€”gradient(90deg, transparent, rgba(192,192,192,0.12), transparent);
+    transform: translateX(â€”100%);
     transition: transform 0.4s;
   }
-  .btn-secondary:hover::before { transform: translateX(100%); }
-  .btn-secondary:hover { border-color: rgba(255,255,255,0.5); color: #fff; }
+  .btnâ€”secondary:hover::before { transform: translateX(100%); }
+  .btnâ€”secondary:hover { borderâ€”color: rgba(255,255,255,0.5); color: #fff; }
 
   /* â”€â”€ MASCOT â”€â”€ */
-  .mascot-wrap {
+  .mascotâ€”wrap {
     position: relative;
     width: 560px;
     height: 680px;
-    flex-shrink: 0;
-    z-index: 2;
+    flexâ€”shrink: 0;
+    zâ€”index: 2;
     margin: 0 auto;
   }
-  /* Base white-hoodie image - always visible */
-  .mascot-img {
+  /* Base whiteâ€”hoodie image â€” always visible */
+  .mascotâ€”img {
     position: absolute;
     inset: 0;
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    objectâ€”fit: contain;
     display: block;
   }
-  .mascot-img.white {
-    z-index: 1;
+  .mascotâ€”img.white {
+    zâ€”index: 1;
   }
-  /* Green jacket - sits on top, clipped to a circle that follows the cursor */
-  .mascot-img.green {
-    z-index: 2;
-    --spotlight-x: 50%;
-    --spotlight-y: 50%;
-    --spotlight-r: 0px;
-    --spotlight-inner: 0px;
-    /* clip-path circle starts at 0 radius (invisible) - JS will update this */
-    clip-path: circle(0px at 50% 50%);
-    -webkit-mask-image: radial-gradient(
-      circle at var(--spotlight-x) var(--spotlight-y),
+  /* Green jacket â€” sits on top, clipped to a circle that follows the cursor */
+  .mascotâ€”img.green {
+    zâ€”index: 2;
+    â€”â€”spotlightâ€”x: 50%;
+    â€”â€”spotlightâ€”y: 50%;
+    â€”â€”spotlightâ€”r: 0px;
+    â€”â€”spotlightâ€”inner: 0px;
+    /* clipâ€”path circle starts at 0 radius (invisible) â€” JS will update this */
+    clipâ€”path: circle(0px at 50% 50%);
+    â€”webkitâ€”maskâ€”image: radialâ€”gradient(
+      circle at var(â€”â€”spotlightâ€”x) var(â€”â€”spotlightâ€”y),
       #000 0,
-      #000 var(--spotlight-inner),
-      transparent var(--spotlight-r)
+      #000 var(â€”â€”spotlightâ€”inner),
+      transparent var(â€”â€”spotlightâ€”r)
     );
-    mask-image: radial-gradient(
-      circle at var(--spotlight-x) var(--spotlight-y),
+    maskâ€”image: radialâ€”gradient(
+      circle at var(â€”â€”spotlightâ€”x) var(â€”â€”spotlightâ€”y),
       #000 0,
-      #000 var(--spotlight-inner),
-      transparent var(--spotlight-r)
+      #000 var(â€”â€”spotlightâ€”inner),
+      transparent var(â€”â€”spotlightâ€”r)
     );
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
-    transition: clip-path 0.08s ease;
+    â€”webkitâ€”maskâ€”repeat: noâ€”repeat;
+    maskâ€”repeat: noâ€”repeat;
+    transition: clipâ€”path 0.08s ease;
   }
-  /* Bottom fade blend - sits above both images, fades cat into the bg */
-  .mascot-fade {
+  /* Bottom fade blend â€” sits above both images, fades cat into the bg */
+  .mascotâ€”fade {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     height: 42%;
-    background: linear-gradient(to bottom, transparent 0%, var(--black) 100%);
-    z-index: 3;
-    pointer-events: none;
+    background: linearâ€”gradient(to bottom, transparent 0%, var(â€”â€”black) 100%);
+    zâ€”index: 3;
+    pointerâ€”events: none;
   }
-  .mascot-ring {
+  .mascotâ€”ring {
     position: absolute;
-    border-radius: 50%;
+    borderâ€”radius: 50%;
     border: 1px solid rgba(170,255,0,0.15);
-    animation: pulse-ring 3s infinite;
-    pointer-events: none;
-    z-index: 0;
+    animation: pulseâ€”ring 3s infinite;
+    pointerâ€”events: none;
+    zâ€”index: 0;
   }
-  .mascot-ring:nth-child(1) { inset: -20px; animation-delay: 0s; }
-  .mascot-ring:nth-child(2) { inset: -50px; animation-delay: 1s; }
-  .mascot-ring:nth-child(3) { inset: -80px; animation-delay: 2s; }
-  @keyframes pulse-ring {
+  .mascotâ€”ring:nthâ€”child(1) { inset: â€”20px; animationâ€”delay: 0s; }
+  .mascotâ€”ring:nthâ€”child(2) { inset: â€”50px; animationâ€”delay: 1s; }
+  .mascotâ€”ring:nthâ€”child(3) { inset: â€”80px; animationâ€”delay: 2s; }
+  @keyframes pulseâ€”ring {
     0%, 100% { opacity: 0.3; transform: scale(1); }
     50% { opacity: 0.7; transform: scale(1.02); }
   }
-  .mascot-label {
+  .mascotâ€”label {
     position: absolute;
-    bottom: -30px;
+    bottom: â€”30px;
     left: 50%;
-    transform: translateX(-50%);
-    font-family: 'Rajdhani', sans-serif;
-    font-size: 11px;
-    letter-spacing: 0.25em;
+    transform: translateX(â€”50%);
+    fontâ€”family: 'Rajdhani', sansâ€”serif;
+    fontâ€”size: 11px;
+    letterâ€”spacing: 0.25em;
     color: rgba(170,255,0,0.5);
-    text-transform: uppercase;
-    white-space: nowrap;
+    textâ€”transform: uppercase;
+    whiteâ€”space: nowrap;
   }
 
   /* â”€â”€ MARQUEE â”€â”€ */
-  .marquee-section {
+  .marqueeâ€”section {
     padding: 20px 0;
-    background: var(--lime);
+    background: var(â€”â€”lime);
     overflow: hidden;
   }
-  .marquee-track {
+  .marqueeâ€”track {
     display: flex;
     gap: 60px;
     animation: marquee 20s linear infinite;
-    white-space: nowrap;
+    whiteâ€”space: nowrap;
   }
-  .marquee-item {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 13px;
-    font-weight: 700;
-    color: var(--black);
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
+  .marqueeâ€”item {
+    fontâ€”family: 'Orbitron', sansâ€”serif;
+    fontâ€”size: 13px;
+    fontâ€”weight: 700;
+    color: var(â€”â€”black);
+    letterâ€”spacing: 0.2em;
+    textâ€”transform: uppercase;
     display: flex;
-    align-items: center;
+    alignâ€”items: center;
     gap: 20px;
-    flex-shrink: 0;
+    flexâ€”shrink: 0;
   }
-  .marquee-dot { width: 6px; height: 6px; background: var(--black); border-radius: 50%; }
+  .marqueeâ€”dot { width: 6px; height: 6px; background: var(â€”â€”black); borderâ€”radius: 50%; }
   @keyframes marquee {
     0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
+    100% { transform: translateX(â€”50%); }
   }
 
   /* â”€â”€ ABOUT â”€â”€ */
   #about {
     padding: 120px 60px;
-    background: var(--dark);
+    background: var(â€”â€”dark);
   }
-  .section-label {
-    font-family: 'Rajdhani', sans-serif;
-    font-size: 12px;
-    letter-spacing: 0.35em;
-    text-transform: uppercase;
-    color: var(--lime);
-    margin-bottom: 16px;
+  .sectionâ€”label {
+    fontâ€”family: 'Rajdhani', sansâ€”serif;
+    fontâ€”size: 12px;
+    letterâ€”spacing: 0.35em;
+    textâ€”transform: uppercase;
+    color: var(â€”â€”lime);
+    marginâ€”bottom: 16px;
   }
-  .section-title {
-    font-family: 'Orbitron', sans-serif;
-    font-size: clamp(30px, 4vw, 52px);
-    font-weight: 900;
-    margin-bottom: 24px;
-    line-height: 1.1;
+  .sectionâ€”title {
+    fontâ€”family: 'Orbitron', sansâ€”serif;
+    fontâ€”size: clamp(30px, 4vw, 52px);
+    fontâ€”weight: 900;
+    marginâ€”bottom: 24px;
+    lineâ€”height: 1.1;
   }
-  .about-grid {
+  .aboutâ€”grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    gridâ€”templateâ€”columns: 1fr 1fr;
     gap: 80px;
-    align-items: center;
-    margin-top: 60px;
+    alignâ€”items: center;
+    marginâ€”top: 60px;
   }
-  .about-text p {
+  .aboutâ€”text p {
     color: rgba(255,255,255,0.6);
-    line-height: 1.8;
-    font-size: 16px;
-    font-weight: 300;
-    margin-bottom: 20px;
+    lineâ€”height: 1.8;
+    fontâ€”size: 16px;
+    fontâ€”weight: 300;
+    marginâ€”bottom: 20px;
   }
-  .stats-grid {
+  .statsâ€”grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    gridâ€”templateâ€”columns: 1fr 1fr;
     gap: 2px;
   }
-  .stat-num {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 48px;
-    font-weight: 900;
-    color: var(--lime);
-    line-height: 1;
-    margin-bottom: 8px;
+  .statâ€”num {
+    fontâ€”family: 'Orbitron', sansâ€”serif;
+    fontâ€”size: 48px;
+    fontâ€”weight: 900;
+    color: var(â€”â€”lime);
+    lineâ€”height: 1;
+    marginâ€”bottom: 8px;
   }
-  .stat-label {
-    font-family: 'Rajdhani', sans-serif;
-    font-size: 13px;
-    letter-spacing: 0.15em;
+  .statâ€”label {
+    fontâ€”family: 'Rajdhani', sansâ€”serif;
+    fontâ€”size: 13px;
+    letterâ€”spacing: 0.15em;
     color: rgba(255,255,255,0.5);
-    text-transform: uppercase;
+    textâ€”transform: uppercase;
   }
 
   /* â”€â”€ SERVICES â”€â”€ */
   #services {
     padding: 120px 60px;
-    background: var(--black);
+    background: var(â€”â€”black);
   }
-  .services-cards-section {
+  .servicesâ€”cardsâ€”section {
     padding: 0 60px 120px;
-    background: var(--black);
+    background: var(â€”â€”black);
   }
-  .services-intro {
-    text-align: center;
-    max-width: 600px;
+  .servicesâ€”intro {
+    textâ€”align: center;
+    maxâ€”width: 600px;
     margin: 0 auto 80px;
   }
-  .cards-grid {
+  .cardsâ€”grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gridâ€”templateâ€”columns: repeat(autoâ€”fill, minmax(280px, 1fr));
     gap: 24px;
   }
-  .flip-card {
+  .flipâ€”card {
     height: 320px;
     perspective: 1000px;
   }
-  .flip-inner {
+  .flipâ€”inner {
     position: relative;
     width: 100%;
     height: 100%;
-    transform-style: preserve-3d;
-    transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transformâ€”style: preserveâ€”3d;
+    transition: transform 0.7s cubicâ€”bezier(0.4, 0.2, 0.2, 1);
   }
-  .flip-card:hover .flip-inner { transform: rotateY(180deg); }
-  .flip-front, .flip-back {
+  .flipâ€”card:hover .flipâ€”inner { transform: rotateY(180deg); }
+  .flipâ€”front, .flipâ€”back {
     position: absolute;
     inset: 0;
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
+    backfaceâ€”visibility: hidden;
+    â€”webkitâ€”backfaceâ€”visibility: hidden;
     padding: 36px;
     border: 1px solid rgba(170,255,0,0.12);
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    flexâ€”direction: column;
+    justifyâ€”content: flexâ€”end;
   }
-  .flip-front {
-    background: var(--dark2);
-    transition: border-color 0.3s;
+  .flipâ€”front {
+    background: var(â€”â€”dark2);
+    transition: borderâ€”color 0.3s;
   }
-  .flip-card:hover .flip-front { border-color: rgba(170,255,0,0.3); }
-  .flip-back {
-    background: var(--lime);
+  .flipâ€”card:hover .flipâ€”front { borderâ€”color: rgba(170,255,0,0.3); }
+  .flipâ€”back {
+    background: var(â€”â€”lime);
     transform: rotateY(180deg);
-    justify-content: center;
-    align-items: flex-start;
+    justifyâ€”content: center;
+    alignâ€”items: flexâ€”start;
     gap: 16px;
   }
-  .service-icon {
-    font-size: 40px;
-    margin-bottom: 20px;
+  .serviceâ€”icon {
+    fontâ€”size: 40px;
+    marginâ€”bottom: 20px;
     display: block;
     transition: transform 0.3s;
   }
-  .flip-card:hover .service-icon { transform: scale(1.1); }
-  .service-name {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    margin-bottom: 8px;
+  .flipâ€”card:hover .serviceâ€”icon { transform: scale(1.1); }
+  .serviceâ€”name {
+    fontâ€”family: 'Orbitron', sansâ€”serif;
+    fontâ€”size: 18px;
+    fontâ€”weight: 700;
+    marginâ€”bottom: 8px;
     color: #fff;
   }
-  .service-tag {
-    font-family: 'Rajdhani', sans-serif;
-    font-size: 12px;
-    letter-spacing: 0.2em;
+  .serviceâ€”tag {
+    fontâ€”family: 'Rajdhani', sansâ€”serif;
+    fontâ€”size: 12px;
+    letterâ€”spacing: 0.2em;
     color: rgba(170,255,0,0.6);
-    text-transform: uppercase;
+    textâ€”transform: uppercase;
   }
-  .flip-back .service-name { color: var(--black); font-size: 20px; }
-  .flip-back p {
+  .flipâ€”back .serviceâ€”name { color: var(â€”â€”black); fontâ€”size: 20px; }
+  .flipâ€”back p {
     color: rgba(0,0,0,0.75);
-    font-size: 14px;
-    line-height: 1.7;
-    font-weight: 400;
+    fontâ€”size: 14px;
+    lineâ€”height: 1.7;
+    fontâ€”weight: 400;
   }
-  .flip-back .learn-more {
-    font-family: 'Rajdhani', sans-serif;
-    font-weight: 700;
-    font-size: 13px;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: var(--black);
-    text-decoration: none;
-    border-bottom: 2px solid var(--black);
-    padding-bottom: 2px;
-    display: inline-block;
-    margin-top: 8px;
+  .flipâ€”back .learnâ€”more {
+    fontâ€”family: 'Rajdhani', sansâ€”serif;
+    fontâ€”weight: 700;
+    fontâ€”size: 13px;
+    letterâ€”spacing: 0.2em;
+    textâ€”transform: uppercase;
+    color: var(â€”â€”black);
+    textâ€”decoration: none;
+    borderâ€”bottom: 2px solid var(â€”â€”black);
+    paddingâ€”bottom: 2px;
+    display: inlineâ€”block;
+    marginâ€”top: 8px;
   }
-  .card-number {
+  .cardâ€”number {
     position: absolute;
     top: 24px; right: 24px;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 12px;
+    fontâ€”family: 'Orbitron', sansâ€”serif;
+    fontâ€”size: 12px;
     color: rgba(170,255,0,0.25);
-    font-weight: 700;
+    fontâ€”weight: 700;
   }
-  .lime-bar {
+  .limeâ€”bar {
     position: absolute;
     bottom: 0; left: 0;
     height: 2px;
     width: 0%;
-    background: var(--lime);
+    background: var(â€”â€”lime);
     transition: width 0.4s ease;
   }
-  .flip-card:hover .lime-bar { width: 100%; }
+  .flipâ€”card:hover .limeâ€”bar { width: 100%; }
 
   /* â”€â”€ PROCESS â”€â”€ */
   #process {
     padding: 0 60px 120px;
-    background: var(--black);
+    background: var(â€”â€”black);
   }
-  #process-overview {
+  #processâ€”overview {
     width: 100%;
     padding: 120px 60px;
-    background: var(--black);
+    background: var(â€”â€”black);
     overflow: hidden;
   }
-  .process-timeline {
+  .processâ€”timeline {
     display: flex;
     gap: 0;
-    margin-top: 0;
+    marginâ€”top: 0;
     position: relative;
   }
-  .process-timeline::before {
+  .processâ€”timeline::before {
     content: '';
     position: absolute;
     top: 50px;
     left: 60px;
     right: 60px;
     height: 1px;
-    background: linear-gradient(90deg, transparent, var(--lime), transparent);
+    background: linearâ€”gradient(90deg, transparent, var(â€”â€”lime), transparent);
   }
-  .process-step {
+  .processâ€”step {
     flex: 1;
-    text-align: center;
+    textâ€”align: center;
     padding: 0 20px;
     position: relative;
   }
-  .step-num {
+  .stepâ€”num {
     width: 100px;
     height: 100px;
     border: 1px solid rgba(170,255,0,0.3);
-    border-radius: 50%;
+    borderâ€”radius: 50%;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    alignâ€”items: center;
+    justifyâ€”content: center;
     margin: 0 auto 24px;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 22px;
-    font-weight: 900;
-    color: var(--lime);
-    background: var(--dark);
+    fontâ€”family: 'Orbitron', sansâ€”serif;
+    fontâ€”size: 22px;
+    fontâ€”weight: 900;
+    color: var(â€”â€”lime);
+    background: var(â€”â€”dark);
     position: relative;
-    z-index: 1;
+    zâ€”index: 1;
     transition: all 0.4s;
   }
-  .process-step:hover .step-num {
-    background: var(--lime);
-    color: var(--black);
-    box-shadow: 0 0 40px var(--lime-glow);
-    border-color: var(--lime);
+  .processâ€”step:hover .stepâ€”num {
+    background: var(â€”â€”lime);
+    color: var(â€”â€”black);
+    boxâ€”shadow: 0 0 40px var(â€”â€”limeâ€”glow);
+    borderâ€”color: var(â€”â€”lime);
   }
-  .step-title {
-    font-family: 'Rajdhani', sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    margin-bottom: 12px;
+  .stepâ€”title {
+    fontâ€”family: 'Rajdhani', sansâ€”serif;
+    fontâ€”size: 16px;
+    fontâ€”weight: 700;
+    letterâ€”spacing: 0.1em;
+    textâ€”transform: uppercase;
+    marginâ€”bottom: 12px;
     color: rgba(255,255,255,0.9);
   }
-  .step-desc {
-    font-size: 13px;
+  .stepâ€”desc {
+    fontâ€”size: 13px;
     color: rgba(255,255,255,0.45);
-    line-height: 1.7;
+    lineâ€”height: 1.7;
   }
 
   /* â”€â”€ LOGO PHYSICS BOX â”€â”€ */
-  #logo-box-section {
+  #logoâ€”boxâ€”section {
     padding: 120px 60px;
-    background: var(--black);
+    background: var(â€”â€”black);
     overflow: hidden;
   }
-  .logo-box-intro { text-align: center; margin-bottom: 60px; }
-  #logo-canvas-wrap {
+  .logoâ€”boxâ€”intro { textâ€”align: center; marginâ€”bottom: 60px; }
+  #logoâ€”canvasâ€”wrap {
     position: relative;
     width: 100%;
-    max-width: 900px;
+    maxâ€”width: 900px;
     margin: 0 auto;
     height: 500px;
     border: 1px solid rgba(170,255,0,0.2);
@@ -667,86 +667,86 @@
     overflow: hidden;
     cursor: none;
   }
-  #logo-canvas { position: absolute; top: 0; left: 0; width: 100%; pointer-events: none; }
-  .canvas-corner {
+  #logoâ€”canvas { position: absolute; top: 0; left: 0; width: 100%; pointerâ€”events: none; }
+  .canvasâ€”corner {
     position: absolute;
     width: 20px; height: 20px;
-    border-color: var(--lime);
-    border-style: solid;
+    borderâ€”color: var(â€”â€”lime);
+    borderâ€”style: solid;
     opacity: 0.6;
   }
-  .canvas-corner.tl { top: 0; left: 0; border-width: 2px 0 0 2px; }
-  .canvas-corner.tr { top: 0; right: 0; border-width: 2px 2px 0 0; }
-  .canvas-corner.bl { bottom: 0; left: 0; border-width: 0 0 2px 2px; }
-  .canvas-corner.br { bottom: 0; right: 0; border-width: 0 2px 2px 0; }
+  .canvasâ€”corner.tl { top: 0; left: 0; borderâ€”width: 2px 0 0 2px; }
+  .canvasâ€”corner.tr { top: 0; right: 0; borderâ€”width: 2px 2px 0 0; }
+  .canvasâ€”corner.bl { bottom: 0; left: 0; borderâ€”width: 0 0 2px 2px; }
+  .canvasâ€”corner.br { bottom: 0; right: 0; borderâ€”width: 0 2px 2px 0; }
 
   /* â”€â”€ CTA â”€â”€ */
-  .btn-dark {
-    font-family: 'Rajdhani', sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
+  .btnâ€”dark {
+    fontâ€”family: 'Rajdhani', sansâ€”serif;
+    fontâ€”weight: 700;
+    fontâ€”size: 14px;
+    letterâ€”spacing: 0.15em;
+    textâ€”transform: uppercase;
     padding: 18px 48px;
-    background: var(--black);
-    color: var(--lime);
+    background: var(â€”â€”black);
+    color: var(â€”â€”lime);
     border: none;
     cursor: none;
     position: relative;
     overflow: hidden;
     transition: all 0.3s;
-    text-decoration: none;
-    display: inline-block;
+    textâ€”decoration: none;
+    display: inlineâ€”block;
   }
-  .btn-dark::before {
+  .btnâ€”dark::before {
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, transparent, rgba(192,192,192,0.15), transparent);
-    transform: translateX(-100%);
+    background: linearâ€”gradient(135deg, transparent, rgba(192,192,192,0.15), transparent);
+    transform: translateX(â€”100%);
     transition: transform 0.5s;
   }
-  .btn-dark:hover::before { transform: translateX(100%); }
-  .btn-dark:hover { box-shadow: inset 0 0 30px rgba(192,192,192,0.1); transform: translateY(-2px); }
+  .btnâ€”dark:hover::before { transform: translateX(100%); }
+  .btnâ€”dark:hover { boxâ€”shadow: inset 0 0 30px rgba(192,192,192,0.1); transform: translateY(â€”2px); }
 
   /* â”€â”€ FOOTER â”€â”€ */
   footer {
     padding: 60px;
-    background: var(--dark);
-    border-top: 1px solid rgba(170,255,0,0.1);
+    background: var(â€”â€”dark);
+    borderâ€”top: 1px solid rgba(170,255,0,0.1);
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    justifyâ€”content: spaceâ€”between;
+    alignâ€”items: center;
+    flexâ€”wrap: wrap;
     gap: 10px;
   }
-  .footer-logo {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 20px;
-    font-weight: 900;
-    color: var(--lime);
+  .footerâ€”logo {
+    fontâ€”family: 'Orbitron', sansâ€”serif;
+    fontâ€”size: 20px;
+    fontâ€”weight: 900;
+    color: var(â€”â€”lime);
     display: flex;
-    align-items: center;
+    alignâ€”items: center;
     gap: 10px;
-    text-decoration: none;
+    textâ€”decoration: none;
   }
-  .footer-logo img { width: 110px; height: 110px; object-fit: contain; }
-  .footer-links { display: flex; gap: 32px; flex-wrap: wrap; }
-  .footer-links a {
-    font-family: 'Rajdhani', sans-serif;
-    font-size: 13px;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
+  .footerâ€”logo img { width: 110px; height: 110px; objectâ€”fit: contain; }
+  .footerâ€”links { display: flex; gap: 32px; flexâ€”wrap: wrap; }
+  .footerâ€”links a {
+    fontâ€”family: 'Rajdhani', sansâ€”serif;
+    fontâ€”size: 13px;
+    letterâ€”spacing: 0.15em;
+    textâ€”transform: uppercase;
     color: rgba(255,255,255,0.4);
-    text-decoration: none;
+    textâ€”decoration: none;
     transition: color 0.3s;
   }
-  .footer-links a:hover { color: var(--lime); }
+  .footerâ€”links a:hover { color: var(â€”â€”lime); }
   footer small {
-    font-size: 12px;
+    fontâ€”size: 12px;
     color: rgba(255,255,255,0.25);
-    font-family: 'Rajdhani', sans-serif;
-    letter-spacing: 0.1em;
+    fontâ€”family: 'Rajdhani', sansâ€”serif;
+    letterâ€”spacing: 0.1em;
   }
 
   /* â”€â”€ SCROLL REVEAL â”€â”€ */
@@ -761,171 +761,171 @@
   }
 
   /* â”€â”€ RESPONSIVE â”€â”€ */
-  @media (max-width: 1100px) {
+  @media (maxâ€”width: 1100px) {
     #hero {
-      grid-template-columns: 1fr;
-      grid-template-rows: auto auto auto;
+      gridâ€”templateâ€”columns: 1fr;
+      gridâ€”templateâ€”rows: auto auto auto;
       padding: 110px 32px 60px;
-      text-align: center;
+      textâ€”align: center;
       gap: 40px;
     }
-    .hero-content { grid-column: 1; max-width: 100%; justify-self: center; padding-right: 0; }
-    .hero-content-right { grid-column: 1; max-width: 100%; justify-self: center; padding-left: 0; flex-direction: row; justify-content: center; flex-wrap: wrap; }
-    .mascot-wrap { grid-column: 1; }
-    .hero-eyebrow { justify-content: center; }
-    .hero-btns { justify-content: center; }
-    .hero-stat { border-left: none; border-top: 2px solid rgba(170,255,0,0.3); padding-left: 0; padding-top: 12px; text-align: center; min-width: 120px; }
+    .heroâ€”content { gridâ€”column: 1; maxâ€”width: 100%; justifyâ€”self: center; paddingâ€”right: 0; }
+    .heroâ€”contentâ€”right { gridâ€”column: 1; maxâ€”width: 100%; justifyâ€”self: center; paddingâ€”left: 0; flexâ€”direction: row; justifyâ€”content: center; flexâ€”wrap: wrap; }
+    .mascotâ€”wrap { gridâ€”column: 1; }
+    .heroâ€”eyebrow { justifyâ€”content: center; }
+    .heroâ€”btns { justifyâ€”content: center; }
+    .heroâ€”stat { borderâ€”left: none; borderâ€”top: 2px solid rgba(170,255,0,0.3); paddingâ€”left: 0; paddingâ€”top: 12px; textâ€”align: center; minâ€”width: 120px; }
   }
-  @media (max-width: 900px) {
+  @media (maxâ€”width: 900px) {
     nav { padding: 16px 24px; }
-    .nav-links { display: none; }
-    .mascot-wrap { width: 340px; height: 440px; }
-    .about-grid { grid-template-columns: 1fr; gap: 40px; }
-    #about, #services, #logo-box-section, #contact { padding: 80px 24px; }
-    #process-overview { padding: 80px 24px; }
+    .navâ€”links { display: none; }
+    .mascotâ€”wrap { width: 340px; height: 440px; }
+    .aboutâ€”grid { gridâ€”templateâ€”columns: 1fr; gap: 40px; }
+    #about, #services, #logoâ€”boxâ€”section, #contact { padding: 80px 24px; }
+    #processâ€”overview { padding: 80px 24px; }
     #process { padding: 0 24px 80px; }
-    .services-cards-section { padding: 0 24px 80px; }
-    footer { padding: 40px 24px; flex-direction: column; text-align: center; }
-    .process-timeline { flex-direction: column; }
-    .process-timeline::before { display: none; }
+    .servicesâ€”cardsâ€”section { padding: 0 24px 80px; }
+    footer { padding: 40px 24px; flexâ€”direction: column; textâ€”align: center; }
+    .processâ€”timeline { flexâ€”direction: column; }
+    .processâ€”timeline::before { display: none; }
   }
 </style>
 </head>
 <body>
 
-<!-- Custom Cursor -->
+<!â€”â€” Custom Cursor â€”â€”>
 <div id="cursor"></div>
-<div id="cursor-trail"></div>
+<div id="cursorâ€”trail"></div>
 
-<!-- NAV -->
+<!â€”â€” NAV â€”â€”>
 <nav>
-  <a class="nav-logo" href="#hero">
-    <img src="Valour-logo.png" alt="Valour Logo">
+  <a class="navâ€”logo" href="#hero">
+    <img src="Valourâ€”logo.png" alt="Valour Logo">
     Digital Agency
   </a>
-  <ul class="nav-links">
+  <ul class="navâ€”links">
     <li><a href="#about">About</a></li>
     <li><a href="#services">Services</a></li>
-    <li><a href="#process-overview">Process</a></li>
+    <li><a href="#processâ€”overview">Process</a></li>
   </ul>
-  <a href="#contact-options" class="nav-cta">Contact Us</a>
+  <a href="#contactâ€”options" class="navâ€”cta">Contact Us</a>
 </nav>
 
-<!-- HERO -->
+<!â€”â€” HERO â€”â€”>
 <section id="hero">
-  <div class="hero-grid"></div>
+  <div class="heroâ€”grid"></div>
 
-  <!-- LEFT: headline & CTA -->
-  <div class="hero-content reveal">
-    <div class="hero-eyebrow">Digital Marketing Reimagined</div>
+  <!â€”â€” LEFT: headline & CTA â€”â€”>
+  <div class="heroâ€”content reveal">
+    <div class="heroâ€”eyebrow">Digital Marketing Reimagined</div>
     <h1>
       We Build
-      <span class="line-accent">Bold Brands</span>
+      <span class="lineâ€”accent">Bold Brands</span>
       That Win.
     </h1>
-    <p class="hero-sub">We help businesses scale with data-driven digital marketing strategies that deliver measurable results.</p>
-    <div class="hero-btns">
-      <a href="#services" class="btn-primary">Explore Services</a>
-      <a href="#contact-options" class="btn-secondary">Let's Talk</a>
+    <p class="heroâ€”sub">We help businesses scale with dataâ€”driven digital marketing strategies that deliver measurable results.</p>
+    <div class="heroâ€”btns">
+      <a href="#services" class="btnâ€”primary">Explore Services</a>
+      <a href="#contactâ€”options" class="btnâ€”secondary">Let's Talk</a>
     </div>
   </div>
 
-  <!-- CENTRE: mascot -->
-      <div class="mascot-wrap" id="mascot">
-        <div class="mascot-ring"></div>
-        <div class="mascot-ring"></div>
-        <div class="mascot-ring"></div>
-        <img class="mascot-img white" src="valour-mascot-white.png" alt="Valour cat mascot in a white hoodie" />
-        <img class="mascot-img green" id="mascot-green" src="valour-mascot-green-aligned.png" alt="Valour cat mascot in green style" />
-        <div class="mascot-fade"></div>
-        <p class="mascot-label" id="mascot-label">Move cursor over me</p>
+  <!â€”â€” CENTRE: mascot â€”â€”>
+      <div class="mascotâ€”wrap" id="mascot">
+        <div class="mascotâ€”ring"></div>
+        <div class="mascotâ€”ring"></div>
+        <div class="mascotâ€”ring"></div>
+        <img class="mascotâ€”img white" src="valourâ€”mascotâ€”white.png" alt="Valour cat mascot in a white hoodie" />
+        <img class="mascotâ€”img green" id="mascotâ€”green" src="valourâ€”mascotâ€”greenâ€”aligned.png" alt="Valour cat mascot in green style" />
+        <div class="mascotâ€”fade"></div>
+        <p class="mascotâ€”label" id="mascotâ€”label">Move cursor over me</p>
       </div>
 
-  <!-- RIGHT: quick stats -->
-  <div class="hero-content-right reveal">
-    <div class="hero-stat">
-      <div class="hero-stat-num">10+</div>
-      <div class="hero-stat-label">Brands Elevated</div>
+  <!â€”â€” RIGHT: quick stats â€”â€”>
+  <div class="heroâ€”contentâ€”right reveal">
+    <div class="heroâ€”stat">
+      <div class="heroâ€”statâ€”num">10+</div>
+      <div class="heroâ€”statâ€”label">Brands Elevated</div>
     </div>
-    <div class="hero-stat">
-      <div class="hero-stat-num">100%</div>
-      <div class="hero-stat-label">Client Retention</div>
+    <div class="heroâ€”stat">
+      <div class="heroâ€”statâ€”num">100%</div>
+      <div class="heroâ€”statâ€”label">Client Retention</div>
     </div>
-    <div style="margin-top:16px;">
-      <a href="#about" class="btn-secondary" style="font-size:13px; padding:12px 24px;">Our Story â†’</a>
+    <div style="marginâ€”top:16px;">
+      <a href="#about" class="btnâ€”secondary" style="fontâ€”size:13px; padding:12px 24px;">Our Story â†’</a>
     </div>
   </div>
 </section>
 
-<!-- MARQUEE -->
-<div class="marquee-section">
-  <div class="marquee-track" id="marquee">
-    <span class="marquee-item"><span class="marquee-dot"></span>Brand Strategy</span>
-    <span class="marquee-item"><span class="marquee-dot"></span>Digital Marketing</span>
-    <span class="marquee-item"><span class="marquee-dot"></span>SEO</span>
-    <span class="marquee-item"><span class="marquee-dot"></span>Social Media</span>
-    <span class="marquee-item"><span class="marquee-dot"></span>Content Creation</span>
-    <span class="marquee-item"><span class="marquee-dot"></span>Graphic Design</span>
-    <span class="marquee-item"><span class="marquee-dot"></span>Performance Ads</span>
-    <span class="marquee-item"><span class="marquee-dot"></span>Web Design</span>
-    <span class="marquee-item"><span class="marquee-dot"></span>Brand Strategy</span>
-    <span class="marquee-item"><span class="marquee-dot"></span>Digital Marketing</span>
-    <span class="marquee-item"><span class="marquee-dot"></span>SEO </span>
-    <span class="marquee-item"><span class="marquee-dot"></span>Social Media</span>
-    <span class="marquee-item"><span class="marquee-dot"></span>Content Creation</span>
-    <span class="marquee-item"><span class="marquee-dot"></span>Graphic Design</span>
-    <span class="marquee-item"><span class="marquee-dot"></span>Performance Ads</span>
-    <span class="marquee-item"><span class="marquee-dot"></span>Web Design</span>
+<!â€”â€” MARQUEE â€”â€”>
+<div class="marqueeâ€”section">
+  <div class="marqueeâ€”track" id="marquee">
+    <span class="marqueeâ€”item"><span class="marqueeâ€”dot"></span>Brand Strategy</span>
+    <span class="marqueeâ€”item"><span class="marqueeâ€”dot"></span>Digital Marketing</span>
+    <span class="marqueeâ€”item"><span class="marqueeâ€”dot"></span>SEO</span>
+    <span class="marqueeâ€”item"><span class="marqueeâ€”dot"></span>Social Media</span>
+    <span class="marqueeâ€”item"><span class="marqueeâ€”dot"></span>Content Creation</span>
+    <span class="marqueeâ€”item"><span class="marqueeâ€”dot"></span>Graphic Design</span>
+    <span class="marqueeâ€”item"><span class="marqueeâ€”dot"></span>Performance Ads</span>
+    <span class="marqueeâ€”item"><span class="marqueeâ€”dot"></span>Web Design</span>
+    <span class="marqueeâ€”item"><span class="marqueeâ€”dot"></span>Brand Strategy</span>
+    <span class="marqueeâ€”item"><span class="marqueeâ€”dot"></span>Digital Marketing</span>
+    <span class="marqueeâ€”item"><span class="marqueeâ€”dot"></span>SEO </span>
+    <span class="marqueeâ€”item"><span class="marqueeâ€”dot"></span>Social Media</span>
+    <span class="marqueeâ€”item"><span class="marqueeâ€”dot"></span>Content Creation</span>
+    <span class="marqueeâ€”item"><span class="marqueeâ€”dot"></span>Graphic Design</span>
+    <span class="marqueeâ€”item"><span class="marqueeâ€”dot"></span>Performance Ads</span>
+    <span class="marqueeâ€”item"><span class="marqueeâ€”dot"></span>Web Design</span>
   </div>
 </div>
 
-<!-- ABOUT SECTION -->
+<!â€”â€” ABOUT SECTION â€”â€”>
 <section id="about">
-  <div class="about-container">
+  <div class="aboutâ€”container">
 
-    <!-- LEFT SIDE TEXT -->
-    <div class="about-text">
-      <div class="section-label">Who We Are</div>
+    <!â€”â€” LEFT SIDE TEXT â€”â€”>
+    <div class="aboutâ€”text">
+      <div class="sectionâ€”label">Who We Are</div>
 
-      <h1 class="section-title">
+      <h1 class="sectionâ€”title">
         Engineered for <br>
         <span>Impact.</span>
       </h1>
 
       <p>
-        Valour was founded with a clear purpose - to help businesses grow in a
-        fast-changing digital world through strategy, creativity, and
-        performance-driven marketing.
+        Valour was founded with a clear purpose â€” to help businesses grow in a
+        fastâ€”changing digital world through strategy, creativity, and
+        performanceâ€”driven marketing.
       </p>
 
       <p>
         We believe that every business, regardless of size, deserves access to
         smart, effective marketing that delivers real value. At Valour, we
         focus on understanding each client's unique goals and crafting
-        solutions that are tailored, scalable, and result-oriented.
+        solutions that are tailored, scalable, and resultâ€”oriented.
       </p>
 
     </div>
 
-    <!-- RIGHT SIDE -->
-    <div class="about-right">
+    <!â€”â€” RIGHT SIDE â€”â€”>
+    <div class="aboutâ€”right">
 
-      <!-- CAT IMAGE -->
-      <div class="cat-image">
-        <img src="valour-cat-chair.png" alt="Valour Cat">
+      <!â€”â€” CAT IMAGE â€”â€”>
+      <div class="catâ€”image">
+        <img src="valourâ€”catâ€”chair.png" alt="Valour Cat">
       </div>
 
-      <!-- STATS -->
-      <div class="stats-grid">
+      <!â€”â€” STATS â€”â€”>
+      <div class="statsâ€”grid">
 
-        <div class="stat-card">
-          <div class="stat-num">100%</div>
-          <div class="stat-label">Dedicated Team</div>
+        <div class="statâ€”card">
+          <div class="statâ€”num">100%</div>
+          <div class="statâ€”label">Dedicated Team</div>
         </div>
 
-        <div class="stat-card">
-          <div class="stat-num">7+</div>
-          <div class="stat-label">Creative Minds</div>
+        <div class="statâ€”card">
+          <div class="statâ€”num">7+</div>
+          <div class="statâ€”label">Creative Minds</div>
         </div>
 
       </div>
@@ -938,214 +938,214 @@
   *{
     margin:0;
     padding:0;
-    box-sizing:border-box;
+    boxâ€”sizing:borderâ€”box;
   }
 
   body{
     background:#000;
-    font-family:Arial, sans-serif;
+    fontâ€”family:Arial, sansâ€”serif;
     color:white;
   }
 
   #about{
     width:100%;
-    min-height:100vh;
+    minâ€”height:100vh;
     padding:80px 8%;
     background:#000;
     overflow:hidden;
   }
 
-  .about-container{
+  .aboutâ€”container{
     display:flex;
-    justify-content:space-between;
-    align-items:center;
+    justifyâ€”content:spaceâ€”between;
+    alignâ€”items:center;
     gap:60px;
-    flex-wrap:wrap;
+    flexâ€”wrap:wrap;
   }
 
   /* LEFT TEXT */
-  .about-text{
+  .aboutâ€”text{
     flex:1;
-    min-width:320px;
+    minâ€”width:320px;
   }
 
-  .section-label{
+  .sectionâ€”label{
     color:#aaff00;
-    font-size:14px;
-    letter-spacing:3px;
-    text-transform:uppercase;
-    margin-bottom:20px;
+    fontâ€”size:14px;
+    letterâ€”spacing:3px;
+    textâ€”transform:uppercase;
+    marginâ€”bottom:20px;
   }
 
-  .section-title{
-    font-size:80px;
-    line-height:0.95;
-    font-weight:900;
-    margin-bottom:35px;
+  .sectionâ€”title{
+    fontâ€”size:80px;
+    lineâ€”height:0.95;
+    fontâ€”weight:900;
+    marginâ€”bottom:35px;
     color:#fff;
   }
 
-  .section-title span{
+  .sectionâ€”title span{
     color:#b7ff00;
   }
 
-  .about-text p{
+  .aboutâ€”text p{
     color:#bdbdbd;
-    font-size:20px;
-    line-height:1.9;
-    margin-bottom:25px;
-    max-width:700px;
+    fontâ€”size:20px;
+    lineâ€”height:1.9;
+    marginâ€”bottom:25px;
+    maxâ€”width:700px;
   }
 
-  .btn-primary{
-    display:inline-block;
-    margin-top:15px;
+  .btnâ€”primary{
+    display:inlineâ€”block;
+    marginâ€”top:15px;
     padding:18px 40px;
     background:#b7ff00;
     color:#000;
-    text-decoration:none;
-    font-weight:700;
-    letter-spacing:2px;
-    text-transform:uppercase;
+    textâ€”decoration:none;
+    fontâ€”weight:700;
+    letterâ€”spacing:2px;
+    textâ€”transform:uppercase;
     transition:0.3s;
   }
 
-  .btn-primary:hover{
-    transform:translateY(-3px);
+  .btnâ€”primary:hover{
+    transform:translateY(â€”3px);
   }
 
   /* RIGHT SIDE */
-  .about-right{
+  .aboutâ€”right{
     flex:1;
-    min-width:320px;
+    minâ€”width:320px;
     display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
+    flexâ€”direction:column;
+    alignâ€”items:center;
+    justifyâ€”content:center;
   }
 
   /* CAT */
-.cat-image img{
+.catâ€”image img{
     width:100%;
-    max-width:420px; /* reduce from 520px */
-    object-fit:contain;
-    filter:drop-shadow(0 0 25px rgba(183,255,0,0.2));
+    maxâ€”width:420px; /* reduce from 520px */
+    objectâ€”fit:contain;
+    filter:dropâ€”shadow(0 0 25px rgba(183,255,0,0.2));
 }
- .cat-image img{
+ .catâ€”image img{
     width:80%;
-    max-width:380px;
-    object-fit:contain;
+    maxâ€”width:380px;
+    objectâ€”fit:contain;
 }
 
   /* STATS */
-  .stats-grid{
+  .statsâ€”grid{
     width:100%;
     display:grid;
-    grid-template-columns:1fr 1fr;
+    gridâ€”templateâ€”columns:1fr 1fr;
     gap:0;
   }
 
-  .stat-card{
+  .statâ€”card{
     border:1px solid rgba(183,255,0,0.25);
     padding:45px 35px;
     background:#050505;
     transition:0.3s;
   }
 
-  .stat-card:hover{
+  .statâ€”card:hover{
     background:#0b0b0b;
-    border-color:#b7ff00;
+    borderâ€”color:#b7ff00;
   }
 
-  .stat-num{
+  .statâ€”num{
     color:#b7ff00;
-    font-size:72px;
-    font-weight:900;
-    margin-bottom:12px;
+    fontâ€”size:72px;
+    fontâ€”weight:900;
+    marginâ€”bottom:12px;
   }
 
-  .stat-label{
+  .statâ€”label{
     color:#8e8e8e;
-    text-transform:uppercase;
-    letter-spacing:4px;
-    font-size:13px;
+    textâ€”transform:uppercase;
+    letterâ€”spacing:4px;
+    fontâ€”size:13px;
   }
 
   /* RESPONSIVE */
-  @media(max-width:1100px){
+  @media(maxâ€”width:1100px){
 
-    .about-container{
-      flex-direction:column;
+    .aboutâ€”container{
+      flexâ€”direction:column;
     }
 
-    .section-title{
-      font-size:58px;
+    .sectionâ€”title{
+      fontâ€”size:58px;
     }
 
-    .about-text p{
-      font-size:18px;
+    .aboutâ€”text p{
+      fontâ€”size:18px;
     }
 
-    .cat-image img{
-      max-width:420px;
+    .catâ€”image img{
+      maxâ€”width:420px;
     }
   }
 
-  @media(max-width:700px){
+  @media(maxâ€”width:700px){
 
-    .section-title{
-      font-size:44px;
+    .sectionâ€”title{
+      fontâ€”size:44px;
     }
 
-    .stats-grid{
-      grid-template-columns:1fr;
+    .statsâ€”grid{
+      gridâ€”templateâ€”columns:1fr;
     }
 
-    .stat-num{
-      font-size:56px;
+    .statâ€”num{
+      fontâ€”size:56px;
     }
 
-    .cat-image img{
-      max-width:320px;
+    .catâ€”image img{
+      maxâ€”width:320px;
     }
   }
 </style>
 
-<!-- Services SECTION -->
+<!â€”â€” Services SECTION â€”â€”>
 <section id="services">
-  <div class="about-container">
+  <div class="aboutâ€”container">
 
-    <!-- LEFT SIDE TEXT -->
-    <div class="about-text">
-      <div class="section-label">What We Do</div>
+    <!â€”â€” LEFT SIDE TEXT â€”â€”>
+    <div class="aboutâ€”text">
+      <div class="sectionâ€”label">What We Do</div>
 
-      <h1 class="section-title">
+      <h1 class="sectionâ€”title">
         Services That <br>
         <span>Deliver.</span>
       </h1>
 
-      <p>We deliver creative and growth-focused services designed to elevate your brand - from Graphic Design that builds bold visual identities and brand systems, Content Writing that creates SEO-optimized blogs, scripts, and ad copy, and Social Media management that drives engagement through strategy, creatives, and content calendars, to SEO services including keyword research, technical optimization, and search campaigns that boost visibility. We also specialize in Video Editing for reels, brand films, and ad creatives, Performance Ads optimized for conversions and scalable growth, Web Design focused on high-converting and visually stunning websites, and Photography that captures powerful stories, emotions, and moments through creative visuals.</p>
+      <p>We deliver creative and growthâ€”focused services designed to elevate your brand â€” from Graphic Design that builds bold visual identities and brand systems, Content Writing that creates SEOâ€”optimized blogs, scripts, and ad copy, and Social Media management that drives engagement through strategy, creatives, and content calendars, to SEO services including keyword research, technical optimization, and search campaigns that boost visibility. We also specialize in Video Editing for reels, brand films, and ad creatives, Performance Ads optimized for conversions and scalable growth, Web Design focused on highâ€”converting and visually stunning websites, and Photography that captures powerful stories, emotions, and moments through creative visuals.</p>
     </div>
 
-    <!-- RIGHT SIDE -->
-    <div class="about-right">
+    <!â€”â€” RIGHT SIDE â€”â€”>
+    <div class="aboutâ€”right">
 
-      <!-- CAT IMAGE -->
-      <div class="cat-image">
-        <img src="valour-cat-skate.png" alt="Valour Cat">
+      <!â€”â€” CAT IMAGE â€”â€”>
+      <div class="catâ€”image">
+        <img src="valourâ€”catâ€”skate.png" alt="Valour Cat">
       </div>
 
-      <!-- STATS -->
-      <div class="stats-grid">
+      <!â€”â€” STATS â€”â€”>
+      <div class="statsâ€”grid">
 
-        <div class="stat-card">
-          <div class="stat-num">200+</div>
-          <div class="stat-label">Designs delivered</div>
+        <div class="statâ€”card">
+          <div class="statâ€”num">200+</div>
+          <div class="statâ€”label">Designs delivered</div>
         </div>
 
-        <div class="stat-card">
-          <div class="stat-num">300+</div>
-          <div class="stat-label">leads generated</div>
+        <div class="statâ€”card">
+          <div class="statâ€”num">300+</div>
+          <div class="statâ€”label">leads generated</div>
         </div>
 
       </div>
@@ -1158,316 +1158,316 @@
   *{
     margin:0;
     padding:0;
-    box-sizing:border-box;
+    boxâ€”sizing:borderâ€”box;
   }
 
   body{
     background:#000;
-    font-family:Arial, sans-serif;
+    fontâ€”family:Arial, sansâ€”serif;
     color:white;
   }
 
   #about{
     width:100%;
-    min-height:100vh;
+    minâ€”height:100vh;
     padding:80px 8%;
     background:#000;
     overflow:hidden;
   }
 
-  .about-container{
+  .aboutâ€”container{
     display:flex;
-    justify-content:space-between;
-    align-items:center;
+    justifyâ€”content:spaceâ€”between;
+    alignâ€”items:center;
     gap:60px;
-    flex-wrap:wrap;
+    flexâ€”wrap:wrap;
   }
 
   /* LEFT TEXT */
-  .about-text{
+  .aboutâ€”text{
     flex:1;
-    min-width:320px;
+    minâ€”width:320px;
   }
 
-  .section-label{
+  .sectionâ€”label{
     color:#aaff00;
-    font-size:14px;
-    letter-spacing:3px;
-    text-transform:uppercase;
-    margin-bottom:20px;
+    fontâ€”size:14px;
+    letterâ€”spacing:3px;
+    textâ€”transform:uppercase;
+    marginâ€”bottom:20px;
   }
 
-  .section-title{
-    font-size:80px;
-    line-height:0.95;
-    font-weight:900;
-    margin-bottom:35px;
+  .sectionâ€”title{
+    fontâ€”size:80px;
+    lineâ€”height:0.95;
+    fontâ€”weight:900;
+    marginâ€”bottom:35px;
     color:#fff;
   }
 
-  .section-title span{
+  .sectionâ€”title span{
     color:#b7ff00;
   }
 
-  .about-text p{
+  .aboutâ€”text p{
     color:#bdbdbd;
-    font-size:20px;
-    line-height:1.9;
-    margin-bottom:25px;
-    max-width:700px;
+    fontâ€”size:20px;
+    lineâ€”height:1.9;
+    marginâ€”bottom:25px;
+    maxâ€”width:700px;
   }
 
-  .btn-primary{
-    display:inline-block;
-    margin-top:15px;
+  .btnâ€”primary{
+    display:inlineâ€”block;
+    marginâ€”top:15px;
     padding:18px 40px;
     background:#b7ff00;
     color:#000;
-    text-decoration:none;
-    font-weight:700;
-    letter-spacing:2px;
-    text-transform:uppercase;
+    textâ€”decoration:none;
+    fontâ€”weight:700;
+    letterâ€”spacing:2px;
+    textâ€”transform:uppercase;
     transition:0.3s;
   }
 
-  .btn-primary:hover{
-    transform:translateY(-3px);
+  .btnâ€”primary:hover{
+    transform:translateY(â€”3px);
   }
 
   /* RIGHT SIDE */
-  .about-right{
+  .aboutâ€”right{
     flex:1;
-    min-width:320px;
+    minâ€”width:320px;
     display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
+    flexâ€”direction:column;
+    alignâ€”items:center;
+    justifyâ€”content:center;
   }
 
   /* CAT */
-.cat-image img{
+.catâ€”image img{
     width:100%;
-    max-width:420px; /* reduce from 520px */
-    object-fit:contain;
-    filter:drop-shadow(0 0 25px rgba(183,255,0,0.2));
+    maxâ€”width:420px; /* reduce from 520px */
+    objectâ€”fit:contain;
+    filter:dropâ€”shadow(0 0 25px rgba(183,255,0,0.2));
 }
- .cat-image img{
+ .catâ€”image img{
     width:80%;
-    max-width:380px;
-    object-fit:contain;
+    maxâ€”width:380px;
+    objectâ€”fit:contain;
 }
 
   /* STATS */
-  .stats-grid{
+  .statsâ€”grid{
     width:100%;
     display:grid;
-    grid-template-columns:1fr 1fr;
+    gridâ€”templateâ€”columns:1fr 1fr;
     gap:0;
   }
 
-  .stat-card{
+  .statâ€”card{
     border:1px solid rgba(183,255,0,0.25);
     padding:45px 35px;
     background:#050505;
     transition:0.3s;
   }
 
-  .stat-card:hover{
+  .statâ€”card:hover{
     background:#0b0b0b;
-    border-color:#b7ff00;
+    borderâ€”color:#b7ff00;
   }
 
-  .stat-num{
+  .statâ€”num{
     color:#b7ff00;
-    font-size:72px;
-    font-weight:900;
-    margin-bottom:12px;
+    fontâ€”size:72px;
+    fontâ€”weight:900;
+    marginâ€”bottom:12px;
   }
 
-  .stat-label{
+  .statâ€”label{
     color:#8e8e8e;
-    text-transform:uppercase;
-    letter-spacing:4px;
-    font-size:13px;
+    textâ€”transform:uppercase;
+    letterâ€”spacing:4px;
+    fontâ€”size:13px;
   }
 
   /* RESPONSIVE */
-  @media(max-width:1100px){
+  @media(maxâ€”width:1100px){
 
-    .about-container{
-      flex-direction:column;
+    .aboutâ€”container{
+      flexâ€”direction:column;
     }
 
-    .section-title{
-      font-size:58px;
+    .sectionâ€”title{
+      fontâ€”size:58px;
     }
 
-    .about-text p{
-      font-size:18px;
+    .aboutâ€”text p{
+      fontâ€”size:18px;
     }
 
-    .cat-image img{
-      max-width:420px;
+    .catâ€”image img{
+      maxâ€”width:420px;
     }
   }
 
-  @media(max-width:700px){
+  @media(maxâ€”width:700px){
 
-    .section-title{
-      font-size:44px;
+    .sectionâ€”title{
+      fontâ€”size:44px;
     }
 
-    .stats-grid{
-      grid-template-columns:1fr;
+    .statsâ€”grid{
+      gridâ€”templateâ€”columns:1fr;
     }
 
-    .stat-num{
-      font-size:56px;
+    .statâ€”num{
+      fontâ€”size:56px;
     }
 
-    .cat-image img{
-      max-width:320px;
+    .catâ€”image img{
+      maxâ€”width:320px;
     }
   }
 </style>
 
 
-<!-- SERVICES -->
-<section class="services-cards-section" aria-label="Service categories">
-  <div class="cards-grid reveal">
+<!â€”â€” SERVICES â€”â€”>
+<section class="servicesâ€”cardsâ€”section" ariaâ€”label="Service categories">
+  <div class="cardsâ€”grid reveal">
 
-    <div class="flip-card">
-      <div class="flip-inner">
-        <div class="flip-front">
-          <div class="lime-bar"></div>
-          <span class="card-number">01</span>
-          <span class="service-icon" aria-hidden="true"><i class="fa-solid fa-palette"></i></span>
-          <div class="service-name">Graphic Design</div>
-          <div class="service-tag">Visual Identity</div>
+    <div class="flipâ€”card">
+      <div class="flipâ€”inner">
+        <div class="flipâ€”front">
+          <div class="limeâ€”bar"></div>
+          <span class="cardâ€”number">01</span>
+          <span class="serviceâ€”icon" ariaâ€”hidden="true"><i class="faâ€”solid faâ€”palette"></i></span>
+          <div class="serviceâ€”name">Graphic Design</div>
+          <div class="serviceâ€”tag">Visual Identity</div>
         </div>
-        <div class="flip-back">
-          <div class="service-name">Graphic Design</div>
-          <p>From logos to full brand systems - we create visuals that stop thumbs and start conversations. Every pixel placed with purpose.</p>
-          <a href="#contact-options" class="learn-more">Get Started â†’</a>
+        <div class="flipâ€”back">
+          <div class="serviceâ€”name">Graphic Design</div>
+          <p>From logos to full brand systems â€” we create visuals that stop thumbs and start conversations. Every pixel placed with purpose.</p>
+          <a href="#contactâ€”options" class="learnâ€”more">Get Started â†’</a>
         </div>
       </div>
     </div>
 
-    <div class="flip-card">
-      <div class="flip-inner">
-        <div class="flip-front">
-          <div class="lime-bar"></div>
-          <span class="card-number">02</span>
-          <span class="service-icon" aria-hidden="true"><i class="fa-solid fa-pen-nib"></i></span>
-          <div class="service-name">Content Writing</div>
-          <div class="service-tag">Storytelling</div>
+    <div class="flipâ€”card">
+      <div class="flipâ€”inner">
+        <div class="flipâ€”front">
+          <div class="limeâ€”bar"></div>
+          <span class="cardâ€”number">02</span>
+          <span class="serviceâ€”icon" ariaâ€”hidden="true"><i class="faâ€”solid faâ€”penâ€”nib"></i></span>
+          <div class="serviceâ€”name">Content Writing</div>
+          <div class="serviceâ€”tag">Storytelling</div>
         </div>
-        <div class="flip-back">
-          <div class="service-name">Content Writing</div>
-          <p>SEO-optimized copy, blogs, scripts, and ad copy that resonates deeply with your audience and drives measurable action.</p>
-          <a href="#contact-options" class="learn-more">Get Started â†’</a>
+        <div class="flipâ€”back">
+          <div class="serviceâ€”name">Content Writing</div>
+          <p>SEOâ€”optimized copy, blogs, scripts, and ad copy that resonates deeply with your audience and drives measurable action.</p>
+          <a href="#contactâ€”options" class="learnâ€”more">Get Started â†’</a>
         </div>
       </div>
     </div>
 
-    <div class="flip-card">
-      <div class="flip-inner">
-        <div class="flip-front">
-          <div class="lime-bar"></div>
-          <span class="card-number">03</span>
-          <span class="service-icon" aria-hidden="true"><i class="fa-solid fa-share-nodes"></i></span>
-          <div class="service-name">Social Media</div>
-          <div class="service-tag">Community Growth</div>
+    <div class="flipâ€”card">
+      <div class="flipâ€”inner">
+        <div class="flipâ€”front">
+          <div class="limeâ€”bar"></div>
+          <span class="cardâ€”number">03</span>
+          <span class="serviceâ€”icon" ariaâ€”hidden="true"><i class="faâ€”solid faâ€”shareâ€”nodes"></i></span>
+          <div class="serviceâ€”name">Social Media</div>
+          <div class="serviceâ€”tag">Community Growth</div>
         </div>
-        <div class="flip-back">
-          <div class="service-name">Social Media</div>
+        <div class="flipâ€”back">
+          <div class="serviceâ€”name">Social Media</div>
           <p>Strategy, content calendars, creative assets, and full account management across Instagram, LinkedIn, X, and more.</p>
-          <a href="#contact-options" class="learn-more">Get Started â†’</a>
+          <a href="#contactâ€”options" class="learnâ€”more">Get Started â†’</a>
         </div>
       </div>
     </div>
 
-    <div class="flip-card">
-      <div class="flip-inner">
-        <div class="flip-front">
-          <div class="lime-bar"></div>
-          <span class="card-number">04</span>
-          <span class="service-icon" aria-hidden="true"><i class="fa-solid fa-magnifying-glass"></i></span>
-          <div class="service-name">SEO </div>
-          <div class="service-tag">Search Domination</div>
+    <div class="flipâ€”card">
+      <div class="flipâ€”inner">
+        <div class="flipâ€”front">
+          <div class="limeâ€”bar"></div>
+          <span class="cardâ€”number">04</span>
+          <span class="serviceâ€”icon" ariaâ€”hidden="true"><i class="faâ€”solid faâ€”magnifyingâ€”glass"></i></span>
+          <div class="serviceâ€”name">SEO </div>
+          <div class="serviceâ€”tag">Search Domination</div>
         </div>
-        <div class="flip-back">
-          <div class="service-name">SEO </div>
-          <p>Technical SEO, keyword research, link building, and paid search campaigns that put your brand at the top - and keep it there.</p>
-          <a href="#contact-options" class="learn-more">Get Started â†’</a>
+        <div class="flipâ€”back">
+          <div class="serviceâ€”name">SEO </div>
+          <p>Technical SEO, keyword research, link building, and paid search campaigns that put your brand at the top â€” and keep it there.</p>
+          <a href="#contactâ€”options" class="learnâ€”more">Get Started â†’</a>
         </div>
       </div>
     </div>
 
-    <div class="flip-card">
-      <div class="flip-inner">
-        <div class="flip-front">
-          <div class="lime-bar"></div>
-          <span class="card-number">05</span>
-          <span class="service-icon" aria-hidden="true"><i class="fa-solid fa-clapperboard"></i></span>
-          <div class="service-name">Video Editing</div>
-          <div class="service-tag">Motion & Film</div>
+    <div class="flipâ€”card">
+      <div class="flipâ€”inner">
+        <div class="flipâ€”front">
+          <div class="limeâ€”bar"></div>
+          <span class="cardâ€”number">05</span>
+          <span class="serviceâ€”icon" ariaâ€”hidden="true"><i class="faâ€”solid faâ€”clapperboard"></i></span>
+          <div class="serviceâ€”name">Video Editing</div>
+          <div class="serviceâ€”tag">Motion & Film</div>
         </div>
-        <div class="flip-back">
-          <div class="service-name">Video Editing</div>
+        <div class="flipâ€”back">
+          <div class="serviceâ€”name">Video Editing</div>
           <p>Brand films, reels, explainer videos, and ad creatives crafted to stop the scroll and tell your story in seconds.</p>
-          <a href="#contact-options" class="learn-more">Get Started â†’</a>
+          <a href="#contactâ€”options" class="learnâ€”more">Get Started â†’</a>
         </div>
       </div>
     </div>
 
-    <div class="flip-card">
-      <div class="flip-inner">
-        <div class="flip-front">
-          <div class="lime-bar"></div>
-          <span class="card-number">06</span>
-          <span class="service-icon" aria-hidden="true"><i class="fa-solid fa-chart-line"></i></span>
-          <div class="service-name">Performance Ads</div>
-          <div class="service-tag">Paid Media</div>
+    <div class="flipâ€”card">
+      <div class="flipâ€”inner">
+        <div class="flipâ€”front">
+          <div class="limeâ€”bar"></div>
+          <span class="cardâ€”number">06</span>
+          <span class="serviceâ€”icon" ariaâ€”hidden="true"><i class="faâ€”solid faâ€”chartâ€”line"></i></span>
+          <div class="serviceâ€”name">Performance Ads</div>
+          <div class="serviceâ€”tag">Paid Media</div>
         </div>
-        <div class="flip-back">
-          <div class="service-name">Performance Ads</div>
-          <p>Data-driven Meta, Google, and programmatic ad campaigns optimized for conversion, ROAS, and scalable growth.</p>
-          <a href="#contact-options" class="learn-more">Get Started â†’</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="flip-card">
-      <div class="flip-inner">
-        <div class="flip-front">
-          <div class="lime-bar"></div>
-          <span class="card-number">07</span>
-          <span class="service-icon" aria-hidden="true"><i class="fa-solid fa-globe"></i></span>
-          <div class="service-name">Web Design</div>
-          <div class="service-tag">Digital Presence</div>
-        </div>
-        <div class="flip-back">
-          <div class="service-name">Web Design</div>
-          <p>High-converting landing pages and full websites built with performance, aesthetics, and user experience at the core.</p>
-          <a href="#contact-options" class="learn-more">Get Started â†’</a>
+        <div class="flipâ€”back">
+          <div class="serviceâ€”name">Performance Ads</div>
+          <p>Dataâ€”driven Meta, Google, and programmatic ad campaigns optimized for conversion, ROAS, and scalable growth.</p>
+          <a href="#contactâ€”options" class="learnâ€”more">Get Started â†’</a>
         </div>
       </div>
     </div>
 
-    <div class="flip-card">
-      <div class="flip-inner">
-        <div class="flip-front">
-          <div class="lime-bar"></div>
-          <span class="card-number">08</span>
-          <span class="service-icon" aria-hidden="true"><i class="fa-solid fa-camera"></i></span>
-          <div class="service-name">Photography</div>
-          <div class="service-tag">Virtual Stories</div>
+    <div class="flipâ€”card">
+      <div class="flipâ€”inner">
+        <div class="flipâ€”front">
+          <div class="limeâ€”bar"></div>
+          <span class="cardâ€”number">07</span>
+          <span class="serviceâ€”icon" ariaâ€”hidden="true"><i class="faâ€”solid faâ€”globe"></i></span>
+          <div class="serviceâ€”name">Web Design</div>
+          <div class="serviceâ€”tag">Digital Presence</div>
         </div>
-        <div class="flip-back">
-          <div class="service-name">Photography</div>
+        <div class="flipâ€”back">
+          <div class="serviceâ€”name">Web Design</div>
+          <p>Highâ€”converting landing pages and full websites built with performance, aesthetics, and user experience at the core.</p>
+          <a href="#contactâ€”options" class="learnâ€”more">Get Started â†’</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="flipâ€”card">
+      <div class="flipâ€”inner">
+        <div class="flipâ€”front">
+          <div class="limeâ€”bar"></div>
+          <span class="cardâ€”number">08</span>
+          <span class="serviceâ€”icon" ariaâ€”hidden="true"><i class="faâ€”solid faâ€”camera"></i></span>
+          <div class="serviceâ€”name">Photography</div>
+          <div class="serviceâ€”tag">Virtual Stories</div>
+        </div>
+        <div class="flipâ€”back">
+          <div class="serviceâ€”name">Photography</div>
           <p>Capturing stories, emotions, and moments through creative visuals crafted with style, clarity, and timeless impact.</p>
-          <a href="#contact-options" class="learn-more">Get Started â†’</a>
+          <a href="#contactâ€”options" class="learnâ€”more">Get Started â†’</a>
         </div>
       </div>
     </div>
@@ -1475,13 +1475,13 @@
   </div>
 </section>
 
-<!-- LOGO MARQUEE SECTION -->
-<div class="logo-marquee-section" aria-label="Client logo marquee">
-  <div class="logo-marquee-track">
-    <div class="logo-marquee-item">
+<!â€”â€” LOGO MARQUEE SECTION â€”â€”>
+<div class="logoâ€”marqueeâ€”section" ariaâ€”label="Client logo marquee">
+  <div class="logoâ€”marqueeâ€”track">
+    <div class="logoâ€”marqueeâ€”item">
       <img src="1.jpeg" alt="Geo India">
     </div>
-    <div class="logo-marquee-item" aria-hidden="true">
+    <div class="logoâ€”marqueeâ€”item" ariaâ€”hidden="true">
       <img src="1.jpeg" alt="">
     </div>
   </div>
@@ -1489,130 +1489,130 @@
 
 <style>
 :root{
-  --lime:#c6ff00;
-  --black:#000;
+  â€”â€”lime:#c6ff00;
+  â€”â€”black:#000;
 }
 
 html,
 body{
   width:100%;
-  max-width:100%;
-  overflow-x:hidden;
+  maxâ€”width:100%;
+  overflowâ€”x:hidden;
 }
 
 /* LOGO MARQUEE SECTION */
-.logo-marquee-section{
+.logoâ€”marqueeâ€”section{
   width:100%;
-  max-width:100vw;
-  background:var(--lime);
+  maxâ€”width:100vw;
+  background:var(â€”â€”lime);
   overflow:hidden;
   padding:14px 0;
-  border-top:2px solid var(--black);
-  border-bottom:2px solid var(--black);
+  borderâ€”top:2px solid var(â€”â€”black);
+  borderâ€”bottom:2px solid var(â€”â€”black);
 }
 
 /* TRACK */
-.logo-marquee-track{
+.logoâ€”marqueeâ€”track{
   display:flex;
-  align-items:center;
+  alignâ€”items:center;
   gap:70px;
-  width:max-content;
-  animation:logo-marquee 22s linear infinite;
-  will-change:transform;
+  width:maxâ€”content;
+  animation:logoâ€”marquee 22s linear infinite;
+  willâ€”change:transform;
 }
 
 /* SAME HEIGHT FOR ALL LOGOS */
-.logo-marquee-item{
+.logoâ€”marqueeâ€”item{
   height:130px;
   width:auto;
   display:flex;
-  align-items:center;
-  justify-content:center;
-  flex-shrink:0;
+  alignâ€”items:center;
+  justifyâ€”content:center;
+  flexâ€”shrink:0;
 }
 
 /* IMAGE FIT */
-.logo-marquee-item img{
+.logoâ€”marqueeâ€”item img{
   height:100%;
   width:auto;
-  max-width:none;
-  object-fit:contain;
+  maxâ€”width:none;
+  objectâ€”fit:contain;
   display:block;
 }
 
 /* ANIMATION */
-@keyframes logo-marquee{
+@keyframes logoâ€”marquee{
   from{
     transform:translateX(0);
   }
   to{
-    transform:translateX(-50%);
+    transform:translateX(â€”50%);
   }
 }
 
 /* HOVER PAUSE */
-.logo-marquee-section:hover .logo-marquee-track{
-  animation-play-state:paused;
+.logoâ€”marqueeâ€”section:hover .logoâ€”marqueeâ€”track{
+  animationâ€”playâ€”state:paused;
 }
 
 /* MOBILE */
-@media(max-width:768px){
-  .logo-marquee-section{
+@media(maxâ€”width:768px){
+  .logoâ€”marqueeâ€”section{
     padding:12px 0;
   }
 
-  .logo-marquee-track{
+  .logoâ€”marqueeâ€”track{
     gap:38px;
-    animation-duration:18s;
+    animationâ€”duration:18s;
   }
 
-  .logo-marquee-item{
+  .logoâ€”marqueeâ€”item{
     height:115px;
   }
 
-  .logo-marquee-item img{
+  .logoâ€”marqueeâ€”item img{
     height:115px;
-    max-width:none;
+    maxâ€”width:none;
   }
 }
 </style>
 
 
-<!-- Valour SECTION -->
-<section id="process-overview">
-  <div class="about-container">
+<!â€”â€” Valour SECTION â€”â€”>
+<section id="processâ€”overview">
+  <div class="aboutâ€”container">
 
-    <!-- LEFT SIDE TEXT -->
-    <div class="about-text">
-      <div class="section-label">How We Work</div>
+    <!â€”â€” LEFT SIDE TEXT â€”â€”>
+    <div class="aboutâ€”text">
+      <div class="sectionâ€”label">How We Work</div>
 
-      <h1 class="section-title">
+      <h1 class="sectionâ€”title">
         The Valour <br>
         <span>Method.</span>
       </h1>
 
-      <p>Our process begins with Discover, where we deep-dive into your brand, audience, and competitive landscape to uncover real opportunities. Next comes Strategize, building a data-backed roadmap tailored to your goals, timeline, and growth targets. In the Create phase, our team develops bold, on-brand, and conversion-ready assets and campaigns designed to make an impact. We then Launch with precision across every channel, maximizing reach and engagement from day one. Finally, we Scale by continuously analyzing, optimizing, and improving performance - turning strong results into long-term, compounding growth.</p>
+      <p>Our process begins with Discover, where we deepâ€”dive into your brand, audience, and competitive landscape to uncover real opportunities. Next comes Strategize, building a dataâ€”backed roadmap tailored to your goals, timeline, and growth targets. In the Create phase, our team develops bold, onâ€”brand, and conversionâ€”ready assets and campaigns designed to make an impact. We then Launch with precision across every channel, maximizing reach and engagement from day one. Finally, we Scale by continuously analyzing, optimizing, and improving performance â€” turning strong results into longâ€”term, compounding growth.</p>
     </div>
 
-    <!-- RIGHT SIDE -->
-    <div class="about-right">
+    <!â€”â€” RIGHT SIDE â€”â€”>
+    <div class="aboutâ€”right">
 
-      <!-- CAT IMAGE -->
-      <div class="cat-image">
-        <img src="valour-cark-work.png" alt="Valour Cat">
+      <!â€”â€” CAT IMAGE â€”â€”>
+      <div class="catâ€”image">
+        <img src="valourâ€”carkâ€”work.png" alt="Valour Cat">
       </div>
 
-      <!-- STATS -->
-      <div class="stats-grid">
+      <!â€”â€” STATS â€”â€”>
+      <div class="statsâ€”grid">
 
-        <div class="stat-card">
-          <div class="stat-num">24/7</div>
-          <div class="stat-label">creative support</div>
+        <div class="statâ€”card">
+          <div class="statâ€”num">24/7</div>
+          <div class="statâ€”label">creative support</div>
         </div>
 
-        <div class="stat-card">
-          <div class="stat-num">100%</div>
-          <div class="stat-label">client focused</div>
+        <div class="statâ€”card">
+          <div class="statâ€”num">100%</div>
+          <div class="statâ€”label">client focused</div>
         </div>
 
       </div>
@@ -1624,209 +1624,209 @@ body{
   *{
     margin:0;
     padding:0;
-    box-sizing:border-box;
+    boxâ€”sizing:borderâ€”box;
   }
 
   body{
     background:#000;
-    font-family:Arial, sans-serif;
+    fontâ€”family:Arial, sansâ€”serif;
     color:white;
   }
 
   #about{
     width:100%;
-    min-height:100vh;
+    minâ€”height:100vh;
     padding:80px 8%;
     background:#000;
     overflow:hidden;
   }
 
-  .about-container{
+  .aboutâ€”container{
     display:flex;
-    justify-content:space-between;
-    align-items:center;
+    justifyâ€”content:spaceâ€”between;
+    alignâ€”items:center;
     gap:60px;
-    flex-wrap:wrap;
+    flexâ€”wrap:wrap;
   }
 
   /* LEFT TEXT */
-  .about-text{
+  .aboutâ€”text{
     flex:1;
-    min-width:320px;
+    minâ€”width:320px;
   }
 
-  .section-label{
+  .sectionâ€”label{
     color:#aaff00;
-    font-size:14px;
-    letter-spacing:3px;
-    text-transform:uppercase;
-    margin-bottom:20px;
+    fontâ€”size:14px;
+    letterâ€”spacing:3px;
+    textâ€”transform:uppercase;
+    marginâ€”bottom:20px;
   }
 
-  .section-title{
-    font-size:80px;
-    line-height:0.95;
-    font-weight:900;
-    margin-bottom:35px;
+  .sectionâ€”title{
+    fontâ€”size:80px;
+    lineâ€”height:0.95;
+    fontâ€”weight:900;
+    marginâ€”bottom:35px;
     color:#fff;
   }
 
-  .section-title span{
+  .sectionâ€”title span{
     color:#b7ff00;
   }
 
-  .about-text p{
+  .aboutâ€”text p{
     color:#bdbdbd;
-    font-size:20px;
-    line-height:1.9;
-    margin-bottom:25px;
-    max-width:700px;
+    fontâ€”size:20px;
+    lineâ€”height:1.9;
+    marginâ€”bottom:25px;
+    maxâ€”width:700px;
   }
 
-  .btn-primary{
-    display:inline-block;
-    margin-top:15px;
+  .btnâ€”primary{
+    display:inlineâ€”block;
+    marginâ€”top:15px;
     padding:18px 40px;
     background:#b7ff00;
     color:#000;
-    text-decoration:none;
-    font-weight:700;
-    letter-spacing:2px;
-    text-transform:uppercase;
+    textâ€”decoration:none;
+    fontâ€”weight:700;
+    letterâ€”spacing:2px;
+    textâ€”transform:uppercase;
     transition:0.3s;
   }
 
-  .btn-primary:hover{
-    transform:translateY(-3px);
+  .btnâ€”primary:hover{
+    transform:translateY(â€”3px);
   }
 
   /* RIGHT SIDE */
-  .about-right{
+  .aboutâ€”right{
     flex:1;
-    min-width:320px;
+    minâ€”width:320px;
     display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
+    flexâ€”direction:column;
+    alignâ€”items:center;
+    justifyâ€”content:center;
   }
 
   /* CAT */
-.cat-image img{
+.catâ€”image img{
     width:400%;
-    max-width:520px; /* reduce from 520px */
-    object-fit:contain;
-    filter:drop-shadow(0 0 25px rgba(183,255,0,0.2));
+    maxâ€”width:520px; /* reduce from 520px */
+    objectâ€”fit:contain;
+    filter:dropâ€”shadow(0 0 25px rgba(183,255,0,0.2));
 }
- .cat-image img{
+ .catâ€”image img{
     width:300%;
-    max-width:400px;
-    object-fit:contain;
+    maxâ€”width:400px;
+    objectâ€”fit:contain;
 }
 
   /* STATS */
-  .stats-grid{
+  .statsâ€”grid{
     width:100%;
     display:grid;
-    grid-template-columns:1fr 1fr;
+    gridâ€”templateâ€”columns:1fr 1fr;
     gap:0;
   }
 
-  .stat-card{
+  .statâ€”card{
     border:1px solid rgba(183,255,0,0.25);
     padding:45px 35px;
     background:#050505;
     transition:0.3s;
   }
 
-  .stat-card:hover{
+  .statâ€”card:hover{
     background:#0b0b0b;
-    border-color:#b7ff00;
+    borderâ€”color:#b7ff00;
   }
 
-  .stat-num{
+  .statâ€”num{
     color:#b7ff00;
-    font-family: 'Times New Roman', Times, serif;
-    font-size:70px;
-    font-weight:00;
-    margin-bottom:12px;
+    fontâ€”family: 'Times New Roman', Times, serif;
+    fontâ€”size:70px;
+    fontâ€”weight:00;
+    marginâ€”bottom:12px;
   }
 
-  .stat-label{
+  .statâ€”label{
     color:#8e8e8e;
-    text-transform:uppercase;
-    letter-spacing:4px;
-    font-size:13px;
+    textâ€”transform:uppercase;
+    letterâ€”spacing:4px;
+    fontâ€”size:13px;
   }
 
   /* RESPONSIVE */
-  @media(max-width:1100px){
+  @media(maxâ€”width:1100px){
 
-    .about-container{
-      flex-direction:column;
+    .aboutâ€”container{
+      flexâ€”direction:column;
     }
 
-    .section-title{
-      font-size:58px;
+    .sectionâ€”title{
+      fontâ€”size:58px;
     }
 
-    .about-text p{
-      font-size:18px;
+    .aboutâ€”text p{
+      fontâ€”size:18px;
     }
 
-    .cat-image img{
-      max-width:420px;
+    .catâ€”image img{
+      maxâ€”width:420px;
     }
   }
 
-  @media(max-width:700px){
+  @media(maxâ€”width:700px){
 
-    .section-title{
-      font-size:44px;
+    .sectionâ€”title{
+      fontâ€”size:44px;
     }
 
-    .stats-grid{
-      grid-template-columns:1fr;
+    .statsâ€”grid{
+      gridâ€”templateâ€”columns:1fr;
     }
 
-    .stat-num{
-      font-size:56px;
+    .statâ€”num{
+      fontâ€”size:56px;
     }
 
-    .cat-image img{
-      max-width:320px;
+    .catâ€”image img{
+      maxâ€”width:320px;
     }
   }
 </style>
 </section>
 
 
-<!-- PROCESS -->
+<!â€”â€” PROCESS â€”â€”>
 <section id="process">
-  <div class="process-timeline reveal">
-    <div class="process-step">
-      <div class="step-num">01</div>
-      <div class="step-title">Discover</div>
-      <p class="step-desc">Deep-dive into your brand, audience, and competitive landscape to uncover real opportunities.</p>
+  <div class="processâ€”timeline reveal">
+    <div class="processâ€”step">
+      <div class="stepâ€”num">01</div>
+      <div class="stepâ€”title">Discover</div>
+      <p class="stepâ€”desc">Deepâ€”dive into your brand, audience, and competitive landscape to uncover real opportunities.</p>
     </div>
-    <div class="process-step">
-      <div class="step-num">02</div>
-      <div class="step-title">Strategize</div>
-      <p class="step-desc">Build a data-backed roadmap tailored to your goals, timeline, and growth targets.</p>
+    <div class="processâ€”step">
+      <div class="stepâ€”num">02</div>
+      <div class="stepâ€”title">Strategize</div>
+      <p class="stepâ€”desc">Build a dataâ€”backed roadmap tailored to your goals, timeline, and growth targets.</p>
     </div>
-    <div class="process-step">
-      <div class="step-num">03</div>
-      <div class="step-title">Create</div>
-      <p class="step-desc">Our creatives craft assets and campaigns that are bold, on-brand, and conversion-ready.</p>
+    <div class="processâ€”step">
+      <div class="stepâ€”num">03</div>
+      <div class="stepâ€”title">Create</div>
+      <p class="stepâ€”desc">Our creatives craft assets and campaigns that are bold, onâ€”brand, and conversionâ€”ready.</p>
     </div>
-    <div class="process-step">
-      <div class="step-num">04</div>
-      <div class="step-title">Launch</div>
-      <p class="step-desc">Execute with precision across every channel, maximizing reach and engagement from day one.</p>
+    <div class="processâ€”step">
+      <div class="stepâ€”num">04</div>
+      <div class="stepâ€”title">Launch</div>
+      <p class="stepâ€”desc">Execute with precision across every channel, maximizing reach and engagement from day one.</p>
     </div>
-    <div class="process-step">
-      <div class="step-num">05</div>
-      <div class="step-title">Scale</div>
-      <p class="step-desc">Continuously analyze, optimize, and scale what works - turning results into compounding growth.</p>
+    <div class="processâ€”step">
+      <div class="stepâ€”num">05</div>
+      <div class="stepâ€”title">Scale</div>
+      <p class="stepâ€”desc">Continuously analyze, optimize, and scale what works â€” turning results into compounding growth.</p>
     </div>
   </div>
 </section>
@@ -1839,113 +1839,113 @@ body{
   position:relative;
   overflow:hidden;
   background:#c6ff00;
-  min-height:100vh;
+  minâ€”height:100vh;
   display:grid;
-  grid-template-columns:minmax(220px,0.75fr) minmax(0,1.35fr);
-  align-items:center;
+  gridâ€”templateâ€”columns:minmax(220px,0.75fr) minmax(0,1.35fr);
+  alignâ€”items:center;
   padding:59px 5%;
   gap:56px;
 }
 
-.bg-word{
+.bgâ€”word{
   position:absolute;
   top:50%;
   left:50%;
-  transform:translate(-50%,-50%);
-  font-size:190px;
-  font-weight:900;
+  transform:translate(â€”50%,â€”50%);
+  fontâ€”size:190px;
+  fontâ€”weight:900;
   color:rgba(0,0,0,0.045);
-  letter-spacing:8px;
-  z-index:1;
-  pointer-events:none;
-  font-family:'Orbitron', sans-serif;
+  letterâ€”spacing:8px;
+  zâ€”index:1;
+  pointerâ€”events:none;
+  fontâ€”family:'Orbitron', sansâ€”serif;
 }
 
-.cta-image{
+.ctaâ€”image{
   position:relative;
-  z-index:2;
+  zâ€”index:2;
   display:flex;
-  justify-content:flex-start;
-  align-items:flex-end;
+  justifyâ€”content:flexâ€”start;
+  alignâ€”items:flexâ€”end;
 }
 
-.cta-image img{
+.ctaâ€”image img{
   width:100%;
-  max-width:500px;
-  object-fit:contain;
-  filter:drop-shadow(0 26px 48px rgba(0,0,0,0.22));
+  maxâ€”width:500px;
+  objectâ€”fit:contain;
+  filter:dropâ€”shadow(0 26px 48px rgba(0,0,0,0.22));
 }
 
-.cta-content{
+.ctaâ€”content{
   position:relative;
-  z-index:2;
-  text-align:left;
+  zâ€”index:2;
+  textâ€”align:left;
 }
 
-.contact-label{
+.contactâ€”label{
   color:#111;
-  margin-bottom:14px;
+  marginâ€”bottom:14px;
 }
 
-.cta-content h2{
-  max-width:780px;
-  font-size:68px;
-  line-height:1.02;
-  margin-bottom:24px;
+.ctaâ€”content h2{
+  maxâ€”width:780px;
+  fontâ€”size:68px;
+  lineâ€”height:1.02;
+  marginâ€”bottom:24px;
   color:#000;
-  font-family:'Orbitron', sans-serif;
-  font-weight:900;
-  letter-spacing:0;
+  fontâ€”family:'Orbitron', sansâ€”serif;
+  fontâ€”weight:900;
+  letterâ€”spacing:0;
 }
 
-.cta-content p{
-  max-width:620px;
-  margin-bottom:40px;
-  font-size:19px;
-  line-height:1.7;
+.ctaâ€”content p{
+  maxâ€”width:620px;
+  marginâ€”bottom:40px;
+  fontâ€”size:19px;
+  lineâ€”height:1.7;
   color:rgba(0,0,0,0.72);
-  font-family:'Inter', sans-serif;
+  fontâ€”family:'Inter', sansâ€”serif;
 }
 
-.contact-grid{
+.contactâ€”grid{
   display:grid;
-  grid-template-columns:repeat(6,minmax(0,1fr));
+  gridâ€”templateâ€”columns:repeat(6,minmax(0,1fr));
   gap:10px;
 }
 
-#contact-options{
-  scroll-margin-top:140px;
+#contactâ€”options{
+  scrollâ€”marginâ€”top:140px;
 }
 
-.contact-box{
-  grid-column:span 2;
-  min-height:80px;
+.contactâ€”box{
+  gridâ€”column:span 2;
+  minâ€”height:80px;
   background:#050505;
   border:1px solid rgba(0,0,0,0.86);
-  border-radius:8px;
+  borderâ€”radius:8px;
   padding:10px;
-  text-decoration:none;
+  textâ€”decoration:none;
   color:#fff;
   display:grid;
-  grid-template-columns:46px minmax(0,1fr);
-  align-content:center;
-  column-gap:18px;
-  row-gap:8px;
+  gridâ€”templateâ€”columns:46px minmax(0,1fr);
+  alignâ€”content:center;
+  columnâ€”gap:18px;
+  rowâ€”gap:8px;
   position:relative;
   overflow:hidden;
-  box-shadow:0 22px 44px rgba(0,0,0,0.18);
-  transition:transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+  boxâ€”shadow:0 22px 44px rgba(0,0,0,0.18);
+  transition:transform 0.25s ease, borderâ€”color 0.25s ease, boxâ€”shadow 0.25s ease;
 }
 
-.contact-box:nth-child(4){
-  grid-column:1 / span 3;
+.contactâ€”box:nthâ€”child(4){
+  gridâ€”column:1 / span 3;
 }
 
-.contact-box:nth-child(5){
-  grid-column:4 / span 3;
+.contactâ€”box:nthâ€”child(5){
+  gridâ€”column:4 / span 3;
 }
 
-.contact-box::after{
+.contactâ€”box::after{
   content:'';
   position:absolute;
   left:22px;
@@ -1954,145 +1954,145 @@ body{
   height:3px;
   background:#c6ff00;
   transform:scaleX(0);
-  transform-origin:left;
+  transformâ€”origin:left;
   transition:transform 0.25s ease;
 }
 
-.contact-box:hover{
-  transform:translateY(-6px);
-  border-color:#c6ff00;
-  box-shadow:0 28px 60px rgba(0,0,0,0.28);
+.contactâ€”box:hover{
+  transform:translateY(â€”6px);
+  borderâ€”color:#c6ff00;
+  boxâ€”shadow:0 28px 60px rgba(0,0,0,0.28);
 }
 
-.contact-box:hover::after,
-.contact-box:focus-visible::after{
+.contactâ€”box:hover::after,
+.contactâ€”box:focusâ€”visible::after{
   transform:scaleX(1);
 }
 
-.contact-box:focus-visible{
+.contactâ€”box:focusâ€”visible{
   outline:3px solid rgba(0,0,0,0.35);
-  outline-offset:4px;
+  outlineâ€”offset:4px;
 }
 
-.contact-icon{
+.contactâ€”icon{
   width:46px;
   height:46px;
-  border-radius:50%;
+  borderâ€”radius:50%;
   display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:21px;
-  margin-bottom:0;
+  alignâ€”items:center;
+  justifyâ€”content:center;
+  fontâ€”size:21px;
+  marginâ€”bottom:0;
   border:1px solid rgba(255,255,255,0.12);
   background:rgba(198,255,0,0.12);
   color:#c6ff00;
-  grid-row:1 / span 2;
-  grid-column:1;
+  gridâ€”row:1 / span 2;
+  gridâ€”column:1;
 }
 
-.whatsapp-icon{ color:#25d366; background:rgba(37,211,102,0.12); }
-.instagram-icon{ color:#e4405f; background:rgba(228,64,95,0.12); }
-.facebook-icon{ color:#1877f2; background:rgba(24,119,242,0.12); }
-.linkedin-icon{ color:#0a66c2; background:rgba(10,102,194,0.12); }
-.email-icon{ color:#c6ff00; background:rgba(198,255,0,0.12); }
+.whatsappâ€”icon{ color:#25d366; background:rgba(37,211,102,0.12); }
+.instagramâ€”icon{ color:#e4405f; background:rgba(228,64,95,0.12); }
+.facebookâ€”icon{ color:#1877f2; background:rgba(24,119,242,0.12); }
+.linkedinâ€”icon{ color:#0a66c2; background:rgba(10,102,194,0.12); }
+.emailâ€”icon{ color:#c6ff00; background:rgba(198,255,0,0.12); }
 
-.contact-box h3{
-  font-size:14px;
-  line-height:1.15;
-  margin-bottom:0;
+.contactâ€”box h3{
+  fontâ€”size:14px;
+  lineâ€”height:1.15;
+  marginâ€”bottom:0;
   color:#fff;
-  font-family:'Rajdhani', sans-serif;
-  font-weight:700;
-  letter-spacing:0.08em;
-  text-transform:uppercase;
-  grid-column:2;
-  align-self:end;
+  fontâ€”family:'Rajdhani', sansâ€”serif;
+  fontâ€”weight:700;
+  letterâ€”spacing:0.08em;
+  textâ€”transform:uppercase;
+  gridâ€”column:2;
+  alignâ€”self:end;
 }
 
-.contact-box h4{
-  font-size:12px;
-  line-height:1.45;
-  margin-bottom:0;
+.contactâ€”box h4{
+  fontâ€”size:12px;
+  lineâ€”height:1.45;
+  marginâ€”bottom:0;
   color:#c6ff00;
-  font-family:'Inter', sans-serif;
-  font-weight:600;
-  word-break:keep-all;
-  overflow-wrap:normal;
-  white-space:nowrap;
-  grid-column:2;
-  align-self:start;
+  fontâ€”family:'Inter', sansâ€”serif;
+  fontâ€”weight:600;
+  wordâ€”break:keepâ€”all;
+  overflowâ€”wrap:normal;
+  whiteâ€”space:nowrap;
+  gridâ€”column:2;
+  alignâ€”self:start;
 }
 
-@media(max-width:1200px){
+@media(maxâ€”width:1200px){
   #contact{
-    grid-template-columns:1fr;
-    text-align:center;
+    gridâ€”templateâ€”columns:1fr;
+    textâ€”align:center;
   }
 
-  .cta-content{
-    text-align:center;
+  .ctaâ€”content{
+    textâ€”align:center;
   }
 
-  .cta-content p{
-    margin-left:auto;
-    margin-right:auto;
+  .ctaâ€”content p{
+    marginâ€”left:auto;
+    marginâ€”right:auto;
   }
 
-  .cta-image{
-    justify-content:center;
+  .ctaâ€”image{
+    justifyâ€”content:center;
   }
 
-  .cta-image img{
-    max-width:360px;
+  .ctaâ€”image img{
+    maxâ€”width:360px;
   }
 
-  .contact-grid{
-    grid-template-columns:repeat(2,minmax(0,1fr));
+  .contactâ€”grid{
+    gridâ€”templateâ€”columns:repeat(2,minmax(0,1fr));
   }
 
-  .contact-box,
-  .contact-box:nth-child(4),
-  .contact-box:nth-child(5){
-    grid-column:auto;
+  .contactâ€”box,
+  .contactâ€”box:nthâ€”child(4),
+  .contactâ€”box:nthâ€”child(5){
+    gridâ€”column:auto;
   }
 
-  .bg-word{
-    font-size:120px;
+  .bgâ€”word{
+    fontâ€”size:120px;
   }
 }
 
-@media(max-width:700px){
+@media(maxâ€”width:700px){
   #contact{
     padding:76px 18px;
     gap:34px;
   }
 
-  #contact-options{
-    scroll-margin-top:92px;
+  #contactâ€”options{
+    scrollâ€”marginâ€”top:92px;
   }
 
-  .contact-grid{
-    grid-template-columns:1fr;
+  .contactâ€”grid{
+    gridâ€”templateâ€”columns:1fr;
   }
 
-  .contact-box{
-    min-height:118px;
+  .contactâ€”box{
+    minâ€”height:118px;
   }
 
-  .cta-content h2{
-    font-size:38px;
+  .ctaâ€”content h2{
+    fontâ€”size:38px;
   }
 
-  .cta-content p{
-    font-size:16px;
+  .ctaâ€”content p{
+    fontâ€”size:16px;
   }
 
-  .cta-image img{
-    max-width:250px;
+  .ctaâ€”image img{
+    maxâ€”width:250px;
   }
 
-  .bg-word{
-    font-size:64px;
+  .bgâ€”word{
+    fontâ€”size:64px;
   }
 }
 
@@ -2100,20 +2100,20 @@ body{
 
 <section id="contact">
 
-  <!-- BACKGROUND WORD -->
-  <div class="bg-word">
+  <!â€”â€” BACKGROUND WORD â€”â€”>
+  <div class="bgâ€”word">
     VALOUR
   </div>
 
-  <!-- LEFT SIDE IMAGE -->
-  <div class="cta-image">
-    <img src="valour-cat-hand.png" alt="Valour Cat">
+  <!â€”â€” LEFT SIDE IMAGE â€”â€”>
+  <div class="ctaâ€”image">
+    <img src="valourâ€”catâ€”hand.png" alt="Valour Cat">
   </div>
 
-  <!-- RIGHT SIDE CONTENT -->
-  <div class="cta-content">
+  <!â€”â€” RIGHT SIDE CONTENT â€”â€”>
+  <div class="ctaâ€”content">
 
-    <div class="section-label contact-label">Contact Valour</div>
+    <div class="sectionâ€”label contactâ€”label">Contact Valour</div>
 
     <h2>
       Ready to Build <br>
@@ -2125,18 +2125,18 @@ body{
       Your story starts with a conversation.
     </p>
 
-    <!-- CONTACT GRID -->
-    <div class="contact-grid" id="contact-options">
+    <!â€”â€” CONTACT GRID â€”â€”>
+    <div class="contactâ€”grid" id="contactâ€”options">
 
-      <!-- WHATSAPP -->
+      <!â€”â€” WHATSAPP â€”â€”>
       <a href="https://wa.me/916374267472"
          target="_blank"
          rel="noopener noreferrer"
-         aria-label="Start a WhatsApp chat with Valour"
-         class="contact-box">
+         ariaâ€”label="Start a WhatsApp chat with Valour"
+         class="contactâ€”box">
 
-        <div class="contact-icon whatsapp-icon">
-          <i class="fa-brands fa-whatsapp"></i>
+        <div class="contactâ€”icon whatsappâ€”icon">
+          <i class="faâ€”brands faâ€”whatsapp"></i>
         </div>
 
         <h3>WhatsApp</h3>
@@ -2147,15 +2147,15 @@ body{
 
       </a>
 
-      <!-- INSTAGRAM -->
+      <!â€”â€” INSTAGRAM â€”â€”>
       <a href="https://www.instagram.com/valour_digital_agency?igsh=MXNza2Q4ejg3eThubA=="
          target="_blank"
          rel="noopener noreferrer"
-         aria-label="Visit Valour on Instagram"
-         class="contact-box">
+         ariaâ€”label="Visit Valour on Instagram"
+         class="contactâ€”box">
 
-        <div class="contact-icon instagram-icon">
-          <i class="fa-brands fa-instagram"></i>
+        <div class="contactâ€”icon instagramâ€”icon">
+          <i class="faâ€”brands faâ€”instagram"></i>
         </div>
 
         <h3>Instagram</h3>
@@ -2166,15 +2166,15 @@ body{
 
       </a>
 
-      <!-- FACEBOOK -->
+      <!â€”â€” FACEBOOK â€”â€”>
       <a href="https://www.facebook.com/share/18sBMbDUTp/"
          target="_blank"
          rel="noopener noreferrer"
-         aria-label="Visit Valour on Facebook"
-         class="contact-box">
+         ariaâ€”label="Visit Valour on Facebook"
+         class="contactâ€”box">
 
-        <div class="contact-icon facebook-icon">
-          <i class="fa-brands fa-facebook-f"></i>
+        <div class="contactâ€”icon facebookâ€”icon">
+          <i class="faâ€”brands faâ€”facebookâ€”f"></i>
         </div>
 
         <h3>Facebook</h3>
@@ -2185,15 +2185,15 @@ body{
 
       </a>
 
-      <!-- LINKEDIN -->
-      <a href="https://www.linkedin.com/company/valour-digitalagency/"
+      <!â€”â€” LINKEDIN â€”â€”>
+      <a href="https://www.linkedin.com/company/valourâ€”digitalagency/"
          target="_blank"
          rel="noopener noreferrer"
-         aria-label="Visit Valour on LinkedIn"
-         class="contact-box">
+         ariaâ€”label="Visit Valour on LinkedIn"
+         class="contactâ€”box">
 
-        <div class="contact-icon linkedin-icon">
-          <i class="fa-brands fa-linkedin-in"></i>
+        <div class="contactâ€”icon linkedinâ€”icon">
+          <i class="faâ€”brands faâ€”linkedinâ€”in"></i>
         </div>
 
         <h3>LinkedIn</h3>
@@ -2204,13 +2204,13 @@ body{
 
       </a>
 
-      <!-- EMAIL -->
+      <!â€”â€” EMAIL â€”â€”>
       <a href="valourdigitalagency@gmail.com"
-         aria-label="Send an email to Valour"
-         class="contact-box">
+         ariaâ€”label="Send an email to Valour"
+         class="contactâ€”box">
 
-        <div class="contact-icon email-icon">
-          <i class="fa-solid fa-envelope"></i>
+        <div class="contactâ€”icon emailâ€”icon">
+          <i class="faâ€”solid faâ€”envelope"></i>
         </div>
 
         <h3>Email</h3>
@@ -2227,17 +2227,17 @@ body{
 
 </section>
 
-<!-- FOOTER -->
+<!â€”â€” FOOTER â€”â€”>
 <footer>
-  <a class="footer-logo" href="#hero">
-    <img src="Valour-logo.png" alt="Valour Logo">
+  <a class="footerâ€”logo" href="#hero">
+    <img src="Valourâ€”logo.png" alt="Valour Logo">
     
   </a>
-  <div class="footer-links">
+  <div class="footerâ€”links">
     <a href="#about">About</a>
     <a href="#services">Services</a>
-    <a href="#process-overview">Process</a>
-    <a href="#contact-options">Contact</a>
+    <a href="#processâ€”overview">Process</a>
+    <a href="#contactâ€”options">Contact</a>
   </div>
   <small>Â© 2026 Valour Digital Agency. All rights reserved.</small>
 </footer>
@@ -2245,8 +2245,8 @@ body{
 <script>
 // â”€â”€ CURSOR â”€â”€
 const cursor = document.getElementById('cursor');
-const trail = document.getElementById('cursor-trail');
-let mx = -100, my = -100, tx = -100, ty = -100;
+const trail = document.getElementById('cursorâ€”trail');
+let mx = â€”100, my = â€”100, tx = â€”100, ty = â€”100;
 
 document.addEventListener('mousemove', e => {
   mx = e.clientX; my = e.clientY;
@@ -2256,8 +2256,8 @@ document.addEventListener('mousemove', e => {
 });
 
 function lerpTrail() {
-  tx += (mx - tx) * 0.1;
-  ty += (my - ty) * 0.1;
+  tx += (mx â€” tx) * 0.1;
+  ty += (my â€” ty) * 0.1;
   trail.style.left = tx + 'px';
   trail.style.top = ty + 'px';
   requestAnimationFrame(lerpTrail);
@@ -2270,13 +2270,13 @@ function spawnSpark(x, y) {
   const size = Math.random() * 5 + 2;
   const angle = Math.random() * Math.PI * 2;
   const dist = Math.random() * 30 + 10;
-  s.style.cssText = `left:${x}px;top:${y}px;width:${size}px;height:${size}px;background:${Math.random()<0.5?'#AAFF00':'#fff'};--dx:${Math.cos(angle)*dist}px;--dy:${Math.sin(angle)*dist}px;opacity:0.8;`;
+  s.style.cssText = `left:${x}px;top:${y}px;width:${size}px;height:${size}px;background:${Math.random()<0.5?'#AAFF00':'#fff'};â€”â€”dx:${Math.cos(angle)*dist}px;â€”â€”dy:${Math.sin(angle)*dist}px;opacity:0.8;`;
   document.body.appendChild(s);
   setTimeout(() => s.remove(), 600);
 }
 
 // Button hover cursor scale
-document.querySelectorAll('button, a, .flip-card, .stat-card, .process-step').forEach(el => {
+document.querySelectorAll('button, a, .flipâ€”card, .statâ€”card, .processâ€”step').forEach(el => {
   el.addEventListener('mouseenter', () => {
     cursor.style.width = '44px';
     cursor.style.height = '44px';
@@ -2291,8 +2291,8 @@ document.querySelectorAll('button, a, .flip-card, .stat-card, .process-step').fo
 
 // â”€â”€ MASCOT SPOTLIGHT EFFECT â”€â”€
 const mascotWrap = document.getElementById('mascot');
-const greenImg   = document.getElementById('mascot-green');
-const mascotLbl  = document.getElementById('mascot-label');
+const greenImg   = document.getElementById('mascotâ€”green');
+const mascotLbl  = document.getElementById('mascotâ€”label');
 
 const SPOTLIGHT_R_TARGET = 180;
 const SPOTLIGHT_FEATHER = 22;
@@ -2305,30 +2305,30 @@ let mascotInside = false;
 let mascotRafId = null;
 
 function lerpMascotLoop() {
-  csx += (msx - csx) * LERP_SPEED;
-  csy += (msy - csy) * LERP_SPEED;
-  currentR += (targetR - currentR) * 0.07;
+  csx += (msx â€” csx) * LERP_SPEED;
+  csy += (msy â€” csy) * LERP_SPEED;
+  currentR += (targetR â€” currentR) * 0.07;
 
   const spotlightX = `${csx.toFixed(2)}px`;
   const spotlightY = `${csy.toFixed(2)}px`;
   const spotlightR = `${currentR.toFixed(2)}px`;
-  const spotlightInner = `${Math.max(0, currentR - SPOTLIGHT_FEATHER).toFixed(2)}px`;
+  const spotlightInner = `${Math.max(0, currentR â€” SPOTLIGHT_FEATHER).toFixed(2)}px`;
 
   greenImg.style.transition = 'none';
-  greenImg.style.setProperty('--spotlight-x', spotlightX);
-  greenImg.style.setProperty('--spotlight-y', spotlightY);
-  greenImg.style.setProperty('--spotlight-r', spotlightR);
-  greenImg.style.setProperty('--spotlight-inner', spotlightInner);
+  greenImg.style.setProperty('â€”â€”spotlightâ€”x', spotlightX);
+  greenImg.style.setProperty('â€”â€”spotlightâ€”y', spotlightY);
+  greenImg.style.setProperty('â€”â€”spotlightâ€”r', spotlightR);
+  greenImg.style.setProperty('â€”â€”spotlightâ€”inner', spotlightInner);
   greenImg.style.clipPath = `circle(${spotlightR} at ${spotlightX} ${spotlightY})`;
 
   if (mascotInside || currentR > 0.5) {
     mascotRafId = requestAnimationFrame(lerpMascotLoop);
   } else {
     currentR = 0;
-    greenImg.style.setProperty('--spotlight-x', '50%');
-    greenImg.style.setProperty('--spotlight-y', '50%');
-    greenImg.style.setProperty('--spotlight-r', '0px');
-    greenImg.style.setProperty('--spotlight-inner', '0px');
+    greenImg.style.setProperty('â€”â€”spotlightâ€”x', '50%');
+    greenImg.style.setProperty('â€”â€”spotlightâ€”y', '50%');
+    greenImg.style.setProperty('â€”â€”spotlightâ€”r', '0px');
+    greenImg.style.setProperty('â€”â€”spotlightâ€”inner', '0px');
     greenImg.style.clipPath = 'circle(0px at 50% 50%)';
     mascotRafId = null;
   }
@@ -2336,8 +2336,8 @@ function lerpMascotLoop() {
 
 mascotWrap.addEventListener('mouseenter', e => {
   const rect = mascotWrap.getBoundingClientRect();
-  csx = msx = e.clientX - rect.left;
-  csy = msy = e.clientY - rect.top;
+  csx = msx = e.clientX â€” rect.left;
+  csy = msy = e.clientY â€” rect.top;
   targetR = SPOTLIGHT_R_TARGET;
   mascotInside = true;
   if (!mascotRafId) mascotRafId = requestAnimationFrame(lerpMascotLoop);
@@ -2345,10 +2345,10 @@ mascotWrap.addEventListener('mouseenter', e => {
 
 mascotWrap.addEventListener('mousemove', e => {
   const rect = mascotWrap.getBoundingClientRect();
-  msx = e.clientX - rect.left;
-  msy = e.clientY - rect.top;
+  msx = e.clientX â€” rect.left;
+  msy = e.clientY â€” rect.top;
   mascotLbl.textContent = 'âœ¦ Transforming';
-  mascotLbl.style.color = 'var(--lime)';
+  mascotLbl.style.color = 'var(â€”â€”lime)';
 });
 
 mascotWrap.addEventListener('mouseleave', () => {
@@ -2368,8 +2368,8 @@ const observer = new IntersectionObserver(entries => {
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
 // â”€â”€ LOGO PHYSICS CANVAS â”€â”€
-const canvas = document.getElementById('logo-canvas');
-const wrap = document.getElementById('logo-canvas-wrap');
+const canvas = document.getElementById('logoâ€”canvas');
+const wrap = document.getElementById('logoâ€”canvasâ€”wrap');
 
 if (canvas && wrap) {
 const ctx = canvas.getContext('2d');
@@ -2409,10 +2409,10 @@ function makeBall(x, y) {
   const radius = 10 + Math.random() * 16;
   const col = BALL_COLORS[Math.floor(Math.random() * BALL_COLORS.length)];
   return {
-    x: x ?? (radius + Math.random() * (W - radius * 2)),
-    y: y ?? (H / 2 + Math.random() * (H / 2) - radius), // spawn in bottom half
-    vx: (Math.random() - 0.5) * 1.5,
-    vy: (Math.random() - 0.5) * 1.5,
+    x: x ?? (radius + Math.random() * (W â€” radius * 2)),
+    y: y ?? (H / 2 + Math.random() * (H / 2) â€” radius), // spawn in bottom half
+    vx: (Math.random() â€” 0.5) * 1.5,
+    vy: (Math.random() â€” 0.5) * 1.5,
     radius,
     color: col,
     alpha: 0.8 + Math.random() * 0.2,
@@ -2435,7 +2435,7 @@ function drawBall(b) {
   ctx.globalAlpha = b.alpha;
 
   // main sphere with specular highlight
-  const grad = ctx.createRadialGradient(b.x - r * 0.35, b.y - r * 0.35, r * 0.04, b.x, b.y, r);
+  const grad = ctx.createRadialGradient(b.x â€” r * 0.35, b.y â€” r * 0.35, r * 0.04, b.x, b.y, r);
   grad.addColorStop(0,    '#ffffff');
   grad.addColorStop(0.25, b.color.fill);
   grad.addColorStop(1,    'rgba(0,0,0,0.45)');
@@ -2447,27 +2447,27 @@ function drawBall(b) {
   ctx.restore();
 }
 
-let mouseCanvasX = -9999, mouseCanvasY = -9999;
+let mouseCanvasX = â€”9999, mouseCanvasY = â€”9999;
 let mouseInCanvas = false;
 
 wrap.addEventListener('mousemove', e => {
   const rect = wrap.getBoundingClientRect();
-  mouseCanvasX = e.clientX - rect.left;
-  mouseCanvasY = e.clientY - rect.top;
+  mouseCanvasX = e.clientX â€” rect.left;
+  mouseCanvasY = e.clientY â€” rect.top;
   mouseInCanvas = true;
 });
 wrap.addEventListener('mouseleave', () => {
   mouseInCanvas = false;
-  mouseCanvasX = -9999;
-  mouseCanvasY = -9999;
+  mouseCanvasX = â€”9999;
+  mouseCanvasY = â€”9999;
 });
 
 // Also track mouse globally to keep repelling when cursor drifts slightly
 document.addEventListener('mousemove', e => {
   const rect = wrap.getBoundingClientRect();
-  const lx = e.clientX - rect.left;
-  const ly = e.clientY - rect.top;
-  if (lx >= -50 && lx <= W + 50 && ly >= -50 && ly <= H + 50) {
+  const lx = e.clientX â€” rect.left;
+  const ly = e.clientY â€” rect.top;
+  if (lx >= â€”50 && lx <= W + 50 && ly >= â€”50 && ly <= H + 50) {
     mouseCanvasX = lx;
     mouseCanvasY = ly;
     mouseInCanvas = true;
@@ -2483,25 +2483,25 @@ function collideBalls() {
     for (let j = i + 1; j < balls.length; j++) {
       const b = balls[j];
       if (b.dead) continue;
-      const dx = b.x - a.x;
-      const dy = b.y - a.y;
+      const dx = b.x â€” a.x;
+      const dy = b.y â€” a.y;
       const dist = Math.sqrt(dx * dx + dy * dy);
       const minD = a.radius + b.radius;
       if (dist < minD && dist > 0.01) {
         // separate
-        const overlap = (minD - dist) / 2;
+        const overlap = (minD â€” dist) / 2;
         const nx = dx / dist;
         const ny = dy / dist;
-        a.x -= nx * overlap;
-        a.y -= ny * overlap;
+        a.x â€”= nx * overlap;
+        a.y â€”= ny * overlap;
         b.x += nx * overlap;
         b.y += ny * overlap;
         // exchange velocity along normal
-        const relV = (a.vx - b.vx) * nx + (a.vy - b.vy) * ny;
+        const relV = (a.vx â€” b.vx) * nx + (a.vy â€” b.vy) * ny;
         if (relV > 0) {
           const impulse = relV * 0.7;
-          a.vx -= impulse * nx;
-          a.vy -= impulse * ny;
+          a.vx â€”= impulse * nx;
+          a.vy â€”= impulse * ny;
           b.vx += impulse * nx;
           b.vy += impulse * ny;
         }
@@ -2521,13 +2521,13 @@ function animateBalls() {
     // Gravity
     b.vy += GRAVITY;
 
-    // Cursor repulsion - large radius, strong force
+    // Cursor repulsion â€” large radius, strong force
     if (mouseInCanvas) {
-      const dx = b.x - mouseCanvasX;
-      const dy = b.y - mouseCanvasY;
+      const dx = b.x â€” mouseCanvasX;
+      const dy = b.y â€” mouseCanvasY;
       const dist = Math.sqrt(dx * dx + dy * dy);
       if (dist < REPEL_RADIUS && dist > 0.5) {
-        const force = ((REPEL_RADIUS - dist) / REPEL_RADIUS) * REPEL_FORCE;
+        const force = ((REPEL_RADIUS â€” dist) / REPEL_RADIUS) * REPEL_FORCE;
         b.vx += (dx / dist) * force;
         b.vy += (dy / dist) * force;
       }
@@ -2549,13 +2549,13 @@ function animateBalls() {
 
     const pad = b.radius;
 
-    // LEFT wall - hard bounce
+    // LEFT wall â€” hard bounce
     if (b.x < pad) { b.x = pad; b.vx = Math.abs(b.vx) * BOUNCE; }
-    // RIGHT wall - hard bounce
-    if (b.x > W - pad) { b.x = W - pad; b.vx = -Math.abs(b.vx) * BOUNCE; }
-    // BOTTOM wall - hard bounce (floor of box)
-    if (b.y > H - pad) { b.y = H - pad; b.vy = -Math.abs(b.vy) * BOUNCE; b.vx *= 0.88; }
-    // TOP wall - hard bounce (ceiling of closed box)
+    // RIGHT wall â€” hard bounce
+    if (b.x > W â€” pad) { b.x = W â€” pad; b.vx = â€”Math.abs(b.vx) * BOUNCE; }
+    // BOTTOM wall â€” hard bounce (floor of box)
+    if (b.y > H â€” pad) { b.y = H â€” pad; b.vy = â€”Math.abs(b.vy) * BOUNCE; b.vx *= 0.88; }
+    // TOP wall â€” hard bounce (ceiling of closed box)
     if (b.y < pad) { b.y = pad; b.vy = Math.abs(b.vy) * BOUNCE; }
 
     drawBall(b);
@@ -2568,7 +2568,7 @@ animateBalls();
 
 // â”€â”€ STAT COUNTER ANIMATION â”€â”€
 function animateCounters() {
-  document.querySelectorAll('.stat-num').forEach(el => {
+  document.querySelectorAll('.statâ€”num').forEach(el => {
     const text = el.textContent;
     const num = parseFloat(text);
     if (isNaN(num)) return;
@@ -2591,7 +2591,7 @@ const statsObs = new IntersectionObserver(entries => {
     }
   });
 }, { threshold: 0.5 });
-const statsEl = document.querySelector('.stats-grid');
+const statsEl = document.querySelector('.statsâ€”grid');
 if (statsEl) statsObs.observe(statsEl);
 </script>
 </body>
